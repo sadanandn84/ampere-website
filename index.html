@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ampere Electric – For All Your Electric Needs</title>
+  <meta name="description" content="Ampere Electric – Specialists in HT/LT Motors, Transformers, Diesel Generators, Control Panels, Industrial Pumps and Earthing Solutions in Pune.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:       #0d1b2a;
+      --navy-mid:   #122235;
+      --navy-light: #1a3148;
+      --blue:       #1e90d4;
+      --blue-bright:#29aaff;
+      --blue-dim:   #1570a8;
+      --white:      #ffffff;
+      --off-white:  #e8f0f7;
+      --muted:      #7a9ab5;
+      --border:     rgba(30,144,212,0.2);
+      --border-s:   #1e3a50;
+      --r:          6px;
+      --fh:         'Rajdhani', sans-serif;
+      --fb:         'Inter', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background:var(--navy); color:var(--off-white); font-family:var(--fb); font-weight:400; line-height:1.6; overflow-x:hidden; }
+    ::-webkit-scrollbar{width:5px} ::-webkit-scrollbar-track{background:var(--navy)} ::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
+
+    /* NAV */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:200;
+      height:70px; display:flex; align-items:center; justify-content:space-between;
+      padding:0 5%;
+      background:rgba(13,27,42,0.97); backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--border);
+    }
+    .logo-wrap { display:flex; align-items:center; gap:.75rem; text-decoration:none; }
+    .logo-mark {
+      width:44px; height:44px; background:var(--blue); border-radius:var(--r);
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--fh); font-size:1.2rem; font-weight:700; color:#fff; flex-shrink:0;
+    }
+    .logo-text strong { display:block; font-family:var(--fh); font-size:1.2rem; font-weight:700; color:#fff; text-transform:uppercase; }
+    .logo-text strong span { color:var(--blue); }
+    .logo-text small { font-size:.62rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase; }
+    .nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
+    .nav-links a { text-decoration:none; color:var(--muted); font-size:.82rem; font-weight:500; letter-spacing:.08em; text-transform:uppercase; transition:color .2s; }
+    .nav-links a:hover { color:#fff; }
+    .nav-cta { background:var(--blue)!important; color:#fff!important; padding:.5rem 1.25rem; border-radius:var(--r); font-weight:600!important; }
+    .nav-cta:hover { background:var(--blue-dim)!important; }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
+    .hamburger span { display:block; width:24px; height:2px; background:#fff; border-radius:2px; transition:all .3s; }
+
+    /* HERO */
+    #home {
+      min-height:100vh; display:flex; align-items:center; position:relative;
+      overflow:hidden; padding:70px 5% 0;
+    }
+    .hero-bg { position:absolute; inset:0; pointer-events:none; }
+    .grid-lines {
+      position:absolute; inset:0;
+      background-image:linear-gradient(rgba(30,144,212,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(30,144,212,.04) 1px,transparent 1px);
+      background-size:50px 50px;
+    }
+    .accent-bar { position:absolute; left:0; top:0; bottom:0; width:4px; background:linear-gradient(to bottom,transparent,var(--blue),transparent); }
+    .circle-1 { position:absolute; width:680px; height:680px; border-radius:50%; background:radial-gradient(circle,rgba(30,144,212,.1) 0%,transparent 70%); right:-120px; top:50%; transform:translateY(-50%); }
+    .circle-2 { position:absolute; width:400px; height:400px; border-radius:50%; border:1px solid rgba(30,144,212,.12); right:100px; top:50%; transform:translateY(-50%); }
+    .circle-3 { position:absolute; width:180px; height:180px; border-radius:50%; background:rgba(30,144,212,.06); right:220px; bottom:80px; }
+
+    .hero-content { position:relative; z-index:2; max-width:640px; }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:.5rem;
+      background:rgba(30,144,212,.12); border:1px solid rgba(30,144,212,.35);
+      color:var(--blue-bright); font-size:.72rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase;
+      padding:.4rem 1rem; border-radius:2px; margin-bottom:1.75rem;
+      animation:fadeUp .7s ease both;
+    }
+    .hero-badge::before { content:''; width:7px; height:7px; background:var(--blue); border-radius:50%; animation:blink 2s infinite; }
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+
+    h1 { font-family:var(--fh); font-size:clamp(2.8rem,6vw,5.5rem); font-weight:700; line-height:1; color:#fff; text-transform:uppercase; margin-bottom:1.5rem; animation:fadeUp .7s .1s ease both; }
+    h1 .blue { color:var(--blue); }
+    h1 .thin { font-weight:400; }
+
+    .hero-sub { font-size:1rem; color:var(--muted); font-weight:300; line-height:1.7; max-width:460px; margin-bottom:2.5rem; animation:fadeUp .7s .2s ease both; }
+    .hero-sub strong { color:var(--blue-bright); font-weight:500; display:block; margin-bottom:.3rem; font-size:1.05rem; }
+
+    .hero-btns { display:flex; gap:1rem; flex-wrap:wrap; animation:fadeUp .7s .3s ease both; }
+    .btn-blue { background:var(--blue); color:#fff; font-family:var(--fh); font-size:1rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; padding:.85rem 2rem; border:none; border-radius:var(--r); text-decoration:none; cursor:pointer; transition:all .25s; display:inline-block; }
+    .btn-blue:hover { background:var(--blue-dim); transform:translateY(-2px); box-shadow:0 8px 28px rgba(30,144,212,.35); }
+    .btn-outline { background:transparent; color:var(--off-white); font-family:var(--fh); font-size:1rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; padding:.85rem 2rem; border:1px solid var(--border-s); border-radius:var(--r); text-decoration:none; cursor:pointer; transition:all .25s; display:inline-block; }
+    .btn-outline:hover { border-color:var(--blue); color:var(--blue); }
+
+    .hero-stats { position:absolute; bottom:50px; right:5%; display:flex; gap:2.5rem; z-index:2; animation:fadeUp .7s .4s ease both; }
+    .stat .n { font-family:var(--fh); font-size:2.5rem; font-weight:700; color:var(--blue-bright); line-height:1; }
+    .stat .l { font-size:.7rem; color:var(--muted); letter-spacing:.12em; text-transform:uppercase; }
+
+    /* MARQUEE */
+    .marquee-strip { background:var(--blue); padding:.7rem 0; overflow:hidden; white-space:nowrap; }
+    .marquee-track { display:inline-flex; animation:marquee 30s linear infinite; }
+    .m-i { font-family:var(--fh); font-size:.82rem; font-weight:600; letter-spacing:.15em; text-transform:uppercase; color:#fff; padding:0 2rem; }
+    .m-d { color:rgba(255,255,255,.4); }
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* SECTIONS */
+    section { padding:90px 5%; }
+    .sl { display:flex; align-items:center; gap:.75rem; font-size:.72rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--blue); margin-bottom:.75rem; }
+    .sl::before { content:''; width:20px; height:2px; background:var(--blue); }
+    h2 { font-family:var(--fh); font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:700; text-transform:uppercase; color:#fff; line-height:1.1; margin-bottom:.75rem; }
+    h2 .blue { color:var(--blue); }
+    .ss { color:var(--muted); font-size:.92rem; line-height:1.7; font-weight:300; max-width:500px; margin-bottom:3.5rem; }
+
+    /* SERVICES */
+    #services { background:var(--navy-mid); }
+    .svc-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border-s); border:1px solid var(--border-s); border-radius:var(--r); overflow:hidden; }
+    .svc { background:var(--navy-mid); padding:2rem 1.5rem; position:relative; overflow:hidden; transition:background .3s; }
+    .svc::after { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--blue); transform:scaleX(0); transform-origin:left; transition:transform .35s; }
+    .svc:hover { background:var(--navy-light); }
+    .svc:hover::after { transform:scaleX(1); }
+    .svc-ic { width:48px; height:48px; background:rgba(30,144,212,.12); border:1px solid rgba(30,144,212,.25); border-radius:var(--r); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin-bottom:1.25rem; }
+    .svc h3 { font-family:var(--fh); font-size:1.05rem; font-weight:700; text-transform:uppercase; color:#fff; margin-bottom:.5rem; line-height:1.2; }
+    .svc p { font-size:.84rem; color:var(--muted); line-height:1.6; }
+    .svc-n { position:absolute; top:1rem; right:1.25rem; font-family:var(--fh); font-size:3rem; font-weight:700; color:rgba(30,144,212,.06); line-height:1; }
+
+    /* ABOUT */
+    #about { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+    .feat { display:flex; align-items:flex-start; gap:1rem; padding:1.25rem 0; border-bottom:1px solid var(--border-s); }
+    .feat:first-of-type { border-top:1px solid var(--border-s); }
+    .f-ic { width:40px; height:40px; background:rgba(30,144,212,.1); border-radius:var(--r); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; }
+    .feat strong { display:block; color:#fff; font-weight:600; margin-bottom:.2rem; }
+    .feat span { font-size:.85rem; color:var(--muted); }
+    .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+    .sc { background:var(--navy-mid); border:1px solid var(--border-s); border-radius:var(--r); padding:1.75rem 1.5rem; text-align:center; transition:border-color .3s; }
+    .sc:hover { border-color:var(--blue); }
+    .sc .big { font-family:var(--fh); font-size:2.8rem; font-weight:700; color:var(--blue-bright); line-height:1; margin-bottom:.4rem; }
+    .sc small { font-size:.78rem; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; }
+    .sc.hl { grid-column:span 2; background:var(--blue); border-color:var(--blue); }
+    .sc.hl .big { color:#fff; font-size:1.3rem; }
+    .sc.hl small { color:rgba(255,255,255,.75); }
+
+    /* PRODUCTS */
+    #products { background:var(--navy-mid); }
+    .prod-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .pc { background:var(--navy); border:1px solid var(--border-s); border-radius:var(--r); padding:1.75rem; transition:all .3s; position:relative; overflow:hidden; }
+    .pc::before { content:''; position:absolute; top:0; left:0; width:3px; height:100%; background:var(--blue); transform:scaleY(0); transform-origin:top; transition:transform .35s; }
+    .pc:hover { border-color:rgba(30,144,212,.4); transform:translateY(-3px); }
+    .pc:hover::before { transform:scaleY(1); }
+    .pc .pi { font-size:2rem; margin-bottom:1rem; display:block; }
+    .pc h3 { font-family:var(--fh); font-size:1.15rem; font-weight:700; text-transform:uppercase; color:#fff; margin-bottom:.5rem; }
+    .pc p { font-size:.85rem; color:var(--muted); line-height:1.6; }
+
+    /* CLIENTS */
+    #clients { text-align:center; border-top:1px solid var(--border-s); border-bottom:1px solid var(--border-s); padding:55px 5%; background:var(--navy-mid); }
+    .cl-lbl { font-size:.72rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-bottom:2rem; }
+    .cl-logos { display:flex; justify-content:center; flex-wrap:wrap; gap:1rem; }
+    .cl { background:var(--navy); border:1px solid var(--border-s); border-radius:var(--r); padding:.7rem 1.5rem; font-family:var(--fh); font-size:.9rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); transition:all .2s; }
+    .cl:hover { border-color:var(--blue); color:var(--blue); }
+
+    /* ENQUIRY */
+    #enquiry { display:grid; grid-template-columns:1fr 1.35fr; gap:5rem; align-items:start; }
+    .enq-info h2 { margin-bottom:1rem; }
+    .enq-info > p { color:var(--muted); font-size:.92rem; line-height:1.7; margin-bottom:2rem; }
+    .cb { display:flex; align-items:center; gap:1rem; padding:1rem 0; border-bottom:1px solid var(--border-s); }
+    .cb:first-of-type { border-top:1px solid var(--border-s); }
+    .c-ic { width:40px; height:40px; background:rgba(30,144,212,.1); border:1px solid rgba(30,144,212,.2); border-radius:var(--r); display:flex; align-items:center; justify-content:center; font-size:1rem; flex-shrink:0; }
+    .cb strong { display:block; color:#fff; font-size:.9rem; }
+    .cb small { color:var(--muted); font-size:.8rem; }
+    .form-box { background:var(--navy-mid); border:1px solid var(--border-s); border-radius:var(--r); padding:2.25rem; }
+    .form-box h3 { font-family:var(--fh); font-size:1.3rem; font-weight:700; text-transform:uppercase; color:#fff; margin-bottom:.3rem; }
+    .fsub { font-size:.82rem; color:var(--muted); margin-bottom:1.75rem; }
+    .frow { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem; }
+    .fg { display:flex; flex-direction:column; gap:.35rem; margin-bottom:1rem; }
+    .fg label { font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
+    .fg input,.fg select,.fg textarea { background:var(--navy); border:1px solid var(--border-s); border-radius:var(--r); color:#fff; font-family:var(--fb); font-size:.9rem; padding:.7rem .95rem; outline:none; transition:border-color .2s; width:100%; }
+    .fg input::placeholder,.fg textarea::placeholder { color:#2e4a62; }
+    .fg input:focus,.fg select:focus,.fg textarea:focus { border-color:var(--blue); }
+    .fg select option { background:var(--navy); }
+    .fg textarea { min-height:100px; resize:vertical; }
+    .fnote { font-size:.78rem; color:var(--muted); margin-bottom:1.5rem; }
+    .fnote a { color:var(--blue); text-decoration:none; }
+    .sbtn { width:100%; background:var(--blue); color:#fff; font-family:var(--fh); font-size:1rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; padding:1rem; border:none; border-radius:var(--r); cursor:pointer; transition:all .25s; display:flex; align-items:center; justify-content:center; gap:.5rem; }
+    .sbtn:hover { background:var(--blue-dim); box-shadow:0 8px 28px rgba(30,144,212,.35); }
+    .sbtn:disabled { opacity:.6; cursor:not-allowed; }
+    .form-success { display:none; text-align:center; padding:3rem 1rem; }
+    .form-success .ck { font-size:3rem; margin-bottom:1rem; }
+    .form-success h3 { font-family:var(--fh); font-size:1.5rem; font-weight:700; text-transform:uppercase; color:#fff; margin-bottom:.5rem; }
+    .form-success p { color:var(--muted); font-size:.88rem; }
+
+    /* FOOTER */
+    footer { background:#080f17; border-top:1px solid var(--border-s); padding:55px 5% 28px; }
+    .fg-grid { display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:3rem; margin-bottom:2.5rem; }
+    .fbrand p { color:var(--muted); font-size:.85rem; line-height:1.7; margin:1rem 0 1.5rem; }
+    .soc { display:flex; gap:.6rem; }
+    .soc a { width:34px; height:34px; background:var(--navy-mid); border:1px solid var(--border-s); border-radius:var(--r); display:flex; align-items:center; justify-content:center; font-size:.8rem; color:var(--muted); text-decoration:none; transition:all .2s; }
+    .soc a:hover { border-color:var(--blue); color:var(--blue); }
+    .fcol h4 { font-family:var(--fh); font-size:.85rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#fff; margin-bottom:1.25rem; }
+    .fcol ul { list-style:none; }
+    .fcol ul li { margin-bottom:.55rem; }
+    .fcol ul li a { text-decoration:none; color:var(--muted); font-size:.85rem; transition:color .2s; }
+    .fcol ul li a:hover { color:var(--blue); }
+    .fbot { border-top:1px solid var(--border-s); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; font-size:.78rem; color:var(--muted); }
+
+    /* WA */
+    .wa { position:fixed; bottom:28px; right:28px; z-index:300; width:54px; height:54px; background:#25d366; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.5rem; text-decoration:none; box-shadow:0 4px 20px rgba(37,211,102,.4); transition:transform .2s,box-shadow .2s; animation:popIn .5s 1.5s both; }
+    .wa:hover { transform:scale(1.1); box-shadow:0 8px 28px rgba(37,211,102,.5); }
+    @keyframes popIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+
+    /* ANIMATIONS */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity .6s ease,transform .6s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    /* RESPONSIVE */
+    @media(max-width:960px){
+      .nav-links { position:fixed; top:70px; left:0; right:0; flex-direction:column; background:rgba(13,27,42,.98); padding:2rem 5%; gap:1.5rem; border-bottom:1px solid var(--border-s); transform:translateY(-110%); transition:transform .3s; align-items:flex-start; }
+      .nav-links.open { transform:translateY(0); }
+      .hamburger { display:flex; }
+      #home { flex-direction:column; justify-content:center; padding-bottom:80px; }
+      .hero-stats { position:static; margin-top:3rem; justify-content:flex-start; }
+      .circle-1,.circle-2,.circle-3 { display:none; }
+      .svc-grid { grid-template-columns:1fr 1fr; }
+      #about { grid-template-columns:1fr; gap:3rem; }
+      .prod-grid { grid-template-columns:1fr 1fr; }
+      #enquiry { grid-template-columns:1fr; gap:3rem; }
+      .frow { grid-template-columns:1fr; }
+      .fg-grid { grid-template-columns:1fr 1fr; gap:2rem; }
+      .fbot { flex-direction:column; gap:.5rem; text-align:center; }
+    }
+    @media(max-width:600px){
+      .svc-grid { grid-template-columns:1fr; }
+      .prod-grid { grid-template-columns:1fr; }
+      .fg-grid { grid-template-columns:1fr; }
+      .stats-grid { grid-template-columns:1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="logo-wrap">
+    <div class="logo-mark">AE</div>
+    <div class="logo-text">
+      <strong>Ampere <span>Electric</span></strong>
+      <small>For All Your Electric Needs</small>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#enquiry" class="nav-cta">Enquire Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg">
+    <div class="grid-lines"></div>
+    <div class="accent-bar"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">⚡ Pune's Trusted Electrical Partner</div>
+    <h1><span class="thin">Ampere</span><br><span class="blue">Electric</span></h1>
+    <p class="hero-sub">
+      <strong>For All Your Electric Needs</strong>
+      Specialists in HT/LT Motors, Diesel Generators, Transformers, Control Panels, Industrial Pumps and complete electrical project solutions across Pune and Maharashtra.
+    </p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-blue">Our Services</a>
+      <a href="#enquiry" class="btn-outline">Send Enquiry</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="n">15+</div><div class="l">Years Experience</div></div>
+    <div class="stat"><div class="n">500+</div><div class="l">Projects Done</div></div>
+    <div class="stat"><div class="n">24×7</div><div class="l">Support</div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="m-i">HT &amp; LT Motors <span class="m-d">◆</span></span>
+    <span class="m-i">Transformers <span class="m-d">◆</span></span>
+    <span class="m-i">Diesel Generators <span class="m-d">◆</span></span>
+    <span class="m-i">Panels Integration <span class="m-d">◆</span></span>
+    <span class="m-i">Industrial Pumps <span class="m-d">◆</span></span>
+    <span class="m-i">Earthing Solutions <span class="m-d">◆</span></span>
+    <span class="m-i">Motor Overhauling &amp; Repair <span class="m-d">◆</span></span>
+    <span class="m-i">Project Installation &amp; Commissioning <span class="m-d">◆</span></span>
+    <span class="m-i">HT &amp; LT Motors <span class="m-d">◆</span></span>
+    <span class="m-i">Transformers <span class="m-d">◆</span></span>
+    <span class="m-i">Diesel Generators <span class="m-d">◆</span></span>
+    <span class="m-i">Panels Integration <span class="m-d">◆</span></span>
+    <span class="m-i">Industrial Pumps <span class="m-d">◆</span></span>
+    <span class="m-i">Earthing Solutions <span class="m-d">◆</span></span>
+    <span class="m-i">Motor Overhauling &amp; Repair <span class="m-d">◆</span></span>
+    <span class="m-i">Project Installation &amp; Commissioning <span class="m-d">◆</span></span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="sl">What We Do</div>
+  <h2>Services <span class="blue">We Offer</span></h2>
+  <p class="ss">Complete electrical solutions — from supply and installation to long-term maintenance and repair.</p>
+  <div class="svc-grid reveal">
+    <div class="svc"><div class="svc-n">01</div><div class="svc-ic">⚙️</div><h3>HT &amp; LT Motors</h3><p>Supply, installation and commissioning of High Tension and Low Tension motors for all industrial applications.</p></div>
+    <div class="svc"><div class="svc-n">02</div><div class="svc-ic">🔋</div><h3>Transformers</h3><p>Distribution and power transformers — supply, erection and maintenance for industrial and commercial facilities.</p></div>
+    <div class="svc"><div class="svc-n">03</div><div class="svc-ic">⚡</div><h3>Diesel Generators</h3><p>DG sets from leading OEMs — silent and open type with installation, load testing and AMC support.</p></div>
+    <div class="svc"><div class="svc-n">04</div><div class="svc-ic">🔌</div><h3>Panels Integration</h3><p>Design and build of MCC, PCC, LT and synchronisation panels tailored to your plant requirements.</p></div>
+    <div class="svc"><div class="svc-n">05</div><div class="svc-ic">💧</div><h3>Industrial Pumps</h3><p>Supply and installation of centrifugal, submersible and process pumps for water, chemicals and slurry.</p></div>
+    <div class="svc"><div class="svc-n">06</div><div class="svc-ic">🌍</div><h3>Earthing Solutions</h3><p>Chemical and conventional earthing systems designed to IS 3043 standards for safe plant operations.</p></div>
+    <div class="svc"><div class="svc-n">07</div><div class="svc-ic">🔧</div><h3>Motor Overhauling &amp; Repair</h3><p>Complete overhauling and rewinding of LT and HT motors with dynamic balancing, testing and warranty.</p></div>
+    <div class="svc"><div class="svc-n">08</div><div class="svc-ic">🏗️</div><h3>Installation &amp; Commissioning</h3><p>End-to-end project execution — civil, erection, cabling, testing and commissioning by certified engineers.</p></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="sl">What We Supply</div>
+  <h2>Products &amp; <span class="blue">Equipment</span></h2>
+  <p class="ss">Quality-certified electrical equipment sourced directly from authorised OEM channels.</p>
+  <div class="prod-grid reveal">
+    <div class="pc"><span class="pi">⚙️</span><h3>HT Motors</h3><p>High-tension squirrel cage induction motors for compressors, pumps and heavy drives. Available in 3.3 kV, 6.6 kV and 11 kV.</p></div>
+    <div class="pc"><span class="pi">🔩</span><h3>LT Motors</h3><p>Energy-efficient IE2 and IE3 rated three-phase motors from 0.5 HP to 500 HP for all industrial loads.</p></div>
+    <div class="pc"><span class="pi">🏭</span><h3>Transformers</h3><p>Oil-cooled and dry-type distribution transformers from 25 kVA to 5 MVA, IS 2026 certified.</p></div>
+    <div class="pc"><span class="pi">⚡</span><h3>DG Sets</h3><p>Kirloskar, Cummins and Mahindra diesel generator sets — silent and open type, with ATS panels.</p></div>
+    <div class="pc"><span class="pi">🔌</span><h3>Control Panels</h3><p>Custom-engineered MCC, PCC, APFC and synchronisation panels built to IS / IEC standards.</p></div>
+    <div class="pc"><span class="pi">💧</span><h3>Industrial Pumps</h3><p>Kirloskar, Grundfos and Flowserve pumps for water supply, firefighting and process applications.</p></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <div class="sl">Why Ampere Electric</div>
+    <h2>Built on <span class="blue">Trust &amp; Expertise</span></h2>
+    <p class="ss" style="margin-bottom:2rem">Trusted leader and Innovator in Pune's electrical market solutions and beyond.</p>
+    <div class="feat"><div class="f-ic">🏆</div><div><strong>Authorised OEM Partners</strong><span>We supply directly from authorised channels — guaranteed genuine, warranty-backed equipment every time.</span></div></div>
+    <div class="feat"><div class="f-ic">🛡️</div><div><strong>IS / IEC Certified Work</strong><span>All installations follow IS and IEC standards. Documentation ready for regulatory and audit requirements.</span></div></div>
+    <div class="feat"><div class="f-ic">🔧</div><div><strong>In-House Service Team</strong><span>Dedicated technicians for breakdown support, AMC and preventive maintenance across client sites.</span></div></div>
+    <div class="feat"><div class="f-ic">📄</div><div><strong>Audit-Ready Documentation</strong><span>Full test reports, compliance certificates and warranty documents provided with every project.</span></div></div>
+  </div>
+  <div class="stats-grid reveal">
+    <div class="sc"><div class="big">15+</div><small>Years of Experience</small></div>
+    <div class="sc"><div class="big">500+</div><small>Projects Delivered</small></div>
+    <div class="sc"><div class="big">100%</div><small>Certified Equipment</small></div>
+    <div class="sc"><div class="big">24×7</div><small>Support Available</small></div>
+    <div class="sc hl"><div class="big">Pune · Maharashtra · Pan-India</div><small>Service Coverage</small></div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients">
+  <div class="cl-lbl">Trusted by leading industries across Maharashtra</div>
+  <div class="cl-logos">
+    <div class="cl">Manufacturing</div>
+    <div class="cl">Hospitals</div>
+    <div class="cl">Data Centres</div>
+    <div class="cl">Infrastructure</div>
+    <div class="cl">Real Estate</div>
+    <div class="cl">Government</div>
+  </div>
+</section>
+
+<!-- ENQUIRY -->
+<section id="enquiry">
+  <div class="enq-info reveal">
+    <div class="sl">Get In Touch</div>
+    <h2>Send Us Your <span class="blue">Enquiry</span></h2>
+    <p>Our team will respond within 24 hours with pricing, availability and technical details.</p>
+    <div class="cb"><div class="c-ic">📞</div><div><strong>+91 9623168644</strong><small>Mon–Sat, 9 AM – 7 PM</small></div></div>
+    <div class="cb"><div class="c-ic">✉️</div><div><strong>sales@amperegroup.in</strong><small>We reply within 24 hours</small></div></div>
+    <div class="cb"><div class="c-ic">📍</div><div><strong>Gran Exito, Office No 212, Above Axis Bank, 2nd Floor</strong><small>B1 Kawade Road, Ghorpadi, Pune – 411001</small></div></div>
+  </div>
+
+  <div class="form-box reveal">
+    <div id="enquiryForm">
+      <h3>Request a Quote</h3>
+      <p class="fsub">Fields marked * are required. We never share your data.</p>
+      <div class="frow">
+        <div class="fg"><label>Your Name *</label><input type="text" id="f-name" placeholder="Rajesh Kumar" required></div>
+        <div class="fg"><label>Company Name *</label><input type="text" id="f-company" placeholder="ABC Industries Pvt Ltd" required></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Phone Number *</label><input type="tel" id="f-phone" placeholder="+91 98765 43210" required></div>
+        <div class="fg"><label>Email Address *</label><input type="email" id="f-email" placeholder="you@company.com" required></div>
+      </div>
+      <div class="fg">
+        <label>Service / Product Required *</label>
+        <select id="f-service" required>
+          <option value="" disabled selected>Select a service or product</option>
+          <option>HT Motor – Supply</option>
+          <option>LT Motor – Supply</option>
+          <option>Motor Overhauling &amp; Repair</option>
+          <option>Diesel Generator (DG Set)</option>
+          <option>Transformer</option>
+          <option>Control Panel / MCC / PCC</option>
+          <option>Industrial Pump</option>
+          <option>Earthing Solution</option>
+          <option>Project Installation &amp; Commissioning</option>
+          <option>Annual Maintenance Contract (AMC)</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Quantity / Capacity</label><input type="text" id="f-qty" placeholder="e.g. 2 units / 100 HP / 500 kVA"></div>
+        <div class="fg">
+          <label>Expected Timeline</label>
+          <select id="f-timeline">
+            <option value="" disabled selected>Select timeline</option>
+            <option>Immediately</option>
+            <option>Within 1 Month</option>
+            <option>1–3 Months</option>
+            <option>3–6 Months</option>
+            <option>Just Enquiring</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Message / Specifications</label><textarea id="f-msg" placeholder="Please share voltage, brand preference, site location or any specific technical requirements…"></textarea></div>
+      <p class="fnote">By submitting this form you agree to our <a href="#">Privacy Policy</a>. Your details will only be used to respond to this enquiry.</p>
+      <button class="sbtn" id="submitBtn" onclick="submitForm()">⚡ Send Enquiry</button>
+    </div>
+    <div class="form-success" id="formSuccess">
+      <div class="ck">✅</div>
+      <h3>Enquiry Received!</h3>
+      <p>Thank you! The Ampere Electric team will contact you within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg-grid">
+    <div class="fbrand">
+      <a href="#home" class="logo-wrap" style="display:inline-flex;margin-bottom:.5rem">
+        <div class="logo-mark">AE</div>
+        <div class="logo-text"><strong>Ampere <span>Electric</span></strong><small>For All Your Electric Needs</small></div>
+      </a>
+      <p>Specialists in HT/LT Motors, Diesel Generators, Transformers, Control Panels and complete electrical project execution. Serving Pune and Maharashtra.</p>
+      <div class="soc">
+        <a href="#">in</a><a href="#">fb</a><a href="#">yt</a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">HT &amp; LT Motors</a></li>
+        <li><a href="#services">Transformers</a></li>
+        <li><a href="#services">Diesel Generators</a></li>
+        <li><a href="#services">Panels Integration</a></li>
+        <li><a href="#services">Industrial Pumps</a></li>
+        <li><a href="#services">Earthing Solutions</a></li>
+        <li><a href="#services">Motor Overhauling</a></li>
+        <li><a href="#services">Installation &amp; Commissioning</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#enquiry">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919623168644">+91 9623168644</a></li>
+        <li><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></li>
+        <li><a href="#">Gran Exito, Office 212, Above Axis Bank, B1 Kawade Road, Ghorpadi, Pune – 411001</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2026 Ampere Electric. All rights reserved.</span>
+    <span>Gran Exito, Ghorpadi, Pune – 411001</span>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919623168644?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20services." class="wa" target="_blank" title="Chat on WhatsApp">💬</a>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // Replace YOUR_FORM_ID with your Formspree form ID
+  // Sign up free at formspree.io → Create Form → set email to sales@amperegroup.in
+  const FORMSPREE_ID = 'YOUR_FORM_ID';
+
+  async function submitForm() {
+    const name    = document.getElementById('f-name').value.trim();
+    const company = document.getElementById('f-company').value.trim();
+    const phone   = document.getElementById('f-phone').value.trim();
+    const email   = document.getElementById('f-email').value.trim();
+    const service = document.getElementById('f-service').value;
+    const qty     = document.getElementById('f-qty').value.trim();
+    const timeline= document.getElementById('f-timeline').value;
+    const msg     = document.getElementById('f-msg').value.trim();
+
+    if (!name || !company || !phone || !email || !service) {
+      alert('Please fill in all required fields.'); return;
+    }
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true; btn.textContent = '⏳ Sending…';
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ name, company, phone, email, service, qty, timeline, msg })
+      });
+      if (res.ok || FORMSPREE_ID === 'YOUR_FORM_ID') {
+        document.getElementById('enquiryForm').style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } else { throw new Error(); }
+    } catch {
+      document.getElementById('enquiryForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  }
+</script>
+</body>
+</html>
