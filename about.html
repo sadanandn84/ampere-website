@@ -1,173 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us – Ampere Electric, Pune</title>
-  <meta name="description" content="Learn about Ampere Electric — Pune's trusted electrical solution partner with 15+ years of expertise in HT/LT motors, DG sets, transformers and project commissioning.">
-  <link rel="icon" type="image/jpeg" href="assets/images/logo/logo-icon.jpeg">
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
-  <link rel="manifest" href="assets/images/favicons/site.webmanifest">
-
-  <!-- Android Chrome -->
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicons/android-chrome-512x512.png">
-  
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#0b1929">
-  <meta name="msapplication-TileColor" content="#0b1929">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <style>
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-    .about-img-placeholder { background: var(--navy-3); border: 1px solid var(--border-s); border-radius: var(--r); aspect-ratio: 4/3; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--muted); font-size: 0.82rem; text-align: center; padding: 2rem; }
-    .about-img-placeholder .pi { font-size: 3rem; margin-bottom: 1rem; }
-    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-    .value-card { background: var(--navy-2); border: 1px solid var(--border-s); border-radius: var(--r); padding: 2rem 1.5rem; text-align: center; transition: all 0.3s; }
-    .value-card:hover { border-color: var(--blue); transform: translateY(-4px); }
-    .value-card .vi { font-size: 2.5rem; margin-bottom: 1rem; }
-    .value-card h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
-    .value-card p { font-size: 0.85rem; }
-    .timeline { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 2rem; }
-    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--blue), transparent); }
-    .tl-item { padding: 1.25rem 0 1.25rem 1.5rem; position: relative; border-bottom: 1px solid var(--border-s); }
-    .tl-item::before { content: ''; position: absolute; left: -1.6rem; top: 1.5rem; width: 12px; height: 12px; background: var(--blue); border-radius: 50%; box-shadow: 0 0 0 4px rgba(26,143,209,0.2); }
-    .tl-item:last-child { border-bottom: none; }
-    .tl-year { font-family: var(--fh); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.15em; color: var(--blue-lt); margin-bottom: 0.3rem; }
-    .tl-item h4 { color: #fff; margin-bottom: 0.25rem; font-size: 0.95rem; }
-    .tl-item p { font-size: 0.82rem; }
-  </style>
-</head>
-<body class="page-fade">
-<div class="topbar">
-  <div class="topbar-left"><span>🕐 Mon–Sat: 9 AM – 7 PM</span><a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a></div>
-  <div class="topbar-right"><a href="tel:+919623168644">📞 +91 9623168644</a><a href="https://wa.me/919623168644" target="_blank" class="wa-link">💬 WhatsApp</a></div>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About Ampere Group — Premium V3</title>
+<meta name="description" content="Ampere Group - Pune's Complete Electrical Solution Partner">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+.hero-v3{padding:120px 5%;background:linear-gradient(135deg,#fff,#eaf4fc);position:relative;overflow:hidden}
+.hero-v3:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(22,120,201,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(22,120,201,.05) 1px,transparent 1px);background-size:55px 55px}
+.hero-grid,.story-grid,.lead-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.glass{background:rgba(255,255,255,.78);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow-lg)}
+.hero-panel,.lead-card,.story-card,.oem-card{padding:2rem;border-radius:var(--r)}
+.floatstats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem}
+.stat{padding:1rem;background:#fff;border:1px solid var(--border-s);border-radius:var(--r)}
+.timeline{border-left:3px solid var(--blue);padding-left:2rem}
+.timeline div{margin-bottom:2rem}
+.timeline h4{margin-bottom:.4rem}
+.cap-grid,.why-grid,.oem-grid{display:grid;gap:1.25rem}
+.cap-grid{grid-template-columns:repeat(4,1fr)}
+.why-grid{grid-template-columns:repeat(3,1fr)}
+.oem-grid{grid-template-columns:repeat(6,1fr)}
+.cap,.why,.oem-card{padding:2rem;text-align:center}
+.circle{width:110px;height:110px;border-radius:50%;background:conic-gradient(var(--blue) 0 88%,#dde8f3 88%);margin:auto;margin-bottom:1rem}
+@media(max-width:960px){.hero-grid,.story-grid,.lead-grid,.cap-grid,.why-grid,.oem-grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<section class="hero-v3">
+<div class="container hero-grid">
+<div class="reveal-left">
+<div class="tag">About Ampere Group</div>
+<h1>Pune's <em>Complete Electrical Solution Partner</em></h1>
+<p class="hero-desc">Delivering engineering, supply, execution, commissioning and lifecycle support for industrial, infrastructure and commercial electrical systems.</p>
+<div class="hero-actions" style="margin-top:2rem"><a href="contact.html" class="btn btn-primary">Get Consultation</a></div>
 </div>
-<nav class="site-nav">
-  <a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric Logo"></a>
-  <ul class="nav-menu" id="navMenu">
-    <li><a href="index.html">Home</a></li>
-    <li class="active"><a href="about.html">About Us</a></li>
-    <li><a href="products.html">Products <span class="arr">▾</span></a><div class="nav-dropdown"><a href="products.html#motors">HT &amp; LT Motors</a><a href="products.html#generators">Diesel Generators</a><a href="products.html#transformers">Transformers</a><a href="products.html#panels">Control Panels</a><a href="products.html#pumps">Industrial Pumps</a><a href="products.html#switchgear">Switchgear &amp; Cables</a></div></li>
-    <li><a href="services.html">Services <span class="arr">▾</span></a><div class="nav-dropdown"><a href="services.html#overhauling">Motor Overhauling &amp; Repair</a><a href="services.html#earthing">Earthing Solutions</a><a href="services.html#installation">Project Installation</a><a href="services.html#amc">AMC Services</a></div></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-</nav>
-
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></div>
-    <h1>About <em>Ampere Electric</em></h1>
-    <p>15+ years of delivering reliable electrical solutions across Pune and Maharashtra — built on trust, technical expertise and a commitment to quality.</p>
-  </div>
+<div class="glass hero-panel reveal-scale">
+<h3>Engineering Capability Snapshot</h3>
+<div class="floatstats">
+<div class="stat"><strong>15+ Years</strong><br>Industry Experience</div>
+<div class="stat"><strong>500+</strong><br>Projects Delivered</div>
+<div class="stat"><strong>24×7</strong><br>Support Focus</div>
+<div class="stat"><strong>OEM</strong><br>Partner Ecosystem</div>
 </div>
-
-<!-- ABOUT STORY -->
-<section class="section">
-  <div class="about-grid">
-    <div class="reveal-left">
-      <div class="tag">Our Story</div>
-      <h2>Pune's Trusted <span class="hl">Electrical Partner</span></h2>
-      <p style="margin-bottom:1.25rem;">Ampere Electric was founded with a singular mission: to be the most reliable electrical solution partner for industries in Pune and Maharashtra. From a focused motor supply business, we have grown into a comprehensive electrical solutions provider — covering everything from HT/LT motors and diesel generators to control panels, earthing systems and complete project commissioning.</p>
-      <p style="margin-bottom:1.25rem;">Today, we serve manufacturing plants, hospitals, data centres, pharma companies and infrastructure projects — all with the same commitment to quality, compliance and on-time delivery.</p>
-      <p>Our team of certified engineers brings deep technical expertise and a hands-on approach to every project, ensuring that solutions are not just supplied but properly engineered, installed and documented for long-term reliability and audit compliance.</p>
-    </div>
-    <div class="reveal-right">
-      <div class="about-img-placeholder">
-        <div class="pi">🏭</div>
-        <strong style="color:#fff;font-family:var(--fh);font-size:1rem;text-transform:uppercase;">Add Your Company Photo Here</strong>
-        <p style="margin-top:0.5rem;font-size:0.78rem;">Replace this placeholder with an actual photo of your office, workshop or team. Recommended: 800×600px, JPG format.</p>
-        <p style="margin-top:0.5rem;font-size:0.72rem;color:var(--blue-lt);">Path: assets/images/gallery/company.jpg</p>
-      </div>
-      <div class="certs" style="margin-top:1.25rem;">
-        <div class="cert"><div class="ci">🏆</div><span>ISO 9001:2015</span></div>
-        <div class="cert"><div class="ci">✅</div><span>BIS Certified</span></div>
-        <div class="cert"><div class="ci">🌟</div><span>OEM Authorised</span></div>
-        <div class="cert"><div class="ci">📄</div><span>IS / IEC Compliant</span></div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
 </section>
 
-<!-- KPI STRIP -->
-<div style="background:var(--blue);padding:50px 5%;">
-  <div class="kpi-grid">
-    <div style="text-align:center;"><div style="font-family:var(--fh);font-size:3rem;font-weight:700;color:#fff;line-height:1;" class="counter" data-target="15" data-suffix="+">15+</div><div style="font-size:0.78rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.3rem;">Years in Business</div></div>
-    <div style="text-align:center;"><div style="font-family:var(--fh);font-size:3rem;font-weight:700;color:#fff;line-height:1;" class="counter" data-target="500" data-suffix="+">500+</div><div style="font-size:0.78rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.3rem;">Projects Delivered</div></div>
-    <div style="text-align:center;"><div style="font-family:var(--fh);font-size:3rem;font-weight:700;color:#fff;line-height:1;">100%</div><div style="font-size:0.78rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.3rem;">OEM Certified Products</div></div>
-    <div style="text-align:center;"><div style="font-family:var(--fh);font-size:3rem;font-weight:700;color:#fff;line-height:1;">24×7</div><div style="font-size:0.78rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.3rem;">Breakdown Support</div></div>
-  </div>
+<section class="section">
+<div class="container story-grid">
+<div class="reveal">
+<div class="tag">Company Story</div>
+<h2>Engineering Solutions Beyond <span class="hl">Equipment Supply</span></h2>
+<p>Ampere Group operates with a solution-first mindset. We help industries identify requirements, select optimized systems, execute installations and maintain operational reliability.</p>
+<div class="timeline" style="margin-top:2rem">
+<div><h4>01 — Understand</h4><p>Application study and technical requirement mapping.</p></div>
+<div><h4>02 — Engineer</h4><p>Electrical architecture, OEM selection and optimization.</p></div>
+<div><h4>03 — Execute</h4><p>Installation, testing and commissioning support.</p></div>
+<div><h4>04 — Sustain</h4><p>Lifecycle support and operational continuity.</p></div>
 </div>
+</div>
+<div class="glass story-card reveal-right">
+<h3>Solution Domains</h3>
+<ul>
+<li>HT / LT Electrical Systems</li>
+<li>Motors, Pumps & Drives</li>
+<li>Transformers & Panels</li>
+<li>DG Sets & Power Solutions</li>
+<li>Industrial Project Support</li>
+<li>Maintenance & Service</li>
+</ul>
+</div>
+</div>
+</section>
 
-<!-- VALUES -->
 <section class="section alt">
-  <div class="sec-head center reveal">
-    <div class="tag">Our Values</div>
-    <h2>What We <span class="hl">Stand For</span></h2>
-    <p class="intro" style="margin:0 auto;">The principles that guide every project, every service call and every client interaction.</p>
-  </div>
-  <div class="values-grid">
-    <div class="value-card reveal"><div class="vi">🛡️</div><h3>Quality First</h3><p>We supply only IS/IEC certified, OEM-genuine products. No shortcuts. No compromises on quality or compliance.</p></div>
-    <div class="value-card reveal"><div class="vi">🤝</div><h3>Client Partnership</h3><p>We treat every client as a long-term partner, not a transaction. Your success is our success.</p></div>
-    <div class="value-card reveal"><div class="vi">⚡</div><h3>Technical Excellence</h3><p>Our engineers continuously update their skills to deliver the most efficient and compliant solutions.</p></div>
-    <div class="value-card reveal"><div class="vi">📄</div><h3>Transparency</h3><p>Clear quotations, detailed BOQs, complete test documentation and honest timelines — always.</p></div>
-    <div class="value-card reveal"><div class="vi">⏰</div><h3>Reliability</h3><p>On-time delivery, responsive service and round-the-clock support are commitments we take seriously.</p></div>
-    <div class="value-card reveal"><div class="vi">🌱</div><h3>Sustainability</h3><p>We promote energy-efficient IE3/IE4 motors and guide clients on energy-saving electrical solutions.</p></div>
-  </div>
+<div class="container">
+<div class="sec-head center"><div class="tag">Capabilities</div><h2>Core <span class="hl">Strengths</span></h2></div>
+<div class="cap-grid">
+<div class="cap card reveal"><div class="circle"></div><h3>Engineering</h3></div>
+<div class="cap card reveal"><div class="circle"></div><h3>OEM Solutions</h3></div>
+<div class="cap card reveal"><div class="circle"></div><h3>Execution</h3></div>
+<div class="cap card reveal"><div class="circle"></div><h3>Compliance</h3></div>
+</div>
+</div>
 </section>
 
-<!-- JOURNEY -->
 <section class="section">
-  <div class="about-grid">
-    <div class="reveal-left">
-      <div class="tag">Our Journey</div>
-      <h2>From Startup to <span class="hl">Solution Leader</span></h2>
-      <p style="margin-bottom:2rem;">Two decades of growth driven by technical excellence and client trust.</p>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-year">FOUNDED</div><h4>Company Established</h4><p>Started as a motor supply and repair business serving local manufacturing companies in Pune.</p></div>
-        <div class="tl-item"><div class="tl-year">GROWTH</div><h4>Expanded to DG Sets &amp; Transformers</h4><p>Added diesel generators and transformer supply to our portfolio, becoming a one-stop electrical supplier.</p></div>
-        <div class="tl-item"><div class="tl-year">MILESTONE</div><h4>OEM Authorisation</h4><p>Received authorised dealership from Kirloskar, Cummins, Siemens and other leading OEMs.</p></div>
-        <div class="tl-item"><div class="tl-year">EXPANSION</div><h4>Project Division Launched</h4><p>Started end-to-end project installation and commissioning services for large industrial clients.</p></div>
-        <div class="tl-item"><div class="tl-year">TODAY</div><h4>Complete Solution Partner</h4><p>Serving 500+ clients across manufacturing, pharma, healthcare, data centres and infrastructure sectors.</p></div>
-      </div>
-    </div>
-    <div class="reveal-right">
-      <div class="tag">Why Choose Us</div>
-      <h2>The Ampere <span class="hl">Advantage</span></h2>
-      <div style="display:flex;flex-direction:column;">
-        <div class="why-item" style="display:flex;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--border-s);"><div class="wi-ic">🏆</div><div><strong style="display:block;color:#fff;font-weight:600;margin-bottom:0.2rem;">Authorised OEM Dealer</strong><span style="font-size:0.85rem;color:var(--muted);">Direct supply with full OEM warranty — not grey market.</span></div></div>
-        <div class="why-item" style="display:flex;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--border-s);"><div class="wi-ic">🔧</div><div><strong style="display:block;color:#fff;font-weight:600;margin-bottom:0.2rem;">In-House Engineers</strong><span style="font-size:0.85rem;color:var(--muted);">No sub-contracting. Our certified team handles every project start to finish.</span></div></div>
-        <div class="why-item" style="display:flex;gap:1rem;padding:1.2rem 0;border-bottom:1px solid var(--border-s);"><div class="wi-ic">📄</div><div><strong style="display:block;color:#fff;font-weight:600;margin-bottom:0.2rem;">Audit-Ready Documentation</strong><span style="font-size:0.85rem;color:var(--muted);">Every project comes with complete test reports, certificates and compliance documents.</span></div></div>
-        <div class="why-item" style="display:flex;gap:1rem;padding:1.2rem 0;"><div class="wi-ic">📞</div><div><strong style="display:block;color:#fff;font-weight:600;margin-bottom:0.2rem;">24×7 Support</strong><span style="font-size:0.85rem;color:var(--muted);">Emergency breakdown response within 4 hours for AMC clients across Pune.</span></div></div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="sec-head center"><div class="tag">Why Ampere</div><h2>Why Clients <span class="hl">Choose Us</span></h2></div>
+<div class="why-grid">
+<div class="why card reveal-scale"><h3>Solution Driven</h3><p>Requirement to commissioning support.</p></div>
+<div class="why card reveal-scale"><h3>Industrial Focus</h3><p>Built for demanding operational environments.</p></div>
+<div class="why card reveal-scale"><h3>OEM Network</h3><p>Trusted electrical ecosystem.</p></div>
+<div class="why card reveal-scale"><h3>Technical Expertise</h3><p>Engineering-led decisions.</p></div>
+<div class="why card reveal-scale"><h3>Quality & Safety</h3><p>Compliance conscious execution.</p></div>
+<div class="why card reveal-scale"><h3>Long-Term Partnership</h3><p>Lifecycle relationship mindset.</p></div>
+</div>
+</div>
 </section>
 
-<!-- CTA -->
+<section class="section dark">
+<div class="container lead-grid">
+<div class="lead-card glass reveal-left">
+<div class="tag">Leadership Philosophy</div>
+<h2>Engineering‑Driven <span class="hl">Leadership</span></h2>
+<p>Ampere Group believes strong technical leadership, disciplined execution and customer partnership are essential to delivering dependable electrical solutions.</p>
+</div>
+<div class="kpi-grid reveal-right">
+<div class="kpi"><div class="big counter" data-target="15" data-suffix="+">0</div><small>Years Experience</small></div>
+<div class="kpi"><div class="big counter" data-target="500" data-suffix="+">0</div><small>Projects</small></div>
+<div class="kpi"><div class="big">24×7</div><small>Support</small></div>
+<div class="kpi"><div class="big">100%</div><small>OEM Focus</small></div>
+</div>
+</div>
+</section>
+
+<section class="oem-strip">
+<div class="oem-strip-label">OEM Partner Ecosystem</div>
+<div class="oem-grid container">
+<div class="oem-card card">ABB</div><div class="oem-card card">SIEMENS</div><div class="oem-card card">SCHNEIDER</div><div class="oem-card card">KIRLOSKAR</div><div class="oem-card card">CROMPTON</div><div class="oem-card card">BHARAT BIJLEE</div>
+</div>
+</section>
+
 <div class="cta-banner">
-  <div><h3>Ready to Partner with Ampere Electric?</h3><p>Get in touch today — let's discuss your electrical requirements.</p></div>
-  <a href="contact.html#enquiry" class="btn btn-white">Send Enquiry →</a>
+<div><h3>Looking For A Trusted Electrical Partner?</h3><p>Connect with Ampere Group for engineering consultation and project support.</p></div>
+<a href="contact.html" class="btn btn-white">Talk To Us</a>
 </div>
 
-<footer class="site-footer">
-  <div class="ft-grid">
-    <div class="ft-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric"></a><p>Your complete electrical solution partner in Pune — supplying and servicing HT/LT motors, DG sets, transformers, panels and more across Maharashtra.</p><div class="soc"><a href="#">in</a><a href="#">fb</a><a href="#">yt</a><a href="https://wa.me/919623168644" class="wa">wa</a></div></div>
-    <div class="ft-col"><h5>Products</h5><ul><li><a href="products.html#motors">HT &amp; LT Motors</a></li><li><a href="products.html#generators">Diesel Generators</a></li><li><a href="products.html#transformers">Transformers</a></li><li><a href="products.html#panels">Control Panels</a></li><li><a href="products.html#pumps">Industrial Pumps</a></li></ul></div>
-    <div class="ft-col"><h5>Services</h5><ul><li><a href="services.html#overhauling">Motor Overhauling</a></li><li><a href="services.html#earthing">Earthing Solutions</a></li><li><a href="services.html#installation">Project Installation</a></li><li><a href="services.html#amc">AMC Services</a></li></ul></div>
-    <div class="ft-col"><h5>Contact</h5><div class="contact-item"><span>📞</span><a href="tel:+919623168644">+91 9623168644</a></div><div class="contact-item"><span>✉</span><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></div><div class="contact-item"><span>📍</span><span>Gran Exito, Office 212, Ghorpadi, Pune – 411001</span></div></div>
-  </div>
-  <div class="ft-bot"><span>© 2026 Ampere Electric. All rights reserved.</span><div class="ft-bot-links"><a href="privacy-policy.html">Privacy Policy</a><a href="contact.html">Contact Us</a></div></div>
-</footer>
-<a href="https://wa.me/919623168644?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20solutions." class="wa-float" target="_blank">💬</a>
-<script src="assets/js/main.js"></script><script src="assets/js/animation.js"></script>
+<script src="assets/js/main.js"></script>
 </body></html>
