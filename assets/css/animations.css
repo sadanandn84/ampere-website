@@ -1,0 +1,177 @@
+/* ═══════════════════════════════════════
+   AMPERE ELECTRIC — ANIMATIONS
+══════════════════════════════════════ */
+
+/* Default reveal state */
+
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale{
+opacity:0;
+transition:
+opacity .8s ease,
+transform .8s cubic-bezier(.22,.61,.36,1);
+will-change:transform,opacity;
+}
+
+.reveal{
+transform:translateY(40px);
+}
+
+.reveal-left{
+transform:translateX(-60px);
+}
+
+.reveal-right{
+transform:translateX(60px);
+}
+
+.reveal-scale{
+transform:scale(.92);
+}
+
+/* visible state */
+
+.visible{
+opacity:1;
+transform:none;
+}
+
+/* stagger helpers */
+
+.delay-1{transition-delay:.1s;}
+.delay-2{transition-delay:.2s;}
+.delay-3{transition-delay:.3s;}
+.delay-4{transition-delay:.4s;}
+.delay-5{transition-delay:.5s;}
+
+/* floating */
+
+.float{
+animation:float 6s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-14px);
+}
+
+}
+
+/* glow pulse */
+
+.glow{
+animation:glowPulse 3s infinite ease;
+}
+
+@keyframes glowPulse{
+
+0%,100%{
+box-shadow:0 0 0 rgba(26,143,209,0);
+}
+
+50%{
+box-shadow:
+0 0 25px rgba(26,143,209,.28);
+}
+
+}
+
+/* button lift */
+
+.btn{
+transition:
+transform .22s ease,
+box-shadow .22s ease;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* subtle card animation */
+
+.card,
+.kpi,
+.testi,
+.step{
+transition:
+transform .35s ease,
+border-color .35s ease,
+box-shadow .35s ease;
+}
+
+.card:hover,
+.kpi:hover,
+.testi:hover,
+.step:hover{
+
+box-shadow:
+0 12px 32px rgba(0,0,0,.28);
+}
+
+/* nav entrance */
+
+.site-nav{
+animation:navDrop .7s ease;
+}
+
+@keyframes navDrop{
+
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+
+to{
+opacity:1;
+transform:none;
+}
+
+}
+
+/* marquee smoother */
+
+.marquee-track{
+will-change:transform;
+}
+
+/* hero orb */
+
+.hero-orb{
+position:absolute;
+border-radius:50%;
+filter:blur(70px);
+opacity:.12;
+animation:orbMove 12s infinite alternate ease-in-out;
+}
+
+@keyframes orbMove{
+
+from{
+transform:translate(-20px,-10px);
+}
+
+to{
+transform:translate(20px,25px);
+}
+
+}
+
+/* reduced motion */
+
+@media (prefers-reduced-motion: reduce){
+
+*{
+animation:none!important;
+transition:none!important;
+scroll-behavior:auto!important;
+}
+
+}
