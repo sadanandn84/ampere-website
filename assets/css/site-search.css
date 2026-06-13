@@ -1,0 +1,287 @@
+/* ═══════════════════════════════════════════════
+   AMPERE ELECTRIC
+   GLOBAL SITE SEARCH
+   assets/css/site-search.css
+   ═══════════════════════════════════════════════ */
+
+:root {
+  --ae-blue: #1d7ed0;
+  --ae-blue-dark: #12243a;
+  --ae-orange: #ff8a1d;
+  --ae-light-blue: #eef7ff;
+  --ae-border: #dce8f2;
+  --ae-text: #32465a;
+  --ae-muted: #6b7c8f;
+  --ae-shadow: 0 25px 60px rgba(18, 36, 58, 0.18);
+}
+
+/* ==========================================
+   SEARCH TOGGLE BUTTON
+========================================== */
+
+.site-search-toggle {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+
+  width: 58px;
+  height: 58px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--ae-blue);
+  color: white;
+
+  font-size: 22px;
+  cursor: pointer;
+
+  box-shadow: var(--ae-shadow);
+
+  z-index: 9998;
+
+  transition: all .3s ease;
+}
+
+.site-search-toggle:hover {
+  transform: translateY(-4px);
+  background: var(--ae-orange);
+}
+
+/* ==========================================
+   SEARCH PANEL OVERLAY
+========================================== */
+
+.site-search-panel {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(18, 36, 58, 0.82);
+
+  backdrop-filter: blur(10px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all .3s ease;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding-top: 90px;
+}
+
+.site-search-panel.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==========================================
+   SEARCH BOX
+========================================== */
+
+.site-search-box {
+  width: min(900px, 92%);
+  position: relative;
+}
+
+#siteSearchInput {
+  width: 100%;
+
+  padding: 22px 70px 22px 24px;
+
+  border: none;
+  border-radius: 18px;
+
+  background: white;
+
+  color: var(--ae-text);
+
+  font-size: 18px;
+  font-weight: 600;
+
+  box-shadow: var(--ae-shadow);
+
+  outline: none;
+}
+
+#siteSearchInput:focus {
+  box-shadow:
+    0 0 0 4px rgba(29,126,208,.15),
+    var(--ae-shadow);
+}
+
+#siteSearchInput::placeholder {
+  color: var(--ae-muted);
+}
+
+.site-search-close {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: none;
+
+  font-size: 34px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  color: var(--ae-muted);
+}
+
+.site-search-close:hover {
+  color: var(--ae-orange);
+}
+
+/* ==========================================
+   RESULTS
+========================================== */
+
+.site-search-results {
+  width: min(900px, 92%);
+
+  margin-top: 18px;
+
+  max-height: 65vh;
+  overflow-y: auto;
+
+  border-radius: 18px;
+
+  background: white;
+
+  box-shadow: var(--ae-shadow);
+}
+
+.site-search-results::-webkit-scrollbar {
+  width: 6px;
+}
+
+.site-search-results::-webkit-scrollbar-thumb {
+  background: var(--ae-blue);
+  border-radius: 10px;
+}
+
+.site-search-hint {
+  padding: 30px;
+
+  color: var(--ae-muted);
+
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ==========================================
+   RESULT ITEM
+========================================== */
+
+.site-search-result {
+  display: block;
+
+  padding: 20px 24px;
+
+  border-bottom: 1px solid var(--ae-border);
+
+  text-decoration: none;
+
+  transition: all .25s ease;
+}
+
+.site-search-result:last-child {
+  border-bottom: none;
+}
+
+.site-search-result:hover {
+  background: var(--ae-light-blue);
+}
+
+.site-search-result span {
+  display: inline-block;
+
+  margin-bottom: 6px;
+
+  color: var(--ae-orange);
+
+  font-size: 11px;
+  font-weight: 900;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-search-result strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: var(--ae-blue-dark);
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.site-search-result small {
+  display: block;
+
+  color: var(--ae-muted);
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.site-search-box,
+.site-search-results {
+  transform: translateY(20px);
+  transition: all .3s ease;
+}
+
+.site-search-panel.is-open .site-search-box,
+.site-search-panel.is-open .site-search-results {
+  transform: translateY(0);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .site-search-toggle {
+    width: 54px;
+    height: 54px;
+
+    left: 15px;
+    bottom: 15px;
+  }
+
+  .site-search-panel {
+    padding-top: 70px;
+  }
+
+  #siteSearchInput {
+    padding: 18px 60px 18px 18px;
+    font-size: 16px;
+  }
+
+  .site-search-result {
+    padding: 18px;
+  }
+
+  .site-search-result strong {
+    font-size: 16px;
+  }
+
+  .site-search-hint {
+    padding: 22px;
+  }
+}
