@@ -1,7 +1,7 @@
 /* ==========================================================
    AMPERE ELECTRIC
-   ABOUT V4 PREMIUM
-   assets/js/about-v4.js
+   ABOUT PREMIUM
+   assets/js/about.js
 ========================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {

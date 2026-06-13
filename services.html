@@ -1,218 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services – Motor Repair, Earthing, AMC, Installation | Ampere Electric, Pune</title>
-  <meta name="description" content="Ampere Electric services: Motor Overhauling & Repair, Earthing Solutions, Project Installation & Commissioning, Annual Maintenance Contracts (AMC) in Pune.">
-  <link rel="icon" type="image/jpeg" href="assets/images/logo/logo-icon.jpeg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Services | Ampere Electric</title>
+
+  <meta name="description"
+        content="Industrial automation, electrical contracting, control panels, VFD drives, AMC and turnkey electrical solutions from Ampere Electric.">
+
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <style>
-    .svc-section { padding: 80px 5%; border-bottom: 1px solid var(--border-s); }
-    .svc-section:last-of-type { border-bottom: none; }
-    .svc-section.alt { background: var(--navy-2); }
-    .svc-layout { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start; }
-    .svc-layout.reverse { grid-template-columns: 1.5fr 1fr; }
-    .svc-layout.reverse .svc-detail { order: 1; }
-    .svc-layout.reverse .svc-aside { order: 2; }
+  <link rel="stylesheet" href="assets/css/services.css">
 
-    .svc-detail h2 { margin-bottom: 0.75rem; font-size: clamp(1.4rem, 2.5vw, 2rem); }
-    .svc-detail .svc-desc { font-size: 0.92rem; line-height: 1.75; margin-bottom: 1.5rem; }
-
-    .svc-steps { display: flex; flex-direction: column; gap: 0; }
-    .svc-step { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border-s); }
-    .svc-step:first-child { border-top: 1px solid var(--border-s); }
-    .svc-step:last-child { border-bottom: none; }
-    .ss-num { font-family: var(--fh); font-size: 1.5rem; font-weight: 700; color: var(--blue); min-width: 32px; line-height: 1.2; }
-    .ss-text strong { display: block; color: #fff; font-weight: 600; margin-bottom: 0.2rem; }
-    .ss-text span { font-size: 0.83rem; color: var(--muted); }
-
-    .svc-aside { display: flex; flex-direction: column; gap: 1rem; }
-    .aside-card { background: var(--navy-3); border: 1px solid var(--border-s); border-radius: var(--r); padding: 1.5rem; }
-    .aside-card h4 { font-family: var(--fh); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue-lt); margin-bottom: 0.75rem; }
-    .aside-card ul li { font-size: 0.85rem; color: var(--muted); padding: 0.35rem 0; border-bottom: 1px solid var(--border-s); display: flex; gap: 0.5rem; }
-    .aside-card ul li:last-child { border-bottom: none; }
-    .aside-card ul li::before { content: '✓'; color: var(--blue); font-weight: 700; flex-shrink: 0; }
-    .aside-highlight { background: var(--blue); border-color: var(--blue); }
-    .aside-highlight h4 { color: rgba(255,255,255,.75); }
-    .aside-highlight p { font-size: 0.88rem; color: #fff; line-height: 1.6; }
-
-    .feature-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.25rem 0; }
-    .ftag { background: rgba(26,143,209,0.1); border: 1px solid rgba(26,143,209,0.25); color: var(--blue-lt); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; padding: 0.3rem 0.75rem; border-radius: 2px; }
-
-    @media(max-width:960px){
-      .svc-layout, .svc-layout.reverse { grid-template-columns: 1fr; }
-      .svc-layout.reverse .svc-detail, .svc-layout.reverse .svc-aside { order: unset; }
-    }
-  </style>
 </head>
-<body class="page-fade">
 
-<div class="topbar">
-  <div class="topbar-left"><span>🕐 Mon–Sat: 9 AM – 7 PM</span><a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a></div>
-  <div class="topbar-right"><a href="tel:+919623168644">📞 +91 9623168644</a><a href="https://wa.me/919623168644" target="_blank" class="wa-link">💬 WhatsApp</a></div>
-</div>
+<body>
 
-<nav class="site-nav">
-  <a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric Logo"></a>
-  <ul class="nav-menu" id="navMenu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="products.html">Products <span class="arr">▾</span></a>
-      <div class="nav-dropdown"><a href="products.html#motors">HT &amp; LT Motors</a><a href="products.html#generators">Diesel Generators</a><a href="products.html#transformers">Transformers</a><a href="products.html#panels">Control Panels</a><a href="products.html#pumps">Industrial Pumps</a><a href="products.html#switchgear">Switchgear &amp; Cables</a></div>
-    </li>
-    <li class="active"><a href="services.html">Services <span class="arr">▾</span></a>
-      <div class="nav-dropdown"><a href="#overhauling">Motor Overhauling &amp; Repair</a><a href="#earthing">Earthing Solutions</a><a href="#installation">Project Installation</a><a href="#commissioning">Commissioning</a><a href="#amc">AMC Services</a></div>
-    </li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-</nav>
+<!-- ==================================================
+HEADER
+================================================== -->
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
-    <h1>Our <em>Services</em></h1>
-    <p>End-to-end electrical services delivered by our in-house certified engineering team — no sub-contracting, full documentation, audit-ready handover.</p>
+<header class="site-header">
+
+  <div class="container header-wrap">
+
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo/logo-main.png"
+           alt="Ampere Electric">
+    </a>
+
+    <nav class="main-nav">
+
+      <a href="index.html">Home</a>
+
+      <a href="about-us.html">About Us</a>
+
+      <a href="products.html">Products</a>
+
+      <a href="brands.html">Brands</a>
+
+      <a href="services.html" class="active">
+        Services
+      </a>
+
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
   </div>
-</div>
 
-<!-- ══ OVERHAULING ══ -->
-<div id="overhauling" class="svc-section">
-  <div class="svc-layout">
-    <div class="svc-detail reveal-left">
-      <div class="tag">Service 01</div>
-      <h2>Motor Overhauling <span class="hl">&amp; Repair</span></h2>
-      <p class="svc-desc">Our motor repair workshop handles complete overhauling and rewinding of LT and HT motors of all makes. Every repaired motor undergoes dynamic balancing, vacuum pressure impregnation (VPI) and high-voltage testing before dispatch. All work is backed by a written warranty and a detailed test report.</p>
-      <div class="feature-tags">
-        <span class="ftag">LT Motors (up to 500 HP)</span><span class="ftag">HT Motors (3.3/6.6/11 kV)</span>
-        <span class="ftag">Complete Rewinding</span><span class="ftag">Dynamic Balancing</span>
-        <span class="ftag">VPI Treatment</span><span class="ftag">HV Testing</span><span class="ftag">Warranty Included</span>
-      </div>
-      <div class="svc-steps">
-        <div class="svc-step"><div class="ss-num">01</div><div class="ss-text"><strong>Incoming Inspection &amp; Fault Analysis</strong><span>Visual inspection, winding resistance measurement, insulation resistance (IR) test and fault diagnosis report.</span></div></div>
-        <div class="svc-step"><div class="ss-num">02</div><div class="ss-text"><strong>Dismantling &amp; Core Cleaning</strong><span>Complete dismantling, old winding removal, core cleaning and slot cleaning under controlled conditions.</span></div></div>
-        <div class="svc-step"><div class="ss-num">03</div><div class="ss-text"><strong>Rewinding &amp; VPI</strong><span>New coils wound with original specifications, inserted and VPI (Vacuum Pressure Impregnation) treated for superior insulation.</span></div></div>
-        <div class="svc-step"><div class="ss-num">04</div><div class="ss-text"><strong>Bearing &amp; Mechanical Assembly</strong><span>New SKF/FAG bearings fitted. Shaft, end shields and cooling fans checked and replaced if required.</span></div></div>
-        <div class="svc-step"><div class="ss-num">05</div><div class="ss-text"><strong>Dynamic Balancing &amp; HV Testing</strong><span>Rotor dynamically balanced. No-load run test, HV withstand test and final IR values recorded.</span></div></div>
-        <div class="svc-step"><div class="ss-num">06</div><div class="ss-text"><strong>Test Report &amp; Warranty Dispatch</strong><span>Complete test report issued. Motor dispatched with written warranty and detailed service card.</span></div></div>
-      </div>
-    </div>
-    <div class="svc-aside reveal-right">
-      <div class="aside-card"><h4>Motors We Repair</h4><ul><li>LT Squirrel Cage Induction Motors</li><li>LT Slip Ring Motors</li><li>HT Motors (3.3 kV, 6.6 kV, 11 kV)</li><li>Crane &amp; Hoist Duty Motors</li><li>Submersible Pump Motors</li><li>Flame-Proof (FLP) Motors</li><li>DC Motors &amp; DC Generators</li><li>All Makes: Kirloskar, ABB, Siemens, CG</li></ul></div>
-      <div class="aside-card"><h4>Tests Performed</h4><ul><li>Winding Resistance (per phase)</li><li>Insulation Resistance (IR / PI)</li><li>HV Withstand Test (as per IS 325)</li><li>No-Load Current &amp; Power Factor</li><li>Dynamic Balancing (ISO 1940 G2.5)</li><li>Vibration &amp; Noise Level Check</li><li>Bearing Temperature Rise Test</li></ul></div>
-      <div class="aside-card aside-highlight"><h4>Turnaround Time</h4><p>Standard: 5–7 working days<br>Urgent: 24–48 hours (subject to scope)<br><br>Pick-up and drop-off available within Pune.</p></div>
-    </div>
+</header>
+
+<!-- ==================================================
+HERO
+================================================== -->
+
+<section class="services-hero">
+
+  <div class="container">
+
+    <span class="hero-tag">
+      ENGINEERING SERVICES
+    </span>
+
+    <h1>
+
+      Industrial Electrical &
+      <span>Automation Solutions</span>
+
+    </h1>
+
+    <p>
+
+      Delivering reliable electrical engineering,
+      industrial automation, motor & drive solutions,
+      panel manufacturing and turnkey project execution.
+
+    </p>
+
   </div>
-</div>
 
-<!-- ══ EARTHING ══ -->
-<div id="earthing" class="svc-section alt">
-  <div class="svc-layout reverse">
-    <div class="svc-detail reveal-left">
-      <div class="tag">Service 02</div>
-      <h2>Earthing <span class="hl">Solutions</span></h2>
-      <p class="svc-desc">Safe and compliant earthing systems designed to IS 3043 for industrial plants, commercial buildings and infrastructure projects. We provide complete earthing studies, soil resistivity testing, system design, material supply, installation and earth resistance testing — with full test documentation ready for audits and statutory inspections.</p>
-      <div class="feature-tags">
-        <span class="ftag">IS 3043 Compliant</span><span class="ftag">Chemical Earthing</span>
-        <span class="ftag">Conventional Earthing</span><span class="ftag">Soil Resistivity Testing</span>
-        <span class="ftag">Earth Resistance Test</span><span class="ftag">Lightning Protection</span>
-      </div>
-      <div class="svc-steps">
-        <div class="svc-step"><div class="ss-num">01</div><div class="ss-text"><strong>Soil Resistivity Survey</strong><span>Wenner four-electrode method used to measure soil resistivity at the site. Results used for earthing design.</span></div></div>
-        <div class="svc-step"><div class="ss-num">02</div><div class="ss-text"><strong>Earthing System Design</strong><span>Number, type and layout of earth electrodes calculated per IS 3043 to achieve required resistance &lt;1Ω for HT / &lt;5Ω for LT systems.</span></div></div>
-        <div class="svc-step"><div class="ss-num">03</div><div class="ss-text"><strong>Material Supply &amp; Installation</strong><span>Chemical earth electrodes or GI pipe electrodes installed with back-fill compound for long-term stability.</span></div></div>
-        <div class="svc-step"><div class="ss-num">04</div><div class="ss-text"><strong>Earth Resistance Testing</strong><span>Fall-of-potential method used to verify achieved earth resistance. Results documented per IS 3043 format.</span></div></div>
-        <div class="svc-step"><div class="ss-num">05</div><div class="ss-text"><strong>Documentation &amp; Handover</strong><span>Complete test report, as-built drawing and compliance certificate issued — audit-ready.</span></div></div>
-      </div>
+</section>
+
+<!-- ==================================================
+SERVICES INTRO
+================================================== -->
+
+<section class="services-intro">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>WHAT WE DO</span>
+
+      <h2>
+        End-to-End Industrial Solutions
+      </h2>
+
+      <p>
+
+        We help industries improve reliability,
+        productivity and energy efficiency through
+        engineering-driven electrical solutions.
+
+      </p>
+
     </div>
-    <div class="svc-aside reveal-right">
-      <div class="aside-card"><h4>Earthing Types</h4><ul><li>Chemical (Maintenance-Free) Earthing</li><li>GI Pipe &amp; Plate Earthing</li><li>Copper Plate Earthing</li><li>Mesh / Grid Earthing (Substations)</li><li>Lightning Arrestor (LA) Earthing</li><li>Equipment Body Earthing</li><li>Neutral Earthing (NER / NGR)</li></ul></div>
-      <div class="aside-card"><h4>Standards &amp; Codes</h4><ul><li>IS 3043 – Code of Practice for Earthing</li><li>IS 732 – Electrical Wiring Installations</li><li>NBC 2016 – National Building Code</li><li>IEC 60364 – LV Electrical Installations</li><li>IEEE 80 – Substation Grounding</li></ul></div>
-      <div class="aside-card aside-highlight"><h4>Why Proper Earthing Matters</h4><p>Inadequate earthing is one of the top causes of electrical accidents and audit NCRs. Our designs achieve &lt;1Ω for HT systems and &lt;5Ω for LT — fully documented and compliant.</p></div>
-    </div>
+
   </div>
-</div>
 
-<!-- ══ INSTALLATION ══ -->
-<div id="installation" class="svc-section">
-  <div class="svc-layout">
-    <div class="svc-detail reveal-left">
-      <div class="tag">Service 03</div>
-      <h2>Project Installation <span class="hl">&amp; Commissioning</span></h2>
-      <p class="svc-desc">Turnkey electrical project execution from civil foundations to final commissioning handover. Our in-house team handles equipment erection, cable laying, glanding and termination, loop testing and commissioning — delivering complete documentation for regulatory and audit compliance.</p>
-      <div class="feature-tags">
-        <span class="ftag">Turnkey Execution</span><span class="ftag">Civil &amp; Structural</span>
-        <span class="ftag">Cable Laying</span><span class="ftag">Loop Testing</span>
-        <span class="ftag">Commissioning</span><span class="ftag">Audit Documentation</span>
-      </div>
-      <div class="svc-steps">
-        <div class="svc-step"><div class="ss-num">01</div><div class="ss-text"><strong>Site Survey &amp; Engineering</strong><span>Site survey, load schedule, single line diagram, cable schedule, layout drawing preparation.</span></div></div>
-        <div class="svc-step"><div class="ss-num">02</div><div class="ss-text"><strong>Civil &amp; Foundation Work</strong><span>Equipment foundations, cable trench, cable tray support structures and conduit routing.</span></div></div>
-        <div class="svc-step"><div class="ss-num">03</div><div class="ss-text"><strong>Equipment Erection</strong><span>Mechanical erection of motors, DG sets, transformers, panels and pump sets with alignment checking.</span></div></div>
-        <div class="svc-step"><div class="ss-num">04</div><div class="ss-text"><strong>Cable Laying &amp; Termination</strong><span>Cable pulling, glanding, lugging, termination and IR testing of all cables before energisation.</span></div></div>
-        <div class="svc-step"><div class="ss-num">05</div><div class="ss-text"><strong>Loop Testing &amp; Pre-commissioning</strong><span>Point-to-point loop testing, protection relay setting, interlock verification and pre-commissioning checks.</span></div></div>
-        <div class="svc-step"><div class="ss-num">06</div><div class="ss-text"><strong>Commissioning &amp; Handover</strong><span>Trial runs, load testing, performance verification and final handover with as-built drawings and test reports.</span></div></div>
-      </div>
+</section>
+
+<!-- ==================================================
+SERVICES GRID
+================================================== -->
+
+<section class="services-grid-section">
+
+  <div class="container">
+
+    <div class="services-grid">
+
+      <!-- 1 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">⚙️</div>
+
+        <h3>
+          Industrial Automation
+        </h3>
+
+        <p>
+
+          PLC, HMI, SCADA and industrial
+          automation solutions for process
+          and manufacturing industries.
+
+        </p>
+
+        <ul>
+          <li>PLC Programming</li>
+          <li>HMI Development</li>
+          <li>SCADA Integration</li>
+          <li>Automation Upgrades</li>
+        </ul>
+
+      </article>
+
+      <!-- 2 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">⚡</div>
+
+        <h3>
+          Electrical Contracting
+        </h3>
+
+        <p>
+
+          Complete industrial electrical
+          installation and execution services.
+
+        </p>
+
+        <ul>
+          <li>Power Distribution</li>
+          <li>Cable Laying</li>
+          <li>Electrical Installation</li>
+          <li>Commissioning</li>
+        </ul>
+
+      </article>
+
+      <!-- 3 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">🖥️</div>
+
+        <h3>
+          Control Panel Design
+        </h3>
+
+        <p>
+
+          Design, manufacturing and
+          commissioning of electrical
+          control panels.
+
+        </p>
+
+        <ul>
+          <li>MCC Panels</li>
+          <li>PCC Panels</li>
+          <li>APFC Panels</li>
+          <li>PLC Panels</li>
+        </ul>
+
+      </article>
+
+      <!-- 4 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">🔄</div>
+
+        <h3>
+          Drive Solutions
+        </h3>
+
+        <p>
+
+          Selection, sizing and commissioning
+          of variable frequency drives.
+
+        </p>
+
+        <ul>
+          <li>Danfoss</li>
+          <li>Schneider</li>
+          <li>Yaskawa</li>
+          <li>L&T Drives</li>
+        </ul>
+
+      </article>
+
+      <!-- 5 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">🔧</div>
+
+        <h3>
+          Motor Selection & Sizing
+        </h3>
+
+        <p>
+
+          Application engineering support
+          for optimal motor selection.
+
+        </p>
+
+        <ul>
+          <li>Load Analysis</li>
+          <li>Energy Efficient Motors</li>
+          <li>Crane Duty Motors</li>
+          <li>Process Motors</li>
+        </ul>
+
+      </article>
+
+      <!-- 6 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">📊</div>
+
+        <h3>
+          Energy Audit
+        </h3>
+
+        <p>
+
+          Improve plant efficiency through
+          electrical system optimization.
+
+        </p>
+
+        <ul>
+          <li>Power Factor Analysis</li>
+          <li>Energy Monitoring</li>
+          <li>Drive Optimization</li>
+          <li>Cost Reduction</li>
+        </ul>
+
+      </article>
+
+      <!-- 7 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">🛠️</div>
+
+        <h3>
+          AMC & Maintenance
+        </h3>
+
+        <p>
+
+          Preventive and breakdown maintenance
+          support for industrial facilities.
+
+        </p>
+
+        <ul>
+          <li>Annual Maintenance</li>
+          <li>Health Checks</li>
+          <li>Breakdown Support</li>
+          <li>System Upgrades</li>
+        </ul>
+
+      </article>
+
+      <!-- 8 -->
+
+      <article class="service-card">
+
+        <div class="service-icon">🏭</div>
+
+        <h3>
+          Turnkey Projects
+        </h3>
+
+        <p>
+
+          End-to-end project execution
+          from design through commissioning.
+
+        </p>
+
+        <ul>
+          <li>Design</li>
+          <li>Procurement</li>
+          <li>Installation</li>
+          <li>Commissioning</li>
+        </ul>
+
+      </article>
+
     </div>
-    <div class="svc-aside reveal-right">
-      <div class="aside-card"><h4>Scope We Handle</h4><ul><li>HT / LT Substation Erection</li><li>DG Set Installation &amp; ATS</li><li>Motor-Pump Set Erection</li><li>MCC / PCC Panel Installation</li><li>HT &amp; LT Cable Laying</li><li>Earthing System Installation</li><li>Lighting Installation</li><li>Bus Duct Erection</li></ul></div>
-      <div class="aside-card"><h4>Documentation Delivered</h4><ul><li>As-Built Single Line Diagram</li><li>Cable Schedule &amp; Termination Chart</li><li>IR Test Reports (all cables)</li><li>Loop Test Records</li><li>Equipment Test Certificates</li><li>Earthing Test Report</li><li>Commissioning &amp; Trial Run Report</li></ul></div>
-      <div class="aside-card aside-highlight"><h4>All Work. In-House.</h4><p>We do not sub-contract critical electrical work. Every task is executed by our own certified engineers and technicians — ensuring quality and accountability.</p></div>
-    </div>
+
   </div>
-</div>
 
-<!-- ══ AMC ══ -->
-<div id="amc" class="svc-section alt" style="padding-bottom:90px;">
-  <div class="svc-layout reverse">
-    <div class="svc-detail reveal-left">
-      <div class="tag">Service 04</div>
-      <h2>Annual Maintenance <span class="hl">Contracts (AMC)</span></h2>
-      <p class="svc-desc">Structured AMC plans for DG sets, HT/LT motors, transformers and control panels. Our AMC service covers both preventive (scheduled) and corrective (breakdown) maintenance, with detailed service reports after every visit — giving you full visibility and audit-ready records.</p>
-      <div class="feature-tags">
-        <span class="ftag">Preventive Maintenance</span><span class="ftag">Breakdown Support</span>
-        <span class="ftag">DG Sets</span><span class="ftag">HT / LT Motors</span>
-        <span class="ftag">Transformers</span><span class="ftag">Control Panels</span>
-        <span class="ftag">Service Reports</span><span class="ftag">24×7 Response</span>
-      </div>
-      <div class="svc-steps">
-        <div class="svc-step"><div class="ss-num">01</div><div class="ss-text"><strong>Asset Survey &amp; AMC Proposal</strong><span>We visit your site, list all electrical assets, assess their condition and prepare a customised AMC proposal with scope and pricing.</span></div></div>
-        <div class="svc-step"><div class="ss-num">02</div><div class="ss-text"><strong>Preventive Maintenance Visits</strong><span>Scheduled visits (monthly/quarterly/half-yearly) as per manufacturer's PM schedule. All checks documented.</span></div></div>
-        <div class="svc-step"><div class="ss-num">03</div><div class="ss-text"><strong>Breakdown Response</strong><span>24×7 emergency support. Response within 4 hours for AMC clients across Pune and Pune Metropolitan Region.</span></div></div>
-        <div class="svc-step"><div class="ss-num">04</div><div class="ss-text"><strong>Spare Parts Management</strong><span>We identify and keep critical spares ready (filters, belts, contactors, relays) to minimise downtime on breakdowns.</span></div></div>
-        <div class="svc-step"><div class="ss-num">05</div><div class="ss-text"><strong>Detailed Service Reports</strong><span>Every visit generates a detailed service report with observations, work done, spares used and next PM schedule.</span></div></div>
-      </div>
-      <a href="contact.html#enquiry" class="btn btn-primary" style="margin-top:1.5rem;">Request AMC Quote</a>
+</section>
+
+<!-- ==================================================
+PROCESS
+================================================== -->
+
+<section class="service-process">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>OUR APPROACH</span>
+
+      <h2>
+        How We Execute Projects
+      </h2>
+
     </div>
-    <div class="svc-aside reveal-right">
-      <div class="aside-card"><h4>AMC Coverage Options</h4><ul><li>DG Set (any make, 5 kVA – 2500 kVA)</li><li>HT &amp; LT Motors (any make)</li><li>Power &amp; Distribution Transformers</li><li>LT Control Panels (MCC/PCC/APFC)</li><li>Industrial Pumps &amp; Pump Sets</li><li>Earthing Systems (annual testing)</li><li>Complete Electrical Package AMC</li></ul></div>
-      <div class="aside-card"><h4>AMC Plan Types</h4><ul><li>Comprehensive (Parts + Labour included)</li><li>Non-Comprehensive (Labour only)</li><li>Customised scope available</li><li>Monthly / Quarterly / Annual billing</li><li>Multi-year contracts (better rates)</li></ul></div>
-      <div class="aside-card aside-highlight"><h4>24×7 Support</h4><p>All AMC clients get priority 24×7 breakdown support. Emergency response within 4 hours across Pune and PMR — so your plant never stays down for long.</p></div>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <span>01</span>
+        <h3>Consult</h3>
+        <p>Understand business and technical requirements.</p>
+      </div>
+
+      <div class="process-card">
+        <span>02</span>
+        <h3>Design</h3>
+        <p>Create engineering and solution architecture.</p>
+      </div>
+
+      <div class="process-card">
+        <span>03</span>
+        <h3>Implement</h3>
+        <p>Supply, install and commission systems.</p>
+      </div>
+
+      <div class="process-card">
+        <span>04</span>
+        <h3>Support</h3>
+        <p>Provide AMC and lifecycle support.</p>
+      </div>
+
     </div>
+
   </div>
-</div>
 
-<!-- CTA -->
-<div class="cta-banner">
-  <div><h3>Need a Service Quote?</h3><p>Tell us your requirement — our engineers will visit your site and provide a detailed proposal.</p></div>
-  <a href="contact.html#enquiry" class="btn btn-white">Get in Touch →</a>
-</div>
+</section>
+
+<!-- ==================================================
+CTA
+================================================== -->
+
+<section class="services-cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <h2>
+        Need Engineering Support?
+      </h2>
+
+      <p>
+
+        Discuss your industrial electrical
+        or automation requirements with our team.
+
+      </p>
+
+      <div class="cta-buttons">
+
+        <a href="contact.html"
+           class="primary-btn">
+          Request Consultation
+        </a>
+
+        <a href="https://wa.me/919307213349"
+           target="_blank"
+           class="whatsapp-btn">
+
+          WhatsApp Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ==================================================
+FOOTER
+================================================== -->
 
 <footer class="site-footer">
-  <div class="ft-grid">
-    <div class="ft-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric"></a><p>Your complete electrical solution partner in Pune — supplying and servicing HT/LT motors, DG sets, transformers, panels and more across Maharashtra.</p><div class="soc"><a href="#">in</a><a href="#">fb</a><a href="#">yt</a><a href="https://wa.me/919623168644" class="wa">wa</a></div></div>
-    <div class="ft-col"><h5>Products</h5><ul><li><a href="products.html#motors">HT &amp; LT Motors</a></li><li><a href="products.html#generators">Diesel Generators</a></li><li><a href="products.html#transformers">Transformers</a></li><li><a href="products.html#panels">Control Panels</a></li><li><a href="products.html#pumps">Industrial Pumps</a></li></ul></div>
-    <div class="ft-col"><h5>Services</h5><ul><li><a href="#overhauling">Motor Overhauling</a></li><li><a href="#earthing">Earthing Solutions</a></li><li><a href="#installation">Project Installation</a></li><li><a href="#amc">AMC Services</a></li></ul></div>
-    <div class="ft-col"><h5>Contact</h5><div class="contact-item"><span>📞</span><a href="tel:+919623168644">+91 9623168644</a></div><div class="contact-item"><span>✉</span><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></div><div class="contact-item"><span>📍</span><span>Gran Exito, Office 212, Ghorpadi, Pune – 411001</span></div></div>
+
+  <div class="container">
+
+    <p>
+      © 2026 Ampere Electric.
+      All Rights Reserved.
+    </p>
+
   </div>
-  <div class="ft-bot"><span>© 2026 Ampere Electric. All rights reserved.</span><div class="ft-bot-links"><a href="privacy-policy.html">Privacy Policy</a><a href="contact.html">Contact Us</a></div></div>
+
 </footer>
-<a href="https://wa.me/919623168644?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." class="wa-float" target="_blank" rel="noopener">💬</a>
-<script src="assets/js/main.js"></script><script src="assets/js/animation.js"></script>
+
+<script src="assets/js/services.js"></script>
+
 </body>
 </html>

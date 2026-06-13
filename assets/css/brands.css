@@ -1,0 +1,278 @@
+/* AMPERE ELECTRIC — BRANDS V4 */
+
+:root {
+  --ae-blue: #1d7ed0;
+  --ae-blue-dark: #12243a;
+  --ae-light-blue: #eef7ff;
+  --ae-grid-line: #d9ebf8;
+  --ae-white: #ffffff;
+  --ae-text: #32465a;
+  --ae-muted: #6b7c8f;
+  --ae-border: #dce8f2;
+  --ae-orange: #ff8a1d;
+  --ae-shadow: 0 22px 48px rgba(18, 36, 58, 0.12);
+}
+
+.brands-hero {
+  padding: 120px 0 90px;
+  background-color: var(--ae-light-blue);
+  background-image:
+    linear-gradient(var(--ae-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ae-grid-line) 1px, transparent 1px);
+  background-size: 68px 68px;
+}
+
+.hero-tag {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: rgba(29, 126, 208, 0.08);
+  color: var(--ae-blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.brands-hero h1 {
+  max-width: 900px;
+  color: var(--ae-blue-dark);
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 1.05;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.brands-hero h1 span {
+  color: var(--ae-blue);
+}
+
+.brands-hero p {
+  max-width: 780px;
+  margin-top: 22px;
+  color: var(--ae-text);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.brand-category-section {
+  padding: 85px 0;
+  background: var(--ae-white);
+}
+
+.alternate-bg {
+  background-color: var(--ae-light-blue);
+  background-image:
+    linear-gradient(var(--ae-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--ae-grid-line) 1px, transparent 1px);
+  background-size: 68px 68px;
+}
+
+.section-title {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.section-title span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--ae-orange);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.section-title h2 {
+  color: var(--ae-blue-dark);
+  font-size: 42px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  margin-top: 12px;
+  color: var(--ae-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.brand-card {
+  padding: 28px;
+  border: 1px solid var(--ae-border);
+  border-radius: 18px;
+  background: var(--ae-white);
+  box-shadow: 0 10px 30px rgba(18, 36, 58, 0.06);
+  transition: all 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--ae-blue);
+  box-shadow: var(--ae-shadow);
+}
+
+.brand-logo {
+  height: 92px;
+  margin-bottom: 22px;
+  padding: 18px;
+  border: 1px solid var(--ae-border);
+  border-radius: 12px;
+  background: var(--ae-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo img {
+  max-width: 170px;
+  max-height: 54px;
+  object-fit: contain;
+}
+
+.brand-card h3 {
+  margin-bottom: 12px;
+  color: var(--ae-blue-dark);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.brand-card p {
+  color: var(--ae-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.brand-card ul {
+  margin: 18px 0 24px;
+}
+
+.brand-card li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  color: var(--ae-text);
+  font-size: 14px;
+}
+
+.brand-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--ae-orange);
+  font-weight: 900;
+}
+
+.brand-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: var(--ae-blue);
+  color: var(--ae-white);
+  font-weight: 900;
+  transition: all 0.25s ease;
+}
+
+.brand-btn:hover {
+  background: var(--ae-orange);
+  color: var(--ae-white);
+  transform: translateY(-2px);
+}
+
+.brands-cta {
+  padding: 75px 0;
+  background: linear-gradient(135deg, var(--ae-blue-dark), var(--ae-blue));
+}
+
+.cta-box {
+  text-align: center;
+  color: var(--ae-white);
+}
+
+.cta-box h2 {
+  font-size: 40px;
+  font-weight: 950;
+  margin-bottom: 12px;
+}
+
+.cta-box p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 17px;
+  margin-bottom: 26px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.whatsapp-btn {
+  padding: 14px 24px;
+  border-radius: 8px;
+  color: var(--ae-white);
+  font-weight: 900;
+  transition: 0.25s ease;
+}
+
+.primary-btn {
+  background: var(--ae-orange);
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}
+
+.primary-btn:hover,
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  color: var(--ae-white);
+}
+
+.brand-card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.brand-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-card.is-visible:hover {
+  transform: translateY(-8px);
+}
+
+@media (max-width: 1200px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-hero {
+    padding: 90px 0 65px;
+  }
+
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2,
+  .cta-box h2 {
+    font-size: 32px;
+  }
+
+  .brands-hero h1 {
+    font-size: 38px;
+  }
+}

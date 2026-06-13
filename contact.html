@@ -1,246 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us – Ampere Electric, Ghorpadi, Pune</title>
-  <meta name="description" content="Contact Ampere Electric in Pune for electrical equipment enquiries, motor repair, AMC and project quotations. Call +91 9623168644 or email sales@amperegroup.in.">
-  <link rel="icon" type="image/jpeg" href="assets/images/logo/logo-icon.jpeg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | Ampere Electric</title>
+
+  <meta name="description"
+        content="Contact Ampere Electric for industrial electrical products, motors, drives, automation, control panels and engineering services.">
+
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <style>
-    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem; align-items: start; }
-
-    /* Info cards */
-    .info-cards { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
-    .info-card {
-      background: var(--navy-2); border: 1px solid var(--border-s);
-      border-radius: var(--r); padding: 1.25rem 1.5rem;
-      display: flex; align-items: flex-start; gap: 1rem;
-      transition: border-color 0.3s;
-    }
-    .info-card:hover { border-color: var(--blue); }
-    .info-card .ic { width: 44px; height: 44px; flex-shrink: 0; background: rgba(26,143,209,0.1); border: 1px solid rgba(26,143,209,0.2); border-radius: var(--r); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
-    .info-card-text .label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue-lt); margin-bottom: 0.2rem; }
-    .info-card-text .value { font-size: 0.92rem; color: #fff; font-weight: 500; }
-    .info-card-text .value a { color: #fff; transition: color 0.2s; }
-    .info-card-text .value a:hover { color: var(--blue-lt); }
-    .info-card-text .sub { font-size: 0.78rem; color: var(--muted); margin-top: 0.15rem; }
-
-    /* Hours table */
-    .hours-table { width: 100%; border-collapse: collapse; }
-    .hours-table td { padding: 0.5rem 0; font-size: 0.85rem; border-bottom: 1px solid var(--border-s); }
-    .hours-table tr:last-child td { border-bottom: none; }
-    .hours-table td:first-child { color: var(--muted); width: 55%; }
-    .hours-table td:last-child { color: var(--light); font-weight: 500; }
-    .hours-table .open { color: #4ade80; }
-    .hours-table .closed { color: #f87171; }
-
-    /* Map */
-    .map-wrap { border-radius: var(--r); overflow: hidden; border: 1px solid var(--border-s); margin-top: 2rem; }
-    .map-wrap iframe { display: block; width: 100%; height: 280px; border: none; filter: invert(90%) hue-rotate(180deg); }
-
-    @media(max-width:960px){
-      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/contact.css">
 </head>
-<body class="page-fade">
 
-<div class="topbar">
-  <div class="topbar-left"><span>🕐 Mon–Sat: 9 AM – 7 PM</span><a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a></div>
-  <div class="topbar-right"><a href="tel:+919623168644">📞 +91 9623168644</a><a href="https://wa.me/919623168644" target="_blank" class="wa-link">💬 WhatsApp</a></div>
-</div>
+<body>
 
-<nav class="site-nav">
-  <a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric Logo"></a>
-  <ul class="nav-menu" id="navMenu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="products.html">Products <span class="arr">▾</span></a>
-      <div class="nav-dropdown"><a href="products.html#motors">HT &amp; LT Motors</a><a href="products.html#generators">Diesel Generators</a><a href="products.html#transformers">Transformers</a><a href="products.html#panels">Control Panels</a><a href="products.html#pumps">Industrial Pumps</a><a href="products.html#switchgear">Switchgear &amp; Cables</a></div>
-    </li>
-    <li><a href="services.html">Services <span class="arr">▾</span></a>
-      <div class="nav-dropdown"><a href="services.html#overhauling">Motor Overhauling</a><a href="services.html#earthing">Earthing Solutions</a><a href="services.html#installation">Project Installation</a><a href="services.html#amc">AMC Services</a></div>
-    </li>
-    <li class="active"><a href="contact.html">Contact</a></li>
-    <li><a href="#enquiry" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-</nav>
+<header class="site-header">
+  <div class="container header-wrap">
 
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact Us</span></div>
-    <h1>Get In <em>Touch</em></h1>
-    <p>Have a requirement? Call us, email us, WhatsApp us or fill the form below — our team will respond within 24 hours with a detailed solution and quote.</p>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo/logo-main.png" alt="Ampere Electric">
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="brands.html">Brands</a>
+      <a href="services.html">Services</a>
+      <a href="industries.html">Industries</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
   </div>
-</div>
+</header>
 
-<!-- ══ CONTACT SECTION ══ -->
-<section id="enquiry" class="section">
-  <div class="contact-grid">
+<section class="contact-hero">
+  <div class="container">
+    <span class="hero-tag">CONTACT AMPERE ELECTRIC</span>
 
-    <!-- LEFT — Contact info -->
-    <div class="reveal-left">
-      <div class="tag">Contact Information</div>
-      <h2 style="margin-bottom:1.5rem;">Reach <span class="hl">Ampere Electric</span></h2>
+    <h1>
+      Let’s Discuss Your
+      <span>Electrical Requirement</span>
+    </h1>
 
-      <div class="info-cards">
-        <div class="info-card">
-          <div class="ic">📞</div>
-          <div class="info-card-text">
-            <div class="label">Phone</div>
-            <div class="value"><a href="tel:+919623168644">+91 9623168644</a></div>
-            <div class="sub">Mon–Sat, 9 AM – 7 PM</div>
-          </div>
-        </div>
-        <div class="info-card">
-          <div class="ic">✉️</div>
-          <div class="info-card-text">
-            <div class="label">Email</div>
-            <div class="value"><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></div>
-            <div class="sub">We reply within 24 hours</div>
-          </div>
-        </div>
-        <div class="info-card">
-          <div class="ic">💬</div>
-          <div class="info-card-text">
-            <div class="label">WhatsApp</div>
-            <div class="value"><a href="https://wa.me/919623168644" target="_blank" style="color:#4ade80;">+91 9623168644</a></div>
-            <div class="sub">Quick enquiries &amp; quotation requests</div>
-          </div>
-        </div>
-        <div class="info-card">
-          <div class="ic">📍</div>
-          <div class="info-card-text">
-            <div class="label">Office Address</div>
-            <div class="value">Gran Exito, Office No 212, Above Axis Bank, 2nd Floor</div>
-            <div class="sub">B1 Kawade Road, Ghorpadi, Pune – 411001, Maharashtra</div>
-          </div>
-        </div>
+    <p>
+      Connect with us for motors, drives, automation, control panels,
+      industrial electrical products and engineering services.
+    </p>
+  </div>
+</section>
+
+<section class="contact-main">
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+
+      <div class="section-title">
+        <span>GET IN TOUCH</span>
+        <h2>We’re Ready to Support You</h2>
+        <p>
+          Share your product or service requirement and our team will respond
+          with technical guidance, quotation and availability.
+        </p>
       </div>
 
-      <!-- Business hours -->
-      <div style="background:var(--navy-2);border:1px solid var(--border-s);border-radius:var(--r);padding:1.5rem;margin-bottom:1.5rem;">
-        <h4 style="font-family:var(--fh);font-size:0.85rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#fff;margin-bottom:1rem;">Business Hours</h4>
-        <table class="hours-table">
-          <tr><td>Monday – Friday</td><td class="open">9:00 AM – 7:00 PM</td></tr>
-          <tr><td>Saturday</td><td class="open">9:00 AM – 5:00 PM</td></tr>
-          <tr><td>Sunday</td><td class="closed">Closed</td></tr>
-          <tr><td>Emergency (AMC clients)</td><td class="open">24 × 7</td></tr>
-        </table>
+      <div class="contact-cards">
+
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h3>Office Location</h3>
+          <p>Pune, Maharashtra, India</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Call Us</h3>
+          <p>
+            <a href="tel:+919307213349">+91 9307213349</a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p>
+            <a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a>
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">🕘</div>
+          <h3>Business Hours</h3>
+          <p>Monday - Saturday<br>9:30 AM - 6:30 PM</p>
+        </div>
+
       </div>
 
-      <!-- Certifications -->
-      <div class="certs">
-        <div class="cert"><div class="ci">🏆</div><span>ISO 9001:2015</span></div>
-        <div class="cert"><div class="ci">✅</div><span>BIS Certified</span></div>
-        <div class="cert"><div class="ci">🌟</div><span>OEM Authorised</span></div>
-        <div class="cert"><div class="ci">📄</div><span>IS / IEC Compliant</span></div>
+      <div class="quick-actions">
+        <a href="https://wa.me/919307213349" target="_blank" class="whatsapp-action">
+          WhatsApp Now
+        </a>
+
+        <a href="downloads.html" class="catalogue-action">
+          View Downloads
+        </a>
       </div>
 
-      <!-- Map -->
-      <div class="map-wrap">
-        <!-- Google Maps embed for Gran Exito, Ghorpadi, Pune -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3!2d73.8867!3d18.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGran+Exito%2C+Ghorpadi%2C+Pune!5e0!3m2!1sen!2sin!4v1"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Ampere Electric Office Location">
-        </iframe>
-      </div>
     </div>
 
-    <!-- RIGHT — Enquiry form -->
-    <div class="form-wrap reveal-right">
-      <div id="enquiryForm" data-enquiry-form>
-        <h3>Send Your Requirement</h3>
-        <p class="fsub">All fields marked * are required. We never share your data with third parties.</p>
+    <div class="contact-form-card">
 
-        <div class="frow">
-          <div class="fg"><label>Your Name *</label><input type="text" name="name" placeholder="Rajesh Kumar" required><span class="error-msg"></span></div>
-          <div class="fg"><label>Company Name *</label><input type="text" name="company" placeholder="ABC Industries Pvt Ltd" required><span class="error-msg"></span></div>
+      <h2>Send Enquiry</h2>
+
+      <form id="contactForm" action="#" method="POST">
+
+        <div class="form-row">
+          <label>Your Name</label>
+          <input type="text" name="name" id="name" required>
         </div>
-        <div class="frow">
-          <div class="fg"><label>Phone Number *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required><span class="error-msg"></span></div>
-          <div class="fg"><label>Email Address *</label><input type="email" name="email" placeholder="you@company.com" required><span class="error-msg"></span></div>
+
+        <div class="form-row">
+          <label>Company Name</label>
+          <input type="text" name="company" id="company">
         </div>
-        <div class="fg">
-          <label>Service / Product Required *</label>
-          <select name="service" required>
-            <option value="" disabled selected>Select a service or product</option>
-            <optgroup label="Products"><option>HT Motor – Supply</option><option>LT Motor – Supply</option><option>Diesel Generator (DG Set)</option><option>Transformer</option><option>Control Panel / MCC / PCC</option><option>Industrial Pump</option><option>Switchgear &amp; Cables</option></optgroup>
-            <optgroup label="Services"><option>Motor Overhauling &amp; Repair</option><option>Earthing Solution</option><option>Project Installation &amp; Commissioning</option><option>Annual Maintenance Contract (AMC)</option></optgroup>
-            <option>Other / Not Sure</option>
-          </select>
-          <span class="error-msg"></span>
-        </div>
-        <div class="frow">
-          <div class="fg"><label>Quantity / Capacity</label><input type="text" name="qty" placeholder="e.g. 2 units / 100 HP / 500 kVA"></div>
-          <div class="fg">
-            <label>Expected Timeline</label>
-            <select name="timeline">
-              <option value="" disabled selected>Select timeline</option>
-              <option>Immediately (Urgent)</option><option>Within 1 Month</option><option>1–3 Months</option><option>3–6 Months</option><option>Planning Stage</option>
-            </select>
+
+        <div class="form-row two-col">
+          <div>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+          <div>
+            <label>Mobile Number</label>
+            <input type="tel" name="phone" id="phone" required>
           </div>
         </div>
-        <div class="fg"><label>Site Location / City</label><input type="text" name="location" placeholder="e.g. Pune, Nashik, Mumbai"></div>
-        <div class="fg"><label>Message / Technical Specifications</label><textarea name="message" placeholder="Share voltage, brand preference, application type, fault level, or any specific technical requirements…"></textarea></div>
-        <p class="fnote">By submitting this form you agree to our <a href="privacy-policy.html">Privacy Policy</a>. Your information will only be used to respond to this enquiry.</p>
-        <button class="sbtn" data-submit>⚡ Send Enquiry</button>
-      </div>
-      <div class="form-success" id="formSuccess">
-        <div class="ck">✅</div>
-        <h3>Enquiry Received!</h3>
-        <p>Thank you! Our engineering team will contact you within 24 hours with a detailed solution and quotation.</p>
-        <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;">Back to Home</a>
-      </div>
+
+        <div class="form-row">
+          <label>Enquiry Type</label>
+          <select name="enquiry_type" id="enquiryType" required>
+            <option value="">Select enquiry type</option>
+            <option value="Product Enquiry">Product Enquiry</option>
+            <option value="Service Enquiry">Service Enquiry</option>
+            <option value="Automation Project">Automation Project</option>
+            <option value="Control Panel Requirement">Control Panel Requirement</option>
+            <option value="Motor / Drive Requirement">Motor / Drive Requirement</option>
+            <option value="AMC / Maintenance">AMC / Maintenance</option>
+            <option value="Career Enquiry">Career Enquiry</option>
+            <option value="General Enquiry">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Product / Service Requirement</label>
+          <input type="text" name="requirement" id="requirement"
+                 placeholder="Example: IE3 Motor, VFD Drive, MCC Panel, Automation Support">
+        </div>
+
+        <div class="form-row">
+          <label>Message</label>
+          <textarea name="message" id="message" rows="5"
+                    placeholder="Please share your requirement details"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          Submit Enquiry
+        </button>
+
+        <p class="form-note" id="formNote">
+          This form is currently frontend-ready. Connect EmailJS / Formspree / backend API for live submissions.
+        </p>
+
+      </form>
+
     </div>
 
   </div>
 </section>
 
-<!-- QUICK LINKS -->
-<section class="section alt" style="padding:50px 5%;">
-  <div style="text-align:center;margin-bottom:2.5rem;">
-    <div class="tag" style="justify-content:center;">Quick Actions</div>
-    <h2>Other Ways to <span class="hl">Reach Us</span></h2>
+<section class="map-section">
+  <div class="container">
+    <div class="map-box">
+      <h2>Visit / Locate Us</h2>
+      <p>Replace this map iframe with your exact Google Maps embed link.</p>
+
+      <iframe
+        title="Ampere Electric Location"
+        src="https://www.google.com/maps?q=Pune,%20Maharashtra,%20India&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;">
-    <a href="tel:+919623168644" style="display:flex;flex-direction:column;align-items:center;gap:0.75rem;background:var(--navy-2);border:1px solid var(--border-s);border-radius:var(--r);padding:2rem;text-align:center;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border-s)'">
-      <span style="font-size:2.5rem;">📞</span>
-      <strong style="font-family:var(--fh);font-size:1rem;text-transform:uppercase;color:#fff;">Call Us Now</strong>
-      <span style="font-size:0.85rem;color:var(--blue-lt);">+91 9623168644</span>
-      <span style="font-size:0.78rem;color:var(--muted);">Mon–Sat, 9 AM – 7 PM</span>
-    </a>
-    <a href="https://wa.me/919623168644?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20solutions." target="_blank" style="display:flex;flex-direction:column;align-items:center;gap:0.75rem;background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.25);border-radius:var(--r);padding:2rem;text-align:center;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.borderColor='#25d366'" onmouseout="this.style.borderColor='rgba(37,211,102,0.25)'">
-      <span style="font-size:2.5rem;">💬</span>
-      <strong style="font-family:var(--fh);font-size:1rem;text-transform:uppercase;color:#fff;">WhatsApp Us</strong>
-      <span style="font-size:0.85rem;color:#4ade80;">+91 9623168644</span>
-      <span style="font-size:0.78rem;color:var(--muted);">Quick enquiries &amp; photos</span>
-    </a>
-    <a href="mailto:sales@amperegroup.in" style="display:flex;flex-direction:column;align-items:center;gap:0.75rem;background:var(--navy-2);border:1px solid var(--border-s);border-radius:var(--r);padding:2rem;text-align:center;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.borderColor='var(--blue)'" onmouseout="this.style.borderColor='var(--border-s)'">
-      <span style="font-size:2.5rem;">✉️</span>
-      <strong style="font-family:var(--fh);font-size:1rem;text-transform:uppercase;color:#fff;">Email Us</strong>
-      <span style="font-size:0.85rem;color:var(--blue-lt);">sales@amperegroup.in</span>
-      <span style="font-size:0.78rem;color:var(--muted);">Reply within 24 hours</span>
-    </a>
+</section>
+
+<section class="contact-cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Need Quick Technical Assistance?</h2>
+      <p>
+        Share your product rating, application and site requirement.
+        Our team will guide you with the right solution.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="tel:+919307213349" class="primary-btn">Call Now</a>
+        <a href="https://wa.me/919307213349" target="_blank" class="whatsapp-btn">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <div class="ft-grid">
-    <div class="ft-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric"></a><p>Your complete electrical solution partner in Pune — supplying and servicing HT/LT motors, DG sets, transformers, panels and more across Maharashtra.</p><div class="soc"><a href="#">in</a><a href="#">fb</a><a href="#">yt</a><a href="https://wa.me/919623168644" class="wa">wa</a></div></div>
-    <div class="ft-col"><h5>Products</h5><ul><li><a href="products.html#motors">HT &amp; LT Motors</a></li><li><a href="products.html#generators">Diesel Generators</a></li><li><a href="products.html#transformers">Transformers</a></li><li><a href="products.html#panels">Control Panels</a></li><li><a href="products.html#pumps">Industrial Pumps</a></li></ul></div>
-    <div class="ft-col"><h5>Services</h5><ul><li><a href="services.html#overhauling">Motor Overhauling</a></li><li><a href="services.html#earthing">Earthing Solutions</a></li><li><a href="services.html#installation">Project Installation</a></li><li><a href="services.html#amc">AMC Services</a></li></ul></div>
-    <div class="ft-col"><h5>Contact</h5><div class="contact-item"><span>📞</span><a href="tel:+919623168644">+91 9623168644</a></div><div class="contact-item"><span>✉</span><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></div><div class="contact-item"><span>📍</span><span>Gran Exito, Office 212, Ghorpadi, Pune – 411001</span></div></div>
+  <div class="container">
+    <p>© 2026 Ampere Electric. All Rights Reserved.</p>
   </div>
-  <div class="ft-bot"><span>© 2026 Ampere Electric. All rights reserved.</span><div class="ft-bot-links"><a href="privacy-policy.html">Privacy Policy</a></div></div>
 </footer>
-<a href="https://wa.me/919623168644?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20solutions." class="wa-float" target="_blank" rel="noopener">💬</a>
-<script src="assets/js/main.js"></script><script src="assets/js/animation.js"></script><script src="assets/js/form.js"></script>
+
+<script src="assets/js/contact.js"></script>
+
 </body>
 </html>

@@ -1,369 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products – HT/LT Motors, DG Sets, Transformers | Ampere Electric, Pune</title>
-  <meta name="description" content="Ampere Electric supplies HT/LT Motors, Diesel Generators, Transformers, Control Panels, Industrial Pumps and Switchgear in Pune. Authorised OEM dealer.">
-  <link rel="icon" type="image/jpeg" href="assets/images/logo/logo-icon.jpeg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <style>
-    /* Product category section */
-    .prod-section { padding: 70px 5%; border-bottom: 1px solid var(--border-s); }
-    .prod-section:last-of-type { border-bottom: none; }
-    .prod-section.alt { background: var(--navy-2); }
-    .prod-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; }
-    .prod-layout.reverse { grid-template-columns: 1.6fr 1fr; }
-    .prod-layout.reverse .prod-info { order: 2; }
-    .prod-layout.reverse .prod-visual { order: 1; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Ampere Group</title>
 
-    /* Product info panel */
-    .prod-info h2 { margin-bottom: 0.75rem; font-size: clamp(1.4rem, 2.5vw, 2rem); }
-    .prod-info .prod-desc { margin-bottom: 1.5rem; font-size: 0.92rem; line-height: 1.75; }
-
-    /* Spec table */
-    .spec-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
-    .spec-table tr { border-bottom: 1px solid var(--border-s); }
-    .spec-table tr:last-child { border-bottom: none; }
-    .spec-table td { padding: 0.65rem 0.5rem; font-size: 0.85rem; }
-    .spec-table td:first-child { color: var(--muted); width: 45%; font-weight: 500; }
-    .spec-table td:last-child { color: var(--light); font-weight: 500; }
-
-    /* Feature tags */
-    .feature-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
-    .ftag {
-      background: rgba(26,143,209,0.1); border: 1px solid rgba(26,143,209,0.25);
-      color: var(--blue-lt); font-size: 0.75rem; font-weight: 600;
-      letter-spacing: 0.06em; padding: 0.3rem 0.75rem; border-radius: 2px;
-    }
-
-    /* Visual placeholder */
-    .prod-visual {
-      background: var(--navy-3); border: 1px solid var(--border-s);
-      border-radius: var(--r); aspect-ratio: 4/3;
-      display: flex; flex-direction: column;
-      align-items: center; justify-content: center;
-      color: var(--muted); text-align: center; padding: 2rem;
-      position: relative; overflow: hidden;
-    }
-    .prod-visual::before {
-      content: ''; position: absolute; inset: 0;
-      background-image: linear-gradient(rgba(26,143,209,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(26,143,209,0.03) 1px, transparent 1px);
-      background-size: 30px 30px;
-    }
-    .prod-visual .pv-icon { font-size: 4rem; margin-bottom: 1rem; position: relative; z-index: 1; }
-    .prod-visual strong { display: block; color: #fff; font-family: var(--fh); font-size: 1rem; text-transform: uppercase; margin-bottom: 0.4rem; position: relative; z-index: 1; }
-    .prod-visual span { font-size: 0.75rem; position: relative; z-index: 1; line-height: 1.5; }
-    .prod-visual .img-note { font-size: 0.68rem; color: var(--blue-lt); margin-top: 0.5rem; position: relative; z-index: 1; }
-
-    /* OEM badge */
-    .oem-badge {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      background: rgba(26,143,209,0.08); border: 1px solid rgba(26,143,209,0.2);
-      border-radius: var(--r); padding: 0.75rem 1rem; margin-bottom: 1.5rem;
-      font-size: 0.82rem;
-    }
-    .oem-badge .ob-label { color: var(--muted); }
-    .oem-badge .ob-brands { color: var(--blue-lt); font-weight: 600; }
-
-    @media(max-width:960px){
-      .prod-layout, .prod-layout.reverse { grid-template-columns: 1fr; }
-      .prod-layout.reverse .prod-info, .prod-layout.reverse .prod-visual { order: unset; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/products.css" />
 </head>
-<body class="page-fade">
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="topbar-left"><span>🕐 Mon–Sat: 9 AM – 7 PM</span><a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a></div>
-  <div class="topbar-right"><a href="tel:+919623168644">📞 +91 9623168644</a><a href="https://wa.me/919623168644" target="_blank" class="wa-link">💬 WhatsApp</a></div>
-</div>
+<body>
 
-<!-- NAV -->
-<nav class="site-nav">
-  <a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric Logo"></a>
-  <ul class="nav-menu" id="navMenu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li class="active"><a href="products.html">Products <span class="arr">▾</span></a>
-      <div class="nav-dropdown">
-        <a href="#motors">HT &amp; LT Motors</a>
-        <a href="#generators">Diesel Generators</a>
-        <a href="#transformers">Transformers</a>
-        <a href="#panels">Control Panels</a>
-        <a href="#pumps">Industrial Pumps</a>
-        <a href="#switchgear">Switchgear &amp; Cables</a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-wrap">
+
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo/logo-main.png" alt="Ampere Group Logo">
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+
+        <div class="nav-item">
+          <a href="about-us.html">About Us</a>
+        </div>
+
+        <div class="nav-item active">
+          <a href="products.html">Products</a>
+
+          <div class="nav-dropdown mega-products">
+            <a href="#ht-lt-motors">HT & LT Motors</a>
+            <a href="#diesel-generators">Diesel Generators</a>
+            <a href="#transformers">Transformers</a>
+            <a href="#control-panels">Control Panels</a>
+            <a href="#industrial-pumps">Industrial Pumps</a>
+            <a href="#switchgear-cables">Switchgear & Cables</a>
+          </div>
+        </div>
+
+        <a href="services.html">Service Division</a>
+        <a href="careers.html">Careers</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="header-cta">Get a Quote</a>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="products-hero">
+    <div class="container">
+      <span class="eyebrow">Ampere Group Products</span>
+      <h1>Industrial Electrical Products & Engineering Solutions</h1>
+      <p>
+        Reliable motors, control panels, automation products, switchgear,
+        pumps, transformers and industrial electrical solutions for demanding applications.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCT CATEGORY DROPDOWN -->
+  <section class="product-filter-section">
+    <div class="container">
+
+      <div class="product-filter-top">
+        <h2>Explore Our Products</h2>
+
+        <select id="productCategoryFilter" class="product-category-select">
+          <option value="all">All Product Categories</option>
+          <option value="ht-lt-motors">HT & LT Motors</option>
+          <option value="diesel-generators">Diesel Generators</option>
+          <option value="transformers">Transformers</option>
+          <option value="control-panels">Control Panels</option>
+          <option value="industrial-pumps">Industrial Pumps</option>
+          <option value="switchgear-cables">Switchgear & Cables</option>
+        </select>
       </div>
-    </li>
-    <li><a href="services.html">Services <span class="arr">▾</span></a>
-      <div class="nav-dropdown">
-        <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
-        <a href="services.html#earthing">Earthing Solutions</a>
-        <a href="services.html#installation">Project Installation</a>
-        <a href="services.html#amc">AMC Services</a>
+
+      <div class="product-category-pills">
+        <button class="product-pill active" data-filter="all">All</button>
+        <button class="product-pill" data-filter="ht-lt-motors">HT & LT Motors</button>
+        <button class="product-pill" data-filter="diesel-generators">Diesel Generators</button>
+        <button class="product-pill" data-filter="transformers">Transformers</button>
+        <button class="product-pill" data-filter="control-panels">Control Panels</button>
+        <button class="product-pill" data-filter="industrial-pumps">Industrial Pumps</button>
+        <button class="product-pill" data-filter="switchgear-cables">Switchgear & Cables</button>
       </div>
-    </li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
-</nav>
 
-<!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Products</span></div>
-    <h1>Our <em>Products</em></h1>
-    <p>OEM-authorised, IS/IEC-certified electrical equipment — sourced directly from leading manufacturers and backed by full warranty and documentation.</p>
-  </div>
-</div>
-
-<!-- ══ MOTORS ══ -->
-<div id="motors" class="prod-section">
-  <div class="prod-layout">
-    <div class="prod-visual reveal-left">
-      <div class="pv-icon">⚙️</div>
-      <strong>HT &amp; LT Motors</strong>
-      <span>Add product image here<br>Recommended: 800×600px JPG</span>
-      <span class="img-note">Path: assets/images/products/motors.jpg</span>
     </div>
-    <div class="prod-info reveal-right">
-      <div class="tag">Category 01</div>
-      <h2>HT &amp; LT <span class="hl">Motors</span></h2>
-      <p class="prod-desc">We supply High Tension (HT) and Low Tension (LT) squirrel cage induction motors for the complete range of industrial applications — from small utility drives to large compressors, cooling towers and mill drives. All motors are supplied with factory test certificates and full OEM warranty.</p>
-      <div class="oem-badge"><span class="ob-label">Authorised for:</span><span class="ob-brands">Kirloskar Electric · Siemens · ABB · Crompton Greaves · Bharat Bijlee</span></div>
-      <table class="spec-table">
-        <tr><td>LT Motor Range</td><td>0.5 HP to 500 HP (415V, 3-phase)</td></tr>
-        <tr><td>HT Motor Range</td><td>200 kW to 5000 kW (3.3 / 6.6 / 11 kV)</td></tr>
-        <tr><td>Efficiency Class</td><td>IE2, IE3, IE4 (as per IS 12615)</td></tr>
-        <tr><td>Frame Sizes</td><td>IEC 56 to IEC 450</td></tr>
-        <tr><td>Enclosure</td><td>TEFC, TENV, Flameproof (Exd)</td></tr>
-        <tr><td>Standards</td><td>IS 325, IS 12615, IEC 60034</td></tr>
-        <tr><td>Mounting</td><td>Foot, Flange, Foot-Flange (B3, B5, B35)</td></tr>
-        <tr><td>Duty Class</td><td>S1 to S9 (Crane &amp; Hoist Duty available)</td></tr>
-      </table>
-      <div class="feature-tags">
-        <span class="ftag">TEFC Enclosure</span><span class="ftag">Flameproof Available</span>
-        <span class="ftag">VFD Compatible</span><span class="ftag">Factory Test Certificate</span>
-        <span class="ftag">IE2 / IE3 / IE4</span><span class="ftag">Crane Duty</span>
+  </section>
+
+  <!-- BRAND STRIP -->
+  <section class="brand-strip">
+    <div class="container brand-grid">
+      <div class="brand-card">
+        <img src="assets/images/brands/cg-power.png" alt="CG Power">
       </div>
-      <a href="contact.html#enquiry" class="btn btn-primary">Request a Quote</a>
-    </div>
-  </div>
-</div>
-
-<!-- ══ GENERATORS ══ -->
-<div id="generators" class="prod-section alt">
-  <div class="prod-layout reverse">
-    <div class="prod-info reveal-left">
-      <div class="tag">Category 02</div>
-      <h2>Diesel <span class="hl">Generators</span></h2>
-      <p class="prod-desc">Silent and open type diesel generator sets for industrial, commercial and infrastructure applications. We supply, install, commission and maintain DG sets with complete documentation including noise compliance certificates and emission test reports.</p>
-      <div class="oem-badge"><span class="ob-label">Authorised for:</span><span class="ob-brands">Kirloskar · Cummins · Mahindra · Perkins</span></div>
-      <table class="spec-table">
-        <tr><td>Range</td><td>5 kVA to 2500 kVA</td></tr>
-        <tr><td>Voltage Output</td><td>415 V, 3-phase, 50 Hz</td></tr>
-        <tr><td>Type</td><td>Silent (Acoustic Canopy) &amp; Open</td></tr>
-        <tr><td>Engine Brands</td><td>Kirloskar, Cummins, Perkins, Mahindra</td></tr>
-        <tr><td>Alternator</td><td>Stamford, Leroy Somer, Mecc Alte</td></tr>
-        <tr><td>Control Panel</td><td>AMF / Manual with digital meters</td></tr>
-        <tr><td>ATS Panel</td><td>Available (Auto Transfer Switch)</td></tr>
-        <tr><td>Emission</td><td>CPCB II / CPCB IV+ Compliant</td></tr>
-      </table>
-      <div class="feature-tags">
-        <span class="ftag">Silent / Open Type</span><span class="ftag">CPCB IV+ Compliant</span>
-        <span class="ftag">ATS Panel</span><span class="ftag">AMF Control</span>
-        <span class="ftag">Load Bank Testing</span><span class="ftag">AMC Available</span>
+      <div class="brand-card">
+        <img src="assets/images/brands/siemens.png" alt="Siemens">
       </div>
-      <a href="contact.html#enquiry" class="btn btn-primary">Request a Quote</a>
-    </div>
-    <div class="prod-visual reveal-right">
-      <div class="pv-icon">⚡</div>
-      <strong>Diesel Generators</strong>
-      <span>Add product image here<br>Recommended: 800×600px JPG</span>
-      <span class="img-note">Path: assets/images/products/generators.jpg</span>
-    </div>
-  </div>
-</div>
-
-<!-- ══ TRANSFORMERS ══ -->
-<div id="transformers" class="prod-section">
-  <div class="prod-layout">
-    <div class="prod-visual reveal-left">
-      <div class="pv-icon">🔋</div>
-      <strong>Transformers</strong>
-      <span>Add product image here<br>Recommended: 800×600px JPG</span>
-      <span class="img-note">Path: assets/images/products/transformers.jpg</span>
-    </div>
-    <div class="prod-info reveal-right">
-      <div class="tag">Category 03</div>
-      <h2>Power &amp; Distribution <span class="hl">Transformers</span></h2>
-      <p class="prod-desc">Oil-cooled and dry-type distribution and power transformers for step-up and step-down applications across industrial, commercial and utility sectors. Supplied with factory test reports, type test certificates and complete IS 2026 compliance documentation.</p>
-      <div class="oem-badge"><span class="ob-label">Brands supplied:</span><span class="ob-brands">Kirloskar · Voltamp · Emco · Vijai Electricals</span></div>
-      <table class="spec-table">
-        <tr><td>Rating Range</td><td>25 kVA to 5 MVA</td></tr>
-        <tr><td>Voltage Ratio</td><td>11 kV / 415 V (custom ratios available)</td></tr>
-        <tr><td>Type</td><td>Oil-Cooled (ONAN/ONAF) &amp; Dry-Type</td></tr>
-        <tr><td>Cooling</td><td>ONAN, ONAF, KNAN, KNAF</td></tr>
-        <tr><td>Vector Group</td><td>Dyn11, Yyn0 (as required)</td></tr>
-        <tr><td>Standard</td><td>IS 2026 / IEC 60076</td></tr>
-        <tr><td>Taps</td><td>±5% (Off-load / On-load OLTC)</td></tr>
-        <tr><td>Accessories</td><td>Buchholz relay, PRV, MOG, WTI, OTI</td></tr>
-      </table>
-      <div class="feature-tags">
-        <span class="ftag">IS 2026 Certified</span><span class="ftag">Oil / Dry Type</span>
-        <span class="ftag">OLTC Available</span><span class="ftag">Factory Tested</span>
-        <span class="ftag">Custom Ratios</span><span class="ftag">Full Accessories</span>
+      <div class="brand-card">
+        <img src="assets/images/brands/bharat-bijlee.png" alt="Bharat Bijlee">
       </div>
-      <a href="contact.html#enquiry" class="btn btn-primary">Request a Quote</a>
-    </div>
-  </div>
-</div>
-
-<!-- ══ CONTROL PANELS ══ -->
-<div id="panels" class="prod-section alt">
-  <div class="prod-layout reverse">
-    <div class="prod-info reveal-left">
-      <div class="tag">Category 04</div>
-      <h2>Control <span class="hl">Panels</span></h2>
-      <p class="prod-desc">Custom-engineered LT control panels designed and built to IS/IEC standards by our in-house panel-building team. Each panel is designed as per your single-line diagram, load requirements and fault level, and delivered with complete type-test certificates and wiring documentation.</p>
-      <div class="oem-badge"><span class="ob-label">Components from:</span><span class="ob-brands">Siemens · Schneider · ABB · L&T · Havells</span></div>
-      <table class="spec-table">
-        <tr><td>Panel Types</td><td>MCC, PCC, APFC, SFU, AMF, Sync Panel</td></tr>
-        <tr><td>Current Rating</td><td>Up to 4000 A</td></tr>
-        <tr><td>Fault Level</td><td>Up to 50 kA (RMS symmetrical)</td></tr>
-        <tr><td>Voltage</td><td>415 V, 3-phase, 50 Hz</td></tr>
-        <tr><td>Enclosure</td><td>IP42, IP54, IP55 (as required)</td></tr>
-        <tr><td>Standard</td><td>IS 8623 / IEC 61439</td></tr>
-        <tr><td>Busbar</td><td>Copper / Aluminium (as per design)</td></tr>
-        <tr><td>Metering</td><td>Digital energy meters, PF meters, CT/PT</td></tr>
-      </table>
-      <div class="feature-tags">
-        <span class="ftag">MCC / PCC / APFC</span><span class="ftag">IS 8623 Compliant</span>
-        <span class="ftag">Custom Designed</span><span class="ftag">Up to 4000 A</span>
-        <span class="ftag">50 kA Fault Level</span><span class="ftag">IP54 / IP55</span>
+      <div class="brand-card">
+        <img src="assets/images/brands/havells.png" alt="Havells">
       </div>
-      <a href="contact.html#enquiry" class="btn btn-primary">Request a Quote</a>
     </div>
-    <div class="prod-visual reveal-right">
-      <div class="pv-icon">🔌</div>
-      <strong>Control Panels</strong>
-      <span>Add product image here<br>Recommended: 800×600px JPG</span>
-      <span class="img-note">Path: assets/images/products/panels.jpg</span>
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- ══ PUMPS ══ -->
-<div id="pumps" class="prod-section">
-  <div class="prod-layout">
-    <div class="prod-visual reveal-left">
-      <div class="pv-icon">💧</div>
-      <strong>Industrial Pumps</strong>
-      <span>Add product image here<br>Recommended: 800×600px JPG</span>
-      <span class="img-note">Path: assets/images/products/pumps.jpg</span>
+  <!-- PRODUCTS GRID -->
+  <main class="products-main">
+    <div class="container">
+
+      <!-- HT & LT MOTORS -->
+      <section class="product-category-block" id="ht-lt-motors" data-category="ht-lt-motors">
+        <div class="section-title-row">
+          <h2>HT & LT Motors</h2>
+          <p>Energy-efficient industrial motors for multiple applications.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/ie4-motor.webp" alt="IE4 Motors">
+              <div class="product-overlay">
+                <a href="product-details.html?product=ie4-motors" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>IE4 Motors</h3>
+            <p>Premium efficiency motors for high-performance industrial use.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/ie3-motor.webp" alt="IE3 Motors">
+              <div class="product-overlay">
+                <a href="product-details.html?product=ie3-motors" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>IE3 Motors</h3>
+            <p>Reliable energy-saving motors for continuous-duty operations.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/ie2-motor.webp" alt="IE2 Motors">
+              <div class="product-overlay">
+                <a href="product-details.html?product=ie2-motors" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>IE2 Motors</h3>
+            <p>Industrial motors suitable for pumps, fans, conveyors and machines.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/crane-duty-motor.webp" alt="Crane Duty Motors">
+              <div class="product-overlay">
+                <a href="product-details.html?product=crane-duty-motors" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Crane Duty Motors</h3>
+            <p>Motors designed for frequent start-stop crane applications.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/slipring-motor.webp" alt="Crane Duty Slipring Motors">
+              <div class="product-overlay">
+                <a href="product-details.html?product=crane-duty-slipring-motors" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Crane Duty Slipring Motors</h3>
+            <p>Heavy-duty slipring motors for cranes and hoisting systems.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/brake-motor.webp" alt="Brake Motors">
+              <div class="product-overlay">
+                <a href="product-details.html?product=brake-motors" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Brake Motors</h3>
+            <p>Compact motors with braking arrangement for controlled stopping.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- DIESEL GENERATORS -->
+      <section class="product-category-block" id="diesel-generators" data-category="diesel-generators">
+        <div class="section-title-row">
+          <h2>Diesel Generators</h2>
+          <p>Reliable backup power solutions for commercial and industrial sites.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/diesel-generator.webp" alt="Diesel Generators">
+              <div class="product-overlay">
+                <a href="product-details.html?product=diesel-generators" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Diesel Generators</h3>
+            <p>Industrial DG sets for reliable standby and emergency power.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/silent-dg.webp" alt="Silent DG Sets">
+              <div class="product-overlay">
+                <a href="product-details.html?product=silent-dg-sets" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Silent DG Sets</h3>
+            <p>Low-noise generator solutions for industrial and commercial use.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- TRANSFORMERS -->
+      <section class="product-category-block" id="transformers" data-category="transformers">
+        <div class="section-title-row">
+          <h2>Transformers</h2>
+          <p>Distribution and industrial transformer solutions.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/transformer.webp" alt="Distribution Transformers">
+              <div class="product-overlay">
+                <a href="product-details.html?product=distribution-transformers" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Distribution Transformers</h3>
+            <p>Reliable transformers for industrial and utility applications.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/oil-transformer.webp" alt="Oil Cooled Transformers">
+              <div class="product-overlay">
+                <a href="product-details.html?product=oil-cooled-transformers" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Oil Cooled Transformers</h3>
+            <p>Efficient transformer solutions for stable power distribution.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CONTROL PANELS -->
+      <section class="product-category-block" id="control-panels" data-category="control-panels">
+        <div class="section-title-row">
+          <h2>Control Panels</h2>
+          <p>Custom-built electrical panels for automation and power control.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/control-panel.webp" alt="Control Panels">
+              <div class="product-overlay">
+                <a href="product-details.html?product=control-panels" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Control Panels</h3>
+            <p>Engineered control panels for machines and process automation.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/apfc-panel.webp" alt="APFC Panels">
+              <div class="product-overlay">
+                <a href="product-details.html?product=apfc-panels" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>APFC Panels</h3>
+            <p>Power factor correction panels for energy efficiency.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/mcc-panel.webp" alt="MCC Panels">
+              <div class="product-overlay">
+                <a href="product-details.html?product=mcc-panels" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>MCC Panels</h3>
+            <p>Motor control centres for industrial motor management.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- INDUSTRIAL PUMPS -->
+      <section class="product-category-block" id="industrial-pumps" data-category="industrial-pumps">
+        <div class="section-title-row">
+          <h2>Industrial Pumps</h2>
+          <p>Pump solutions for process, utility and industrial applications.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/industrial-pump.webp" alt="Industrial Pumps">
+              <div class="product-overlay">
+                <a href="product-details.html?product=industrial-pumps" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Industrial Pumps</h3>
+            <p>Robust pumps for water, process and industrial applications.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/centrifugal-pump.webp" alt="Centrifugal Pumps">
+              <div class="product-overlay">
+                <a href="product-details.html?product=centrifugal-pumps" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Centrifugal Pumps</h3>
+            <p>Efficient pumping solutions for continuous operation.</p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SWITCHGEAR & CABLES -->
+      <section class="product-category-block" id="switchgear-cables" data-category="switchgear-cables">
+        <div class="section-title-row">
+          <h2>Switchgear & Cables</h2>
+          <p>Industrial electrical protection, switching and cabling solutions.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/switchgear.webp" alt="Switchgear">
+              <div class="product-overlay">
+                <a href="product-details.html?product=switchgear" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Switchgear</h3>
+            <p>Protection and switching products for electrical systems.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/cables.webp" alt="Industrial Cables">
+              <div class="product-overlay">
+                <a href="product-details.html?product=industrial-cables" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>Industrial Cables</h3>
+            <p>Power and control cables for industrial installations.</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/mccb.webp" alt="MCCB and Protection Devices">
+              <div class="product-overlay">
+                <a href="product-details.html?product=mccb-protection-devices" class="view-btn">View Details</a>
+              </div>
+            </div>
+            <h3>MCCB & Protection Devices</h3>
+            <p>Electrical safety and protection devices for panels and systems.</p>
+          </article>
+
+        </div>
+      </section>
+
     </div>
-    <div class="prod-info reveal-right">
-      <div class="tag">Category 05</div>
-      <h2>Industrial <span class="hl">Pumps</span></h2>
-      <p class="prod-desc">Centrifugal, submersible, vertical turbine, fire-fighting and process pumps for water supply, sewage, chemical transfer and fire protection systems. We supply pumps along with pump-motor sets, starter panels and complete piping skids.</p>
-      <div class="oem-badge"><span class="ob-label">Authorised for:</span><span class="ob-brands">Kirloskar Brothers · Grundfos · Flowserve · KSB</span></div>
-      <table class="spec-table">
-        <tr><td>Types</td><td>Centrifugal, Submersible, VTP, Fire Pump</td></tr>
-        <tr><td>Flow Range</td><td>1 m³/hr to 5000 m³/hr</td></tr>
-        <tr><td>Head Range</td><td>5 m to 300 m</td></tr>
-        <tr><td>Motor Power</td><td>0.5 HP to 500 HP</td></tr>
-        <tr><td>Materials</td><td>CI, SS 304/316, Bronze, Alloy Steel</td></tr>
-        <tr><td>Application</td><td>Water, Sewage, Fire, Chemical, HVAC</td></tr>
-        <tr><td>Standards</td><td>IS 1520, IS 9137, NBC for Fire Pumps</td></tr>
-        <tr><td>Certification</td><td>BIS / UL / FM approved (fire pumps)</td></tr>
-      </table>
-      <div class="feature-tags">
-        <span class="ftag">Centrifugal / Submersible</span><span class="ftag">Fire Pump Sets</span>
-        <span class="ftag">Chemical Duty</span><span class="ftag">Complete Pump-Motor Set</span>
-        <span class="ftag">Piping Skids</span><span class="ftag">Starter Panels</span>
+  </main>
+
+  <!-- CTA -->
+  <section class="products-cta">
+    <div class="container cta-box">
+      <div>
+        <h2>Need help selecting the right product?</h2>
+        <p>Share your requirement and our team will guide you with a suitable solution.</p>
       </div>
-      <a href="contact.html#enquiry" class="btn btn-primary">Request a Quote</a>
-    </div>
-  </div>
-</div>
 
-<!-- ══ SWITCHGEAR ══ -->
-<div id="switchgear" class="prod-section alt">
-  <div class="prod-layout reverse">
-    <div class="prod-info reveal-left">
-      <div class="tag">Category 06</div>
-      <h2>Switchgear <span class="hl">&amp; Cables</span></h2>
-      <p class="prod-desc">Complete range of LT and HT switchgear — MCBs, MCCBs, ACBs, VCBs, contactors, relays — from authorised brands. We also supply IS-certified armoured, FR-LSH and XLPE cables for industrial wiring and cabling projects.</p>
-      <div class="oem-badge"><span class="ob-label">Brands supplied:</span><span class="ob-brands">Havells · Legrand · Schneider · L&T · Polycab · KEI</span></div>
-      <table class="spec-table">
-        <tr><td>LT Switchgear</td><td>MCB, RCCB, MCCB, ACB (up to 6300 A)</td></tr>
-        <tr><td>HT Switchgear</td><td>VCB, SF6 CB (11 kV / 33 kV)</td></tr>
-        <tr><td>Contactors</td><td>9 A to 820 A (AC3 duty)</td></tr>
-        <tr><td>Protection Relays</td><td>Microprocessor-based, numerical</td></tr>
-        <tr><td>LT Cables</td><td>FR, FR-LSH, XLPE, Armoured (1.1 kV)</td></tr>
-        <tr><td>HT Cables</td><td>XLPE Armoured (11 kV / 33 kV)</td></tr>
-        <tr><td>Cable Sizes</td><td>1.5 sq mm to 400 sq mm</td></tr>
-        <tr><td>Standard</td><td>IS 694, IS 1554, IS 7098</td></tr>
-      </table>
-      <div class="feature-tags">
-        <span class="ftag">MCB / MCCB / ACB</span><span class="ftag">VCB (11 kV)</span>
-        <span class="ftag">Armoured Cables</span><span class="ftag">FR-LSH Cables</span>
-        <span class="ftag">XLPE Cables</span><span class="ftag">IS 694 / IS 7098</span>
+      <div class="cta-actions">
+        <a href="contact.html" class="primary-btn">Send Enquiry</a>
+        <a
+          href="https://wa.me/91919307213349?text=Hello%20Ampere%20Group,%20I%20am%20interested%20in%20your%20industrial%20electrical%20products.%20Please%20share%20details."
+          class="whatsapp-btn"
+          target="_blank">
+          WhatsApp Enquiry
+        </a>
       </div>
-      <a href="contact.html#enquiry" class="btn btn-primary">Request a Quote</a>
     </div>
-    <div class="prod-visual reveal-right">
-      <div class="pv-icon">🔧</div>
-      <strong>Switchgear &amp; Cables</strong>
-      <span>Add product image here<br>Recommended: 800×600px JPG</span>
-      <span class="img-note">Path: assets/images/products/switchgear.jpg</span>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Ampere Group. All Rights Reserved.</p>
     </div>
-  </div>
-</div>
+  </footer>
 
-<!-- OEM STRIP -->
-<div class="oem-strip">
-  <div class="oem-strip-label">Authorised dealer &amp; service partner for leading OEMs</div>
-  <div class="oem-logos">
-    <span class="oem-logo">Kirloskar Electric</span>
-    <span class="oem-logo">Cummins</span>
-    <span class="oem-logo">Siemens</span>
-    <span class="oem-logo">ABB</span>
-    <span class="oem-logo">Crompton Greaves</span>
-    <span class="oem-logo">Grundfos</span>
-    <span class="oem-logo">Bharat Bijlee</span>
-    <span class="oem-logo">Havells</span>
-    <span class="oem-logo">Schneider Electric</span>
-    <span class="oem-logo">L&amp;T Electrical</span>
-  </div>
-</div>
+  <script src="assets/js/products.js"></script>
 
-<!-- CTA -->
-<div class="cta-banner">
-  <div><h3>Need a Product Not Listed Here?</h3><p>We can source most electrical equipment — tell us your requirement and we'll find the right solution.</p></div>
-  <a href="contact.html#enquiry" class="btn btn-white">Send Enquiry →</a>
-</div>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="ft-grid">
-    <div class="ft-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.jpeg" alt="Ampere Electric"></a><p>Your complete electrical solution partner in Pune — supplying and servicing HT/LT motors, DG sets, transformers, panels and more across Maharashtra.</p><div class="soc"><a href="#">in</a><a href="#">fb</a><a href="#">yt</a><a href="https://wa.me/919623168644" class="wa">wa</a></div></div>
-    <div class="ft-col"><h5>Products</h5><ul><li><a href="#motors">HT &amp; LT Motors</a></li><li><a href="#generators">Diesel Generators</a></li><li><a href="#transformers">Transformers</a></li><li><a href="#panels">Control Panels</a></li><li><a href="#pumps">Industrial Pumps</a></li><li><a href="#switchgear">Switchgear &amp; Cables</a></li></ul></div>
-    <div class="ft-col"><h5>Services</h5><ul><li><a href="services.html#overhauling">Motor Overhauling</a></li><li><a href="services.html#earthing">Earthing Solutions</a></li><li><a href="services.html#installation">Project Installation</a></li><li><a href="services.html#amc">AMC Services</a></li><li><a href="about.html">About Us</a></li></ul></div>
-    <div class="ft-col"><h5>Contact</h5><div class="contact-item"><span>📞</span><a href="tel:+919623168644">+91 9623168644</a></div><div class="contact-item"><span>✉</span><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></div><div class="contact-item"><span>📍</span><span>Gran Exito, Office 212, Ghorpadi, Pune – 411001</span></div></div>
-  </div>
-  <div class="ft-bot"><span>© 2026 Ampere Electric. All rights reserved.</span><div class="ft-bot-links"><a href="privacy-policy.html">Privacy Policy</a><a href="contact.html">Contact Us</a></div></div>
-</footer>
-
-<a href="https://wa.me/919623168644?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20a%20product." class="wa-float" target="_blank" rel="noopener">💬</a>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/animation.js"></script>
 </body>
 </html>

@@ -141,20 +141,24 @@ main { flex: 1; }
 .arr { font-size: 0.55rem; opacity: 0.5; }
 
 /* Dropdown */
+.nav-menu > li {
+  position: relative;
+}
 .nav-dropdown {
-  position: absolute; top: calc(100% + 8px); left: 0;
+  position: absolute; top: 100%; left: 0;
   min-width: 230px;
   background: var(--navy-3);
   border: 1px solid var(--border-s);
   border-radius: var(--r);
   box-shadow: var(--shadow-lg);
-  opacity: 0; pointer-events: none;
-  transform: translateY(10px);
-  transition: opacity 0.2s, transform 0.2s;
-  z-index: 100;
+  opacity: 0; pointer-events: none; visibility:hidden;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
 }
-.nav-menu > li:hover .nav-dropdown {
-  opacity: 1; pointer-events: all; transform: translateY(0);
+.nav-menu > li:hover .nav-dropdown,
+.nav-menu > li:focus-within > .nav-dropdown,
+.nav-dropdown:hover{
+  opacity: 1; pointer-events: auto; visibility: visible;
 }
 .nav-dropdown a {
   display: block; padding: 0.7rem 1.1rem;
@@ -165,6 +169,14 @@ main { flex: 1; }
 .nav-dropdown a:last-child { border-bottom: none; }
 .nav-dropdown a:hover,
 .nav-dropdown a:focus-visible { color: var(--blue-lt); background: var(--blue-glow); }
+.nav-menu > li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 10px;
+}
 
 /* CTA button in nav */
 .nav-cta {
