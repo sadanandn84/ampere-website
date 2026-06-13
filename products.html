@@ -6,46 +6,62 @@
   <title>Products | Ampere Group</title>
 
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/products.css" />
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <header class="site-header">
+  <header class="site-header">  
     <div class="container header-wrap">
 
       <a href="index.html" class="logo">
         <img src="assets/images/logo/logo-main.png" alt="Ampere Group Logo">
       </a>
+      <ul class="nav-menu" id="navMenu">
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-
-        <div class="nav-item">
-          <a href="about-us.html">About Us</a>
-        </div>
-
-        <div class="nav-item active">
-          <a href="products.html">Products</a>
-
-          <div class="nav-dropdown mega-products">
-            <a href="#ht-lt-motors">HT & LT Motors</a>
-            <a href="#diesel-generators">Diesel Generators</a>
-            <a href="#transformers">Transformers</a>
-            <a href="#control-panels">Control Panels</a>
-            <a href="#industrial-pumps">Industrial Pumps</a>
-            <a href="#switchgear-cables">Switchgear & Cables</a>
-          </div>
-        </div>
-
-        <a href="services.html">Service Division</a>
-        <a href="careers.html">Careers</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
-      <a href="contact.html" class="header-cta">Get a Quote</a>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="products.html">Products</a></li>
+        
+          <li>
+           <a href="about-us.html">About <span class="arr">▾</span></a>
+           <div class="nav-dropdown">
+             <a href="about-us.html">About Us</a>
+             <a href="our-skills.html">Our Skills</a>
+             <a href="why-ampere.html">Why Ampere</a>
+             <a href="company-journey.html">Company Journey</a>
+           </div>
+          </li>
+        
+          <li>
+            <a href="products.html">Products <span class="arr">▾</span></a>
+            <div class="nav-dropdown">
+              <a href="products.html#motors">HT &amp; LT Motors</a>
+              <a href="products.html#generators">Diesel Generators</a>
+              <a href="products.html#transformers">Transformers</a>
+              <a href="products.html#panels">Control Panels</a>
+              <a href="products.html#pumps">Industrial Pumps</a>
+              <a href="products.html#switchgear">Switchgear &amp; Cables</a>
+            </div>
+          </li>
+        
+          <li>
+            <a href="services.html">Services <span class="arr">▾</span></a>
+            <div class="nav-dropdown">
+              <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
+              <a href="services.html#earthing">Earthing Solutions</a>
+              <a href="services.html#installation">Project Installation</a>
+              <a href="services.html#amc">AMC Services</a>
+              <a href="services.html#commissioning">Commissioning</a>
+            </div>
+          </li>
+      
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
+         </ul>
 
     </div>
   </header>
