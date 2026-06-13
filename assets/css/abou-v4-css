@@ -1,0 +1,633 @@
+/* ==========================================================
+   AMPERE ELECTRIC
+   ABOUT V4 PREMIUM
+   assets/css/about-v4.css
+========================================================== */
+
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.about-hero {
+	position: relative;
+	min-height: 650px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	background:
+		linear-gradient(135deg,
+			#ffffff 0%,
+			#eef5fb 100%);
+}
+
+.hero-grid {
+	position: absolute;
+	inset: 0;
+
+	background-image:
+		linear-gradient(rgba(22, 120, 201, .05) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(22, 120, 201, .05) 1px, transparent 1px);
+
+	background-size: 60px 60px;
+}
+
+.hero-glow {
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(80px);
+}
+
+.hero-glow-1 {
+	width: 400px;
+	height: 400px;
+	background: rgba(46, 150, 234, .18);
+	top: -100px;
+	left: -100px;
+}
+
+.hero-glow-2 {
+	width: 350px;
+	height: 350px;
+	background: rgba(22, 120, 201, .12);
+	right: -80px;
+	bottom: -80px;
+}
+
+.about-hero-wrap {
+	position: relative;
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 1.2fr .8fr;
+	gap: 80px;
+	align-items: center;
+}
+
+.hero-content h1 {
+	margin-bottom: 25px;
+}
+
+.hero-desc {
+	max-width: 700px;
+	margin-bottom: 35px;
+	font-size: 1.05rem;
+}
+
+.hero-actions {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+
+/* ==========================================================
+   HERO KPI
+========================================================== */
+
+.hero-kpis {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.hero-kpi {
+	background: rgba(255, 255, 255, .8);
+	backdrop-filter: blur(10px);
+
+	border: 1px solid rgba(255, 255, 255, .8);
+
+	border-radius: 16px;
+
+	padding: 30px;
+
+	text-align: center;
+
+	box-shadow: var(--shadow-lg);
+
+	transition: .35s;
+}
+
+.hero-kpi:hover {
+	transform: translateY(-8px);
+}
+
+.hero-kpi .num {
+	font-family: var(--fh);
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: var(--blue);
+	margin-bottom: 10px;
+}
+
+.hero-kpi span {
+	font-size: .82rem;
+	text-transform: uppercase;
+	letter-spacing: .12em;
+}
+
+.hero-watermark {
+	position: absolute;
+	right: 60px;
+	bottom: 40px;
+	opacity: .05;
+	pointer-events: none;
+}
+
+.hero-watermark img {
+	width: 350px;
+}
+
+
+/* ==========================================================
+   COMPANY PROFILE
+========================================================== */
+
+.about-profile-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 80px;
+	align-items: center;
+}
+
+.profile-content p {
+	margin-bottom: 20px;
+}
+
+.profile-highlights {
+	margin-top: 40px;
+}
+
+.highlight {
+	display: flex;
+	gap: 18px;
+	margin-bottom: 25px;
+}
+
+.highlight .icon {
+	width: 60px;
+	height: 60px;
+
+	border-radius: 12px;
+
+	background: rgba(22, 120, 201, .1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.5rem;
+}
+
+
+/* ==========================================================
+   IMAGE STACK
+========================================================== */
+
+.profile-images {
+	position: relative;
+	min-height: 580px;
+}
+
+.img-card {
+	position: absolute;
+	overflow: hidden;
+
+	border-radius: 20px;
+
+	box-shadow: var(--shadow-lg);
+
+	transition: .5s;
+}
+
+.img-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	transition: 1s;
+}
+
+.img-card:hover img {
+	transform: scale(1.08);
+}
+
+.img-main {
+	width: 430px;
+	height: 520px;
+	top: 30px;
+	right: 0;
+}
+
+.img-top {
+	width: 250px;
+	height: 180px;
+	left: 0;
+	top: 0;
+}
+
+.img-bottom {
+	width: 270px;
+	height: 210px;
+	left: 30px;
+	bottom: 0;
+}
+
+.img-card:hover {
+	transform: translateY(-10px);
+}
+
+.img-main {
+	animation: floatLarge 7s ease-in-out infinite;
+}
+
+.img-top {
+	animation: floatSmall 6s ease-in-out infinite;
+}
+
+.img-bottom {
+	animation: floatSmall 8s ease-in-out infinite;
+}
+
+@keyframes floatLarge {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-18px);
+	}
+}
+
+@keyframes floatSmall {
+
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-12px);
+	}
+}
+
+
+/* ==========================================================
+   COMPANY SNAPSHOT
+========================================================== */
+
+.company-snapshot {
+	padding: 0 5% 90px;
+}
+
+.snapshot-grid {
+	max-width: 1300px;
+	margin: auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+.snapshot-card {
+	background: #fff;
+
+	border: 1px solid var(--border-s);
+
+	border-radius: 12px;
+
+	padding: 35px;
+
+	text-align: center;
+
+	box-shadow: var(--shadow);
+}
+
+.snapshot-number {
+	font-family: var(--fh);
+	font-size: 3rem;
+	color: var(--blue);
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+
+/* ==========================================================
+   MISSION & VISION
+========================================================== */
+
+.mv-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+}
+
+.mv-card {
+	position: relative;
+
+	padding: 45px;
+
+	border-radius: 20px;
+
+	overflow: hidden;
+
+	background:
+		rgba(255, 255, 255, .85);
+
+	backdrop-filter: blur(10px);
+
+	border: 1px solid rgba(255, 255, 255, .8);
+
+	box-shadow: var(--shadow-lg);
+
+	transition: .4s;
+}
+
+.mv-card:hover {
+	transform: translateY(-10px);
+}
+
+.mv-icon {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.mission-card {
+	border-left: 5px solid var(--blue);
+}
+
+.vision-card {
+	border-left: 5px solid #25d366;
+}
+
+
+/* ==========================================================
+   WHY AMPERE
+========================================================== */
+
+.why-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+}
+
+.why-card {
+	background: #fff;
+	padding: 35px;
+	border-radius: 14px;
+	box-shadow: var(--shadow);
+	transition: .35s;
+}
+
+.why-card:hover {
+	transform: translateY(-8px);
+}
+
+
+/* ==========================================================
+   STRENGTHS
+========================================================== */
+
+.strengths-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+}
+
+.strength-card {
+	padding: 35px;
+}
+
+
+/* ==========================================================
+   VALUES
+========================================================== */
+
+.values-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.value-box {
+	padding: 40px 25px;
+
+	background: #fff;
+
+	text-align: center;
+
+	border-radius: 12px;
+
+	border: 1px solid var(--border-s);
+
+	transition: .35s;
+}
+
+.value-box:hover {
+	background: var(--blue);
+	color: #fff;
+}
+
+
+/* ==========================================================
+   SERVICES
+========================================================== */
+
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+}
+
+.services-grid .card {
+	padding: 35px;
+}
+
+
+/* ==========================================================
+   SKILLS
+========================================================== */
+
+.skills-wrap {
+	max-width: 900px;
+	margin: auto;
+}
+
+.skill-item {
+	margin-bottom: 35px;
+}
+
+.skill-head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.skill-bar {
+	height: 12px;
+	background: #dce8f3;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.skill-fill {
+	height: 100%;
+	width: 0;
+	border-radius: 100px;
+
+	background:
+		linear-gradient(90deg,
+			var(--blue),
+			var(--blue-lt));
+
+}
+
+
+
+/* ==========================================================
+   TIMELINE
+========================================================== */
+
+.timeline {
+	position: relative;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	background: var(--blue);
+}
+
+.timeline-item {
+	width: 45%;
+	background: #fff;
+
+	padding: 25px;
+
+	margin-bottom: 40px;
+
+	border-radius: 12px;
+
+	box-shadow: var(--shadow);
+
+	position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+	margin-right: auto;
+}
+
+.timeline-item:nth-child(even) {
+	margin-left: auto;
+}
+
+
+/* ==========================================================
+   REVEAL ANIMATION SUPPORT
+========================================================== */
+
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+	opacity: 0;
+	transition: all .9s ease;
+}
+
+.reveal {
+	transform: translateY(40px);
+}
+
+.reveal-left {
+	transform: translateX(-50px);
+}
+
+.reveal-right {
+	transform: translateX(50px);
+}
+
+.reveal-scale {
+	transform: scale(.92);
+}
+
+.visible {
+	opacity: 1;
+	transform: none;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px) {
+
+	.about-hero-wrap,
+	.about-profile-grid,
+	.mv-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-kpis {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.why-grid,
+	.strengths-grid,
+	.services-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.values-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.snapshot-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.timeline::before {
+		left: 20px;
+	}
+
+	.timeline-item {
+		width: 100%;
+		margin-left: 40px !important;
+	}
+
+	.profile-images {
+		min-height: 450px;
+	}
+}
+
+@media(max-width:768px) {
+
+	.hero-kpis,
+	.snapshot-grid,
+	.values-grid,
+	.why-grid,
+	.strengths-grid,
+	.services-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.profile-images {
+		display: none;
+	}
+
+	.timeline-item {
+		margin-left: 35px !important;
+	}
+
+	.timeline::before {
+		left: 12px;
+	}
+}
