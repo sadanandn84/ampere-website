@@ -11,12 +11,11 @@
 
 .about-hero {
 	position: relative;
-	min-height: 650px;
+	min-height: calc(100vh - 108px);
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-	padding: 90px 0 100px;
-	margin-top: 120px;
+	padding: 0 5%;
 	background:
 		linear-gradient(135deg,
 			#ffffff 0%,
