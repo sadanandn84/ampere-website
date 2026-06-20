@@ -16,6 +16,7 @@
 	display: flex;
 	align-items: center;
 	padding: 90px 0 100px;
+	margin-top: 120px;
 	background:
 		linear-gradient(135deg,
 			#ffffff 0%,
