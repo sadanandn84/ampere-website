@@ -90,6 +90,39 @@ main { flex: 1; }
 .topbar-right .wa-link { color: var(--green); }
 .topbar-right .wa-link:hover { color: #1da851; }
 
+.topbar-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.top-contact{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+    transition:all .3s ease;
+}
+
+.top-contact:hover{
+    transform:translateY(-2px);
+}
+
+.top-contact i{
+    font-size:16px;
+}
+
+.top-contact.whatsapp i{
+    color:#25D366;
+}
+
+.top-contact:not(.whatsapp) i{
+    color:#4FC3F7;
+}
+
 /* ══════════════════════════════════
    NAV
 ══════════════════════════════════ */
@@ -208,18 +241,26 @@ main { flex: 1; }
 /* ══════════════════════════════════
    PAGE HERO (inner pages)
 ══════════════════════════════════ */
+.accent-line {
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #0056b3;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 0.6rem;
-      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
       color: var(--blue-lt); background: rgba(26,143,209,0.1); border: 1px solid rgba(26,143,209,0.3);
-      padding: 0.35rem 0.9rem; border-radius: 2px; margin-bottom: 1.6rem;
+      padding: 0.35rem 1rem; border-radius: 2px; margin-bottom: 1.6rem;
     }
 .hero-eyebrow .dot { width: 7px; height: 7px; background: var(--blue); border-radius: 50%; }
 .page-hero {
   position: relative;
   padding: 100px 5% 70px;
-  background: linear-gradient(135deg, #ffffff 0%, #edf5fb 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #edf5fb 50%);
   border-bottom: 1px solid #dde8f3;
   overflow: hidden;
 }

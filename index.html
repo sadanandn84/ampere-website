@@ -27,6 +27,7 @@
   <meta name="msapplication-TileColor" content="#0b1929">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -69,9 +70,9 @@
       display: inline-flex; align-items: center; gap: 0.6rem;
       font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
       color: var(--blue-lt); background: rgba(26,143,209,0.1); border: 1px solid rgba(26,143,209,0.3);
-      padding: 0.35rem 0.9rem; border-radius: 2px; margin-bottom: 1.6rem;
+      padding: 0.35rem 0.9rem; border-radius: 1px; margin-bottom: 1.6rem;
     }
-    .hero-eyebrow .dot { width: 7px; height: 7px; background: var(--blue); border-radius: 50%; }
+    .hero-eyebrow .dot { width: 8px; height: 5px; background: var(--blue); border-radius: 50%; }
     h1 { margin-bottom: 1.5rem; }
     h1 .line2 { font-weight: 400; font-size: 75%; color: var(--light); display: block; margin-top: 0.3rem; }
     .hero-desc { font-size: 1rem; line-height: 1.75; max-width: 520px; margin-bottom: 2.25rem; }
@@ -156,14 +157,28 @@
 <body class="page-fade">
 
 <!-- TOP BAR -->
+
 <div class="topbar">
   <div class="topbar-left">
-    <span>🕐 Mon–Sat: 9 AM – 7 PM</span>
-    <a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a>
+    <span class="topbar-item">
+      <i class="fa-solid fa-business-time"></i>
+      Mon–Sat: 9 AM – 7 PM
+    </span>
+    <a href="mailto:sales@amperegroup.in" class="topbar-item">
+      <i class="fa-regular fa-envelope"></i>
+      sales@amperegroup.in
+    </a>
   </div>
   <div class="topbar-right">
-    <a href="tel:+919307213349">📞 +91 9307213349</a>
-    <a href="https://wa.me/919307213349" target="_blank" rel="noopener" class="wa-link">💬 WhatsApp</a>
+    <a href="tel:+919307213349" class="top-contact">
+      <i class="fa-solid fa-phone-volume"></i>
+      <span>+91 9307213349</span>
+    <a href="https://wa.me/919307213349" target="_blank" rel="noopener" class="top-contact whatsapp">
+      <i class="fa-brands fa-square-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    </a>
   </div>
 </div>
 
