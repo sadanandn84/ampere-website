@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       navMenu.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', navMenu.classList.contains('open'));
-      document.body.classList.toggle('menu-open', navMenu.classList.contains('open'));
+      const isOpen = navMenu.classList.contains('open');
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+      document.body.classList.toggle('menu-open', isOpen);
     });
 
     // Close on link click
