@@ -15,7 +15,7 @@
 
 /* HERO */
 .services-hero {
-  padding: 120px 0 90px;
+  padding: 1px 0 90px;
   background-color: var(--ae-light-blue);
   background-image:
     linear-gradient(var(--ae-grid-line) 1px, transparent 1px),
@@ -70,7 +70,7 @@
 .section-title span {
   display: inline-block;
   margin-bottom: 12px;
-  color: var(--ae-orange);
+  color: var(--ae-blue);
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 3px;
@@ -176,7 +176,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--ae-orange);
+  color: var(--ae-blue);
   font-weight: 900;
 }
 
@@ -215,7 +215,7 @@
 .process-card span {
   display: inline-block;
   margin-bottom: 18px;
-  color: var(--ae-orange);
+  color: var(--ae-blue);
   font-size: 36px;
   font-weight: 950;
 }

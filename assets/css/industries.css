@@ -15,7 +15,7 @@
 
 .industries-hero,
 .industry-benefits {
-  padding: 120px 0 90px;
+  padding: 1px 0 90px;
   background-color: var(--ae-light-blue);
   background-image:
     linear-gradient(var(--ae-grid-line) 1px, transparent 1px),

@@ -19,7 +19,7 @@
 
 /* HERO */
 .products-hero {
-  padding: 120px 0 90px;
+  padding: 1px 0 90px;
   background-color: var(--ae-light-blue);
   background-image:
     linear-gradient(var(--ae-grid-line) 1px, transparent 1px),
@@ -40,7 +40,7 @@
   margin-bottom: 18px;
   padding: 12px 18px;
   border: 1px solid rgba(29, 126, 208, 0.22);
-  border-radius: 6px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.58);
   color: var(--ae-blue);
   font-size: 13px;
