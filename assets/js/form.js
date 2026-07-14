@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initForm(formEl) {
 
   const submitBtn = formEl.querySelector('[data-submit]');
-  const successEl = document.getElementById('formSuccess');
+  const successEl = formE1.parentElement.querySelector('.form-success');
 
   /* ── REAL-TIME VALIDATION ── */
   formEl.querySelectorAll('[required]').forEach(input => {
