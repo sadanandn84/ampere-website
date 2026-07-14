@@ -7,13 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Services | Ampere Electric</title>
-
-  <meta name="description"
-        content="Industrial automation, electrical contracting, control panels, VFD drives, AMC and turnkey electrical solutions from Ampere Electric.">
-
+  <meta name="description" content="Industrial automation, electrical contracting, control panels, VFD drives, AMC and turnkey electrical solutions from Ampere Electric.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/floating-contact.css">
+  <link rel="stylesheet" href="assets/css/site-search.css">
   <link rel="stylesheet" href="assets/css/services.css">
 
 </head>
@@ -22,31 +26,29 @@
   <!-- TOP BAR -->
    <div class="topbar">
       <div class="topbar-left">
-         <span>🕐 Mon–Sat: 9 AM – 7 PM</span>
-         <a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a>
+        <span class="topbar-item"><i class="fa-solid fa-business-time"></i>
+          <span>Mon–Sat: 9 AM – 7 PM</span>
+        </span>
+         <a href="mailto:sales@amperegroup.in" 
+            class="topbar-item"
+            aria-label="Email Ampere Electric"
+         ><i class="fa-regular fa-envelope"></i>
+         <span>sales@amperegroup.in</span></a>
       </div>
       <div class="topbar-right">
-         <a href="tel:+919307213349">📞 +91 9307213349</a>
-         <a href="https://wa.me/919307213349" target="_blank" rel="noopener" class="wa-link">💬 WhatsApp</a>
+         <a href="tel:+919307213349" class="top-contact" aria-label="Call Ampere Electric">
+          <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <span>+91 9307213349</span>
+         </a>
+         <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20solutions." target="_blank" rel="noopener noreferrer" class="top-contact whatsapp" aria-label="Chat with Ampere Electric on WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>WhatsApp</span>
+         </a>
       </div>
    </div>
 
 <!-- NAV -->
 
-<!--<header class="site-nav">
-
-  <div class="container nav-container">
-    <a href="index.html" class="nav-logo">
-        <img src="assets/images/logo/logo-main.png" alt="Ampere Electric">
-        <div class="nav-logo-text">
-           <strong>
-           AMPERE <span class="blue">ELECTRIC</span>
-           </strong>
-           <small>
-           Electrical Solutions Partner
-           </small>
-        </div>
-    </a>-->
   <nav class="site-nav" aria-label="Main Navigation">
     <a href="index.html" class="nav-logo">
      <img src="assets/images/logo/logo-main.png" loading="lazy" alt="Ampere Electric Logo">
@@ -55,7 +57,11 @@
         <li><a href="index.html">Home</a></li>
       
         <li>
-          <a href="about-us.html">About <span class="arr">▾</span></a>
+          <a href="about-us.html">About <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span></a>
           <div class="nav-dropdown">
             <a href="about-us.html">About Us</a>
             <a href="our-skills.html">Our Skills</a>
@@ -64,33 +70,56 @@
           </div>
         </li>
         <li>
-          <a href="products.html">Products <span class="arr">▾</span></a>
+          <a href="products.html">Products <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span></a>
           <div class="nav-dropdown">
             <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
             <a href="products.html#diesel-generators">Diesel Generators</a>
             <a href="products.html#transformers">Transformers</a>
             <a href="products.html#control-panels">Control Panels</a>
-            <a href="products.html#industrial-pumps">Industrial Pumps</a>
             <a href="products.html#switchgear-cables">Switchgear &amp; Cables</a>
+            <a href="products.html#cooling-tower-solutions">Cooling Tower Solutions</a>
+            <a href="products.html#earthing-solutions">Earthing Solutions</a>
+            <a href="products.html#ev-charging">EV Charging (AC &amp; DC)</a>
           </div>
         </li>
       
         <li class="active">
-          <a href="services.html">Services <span class="arr">▾</span></a>
+          <a href="services.html">Services <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>  
+            </svg>
+          </span></a>
             <div class="nav-dropdown">
-              <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
-              <a href="services.html#earthing">Earthing Solutions</a>
-              <a href="services.html#installation">Project Installation</a>
-              <a href="services.html#amc">AMC Services</a>
-              <a href="services.html#commissioning">Commissioning</a>
+              <a href="services.html#industrial-automation">Industrial Automation</a>
+              <a href="services.html#electrical-contracting">Electrical Contracting</a>
+              <a href="services.html#control-panel-design">Control Panel Design</a>
+              <a href="services.html#drive-solutions">Drive Solutions</a>
+              <a href="services.html#motor-selection">Motor Selection</a>
+              <a href="services.html#energy-audit">Energy Audit</a>
+              <a href="services.html#amc-maintenance">AMC &amp; Maintenance</a>
+              <a href="services.html#turnkey-projects">Turnkey Projects</a>
             </div>
         </li>
         <li><a href="industries.html">Industries</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="contact.html#enquiry" class="nav-cta">Enquire Now</a></li>
       </ul>
-
-  <!--</div>-->
+      <button
+        type="button"
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
 </nav>
 
@@ -103,7 +132,7 @@ HERO
   <div class="container">
 
     <div class="hero-eyebrow">
-      ENGINEERING SERVICES
+      Engineering Services Offered
     </div>
 
     <h1>
@@ -167,9 +196,11 @@ SERVICES GRID
 
       <!-- 1 -->
 
-      <article class="service-card">
+      <article class="service-card" id="industrial-automation">
 
-        <div class="service-icon">⚙️</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-gears" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Industrial Automation
@@ -194,9 +225,11 @@ SERVICES GRID
 
       <!-- 2 -->
 
-      <article class="service-card">
+      <article class="service-card" id="electrical-contracting">
 
-        <div class="service-icon">⚡</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Electrical Contracting
@@ -220,9 +253,11 @@ SERVICES GRID
 
       <!-- 3 -->
 
-      <article class="service-card">
+      <article class="service-card" id="control-panel-design">
 
-        <div class="service-icon">🖥️</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Control Panel Design
@@ -247,9 +282,11 @@ SERVICES GRID
 
       <!-- 4 -->
 
-      <article class="service-card">
+      <article class="service-card" id="drive-solutions">
 
-        <div class="service-icon">🔄</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-tachometer-alt" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Drive Solutions
@@ -273,9 +310,12 @@ SERVICES GRID
 
       <!-- 5 -->
 
-      <article class="service-card">
+      <article class="service-card" id="motor-selection">
 
-        <div class="service-icon">🔧</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-gear" aria-hidden="true"></i>
+          <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Motor Selection & Sizing
@@ -299,9 +339,11 @@ SERVICES GRID
 
       <!-- 6 -->
 
-      <article class="service-card">
+      <article class="service-card" id="energy-audit">
 
-        <div class="service-icon">📊</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-chart-simple" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Energy Audit
@@ -325,9 +367,11 @@ SERVICES GRID
 
       <!-- 7 -->
 
-      <article class="service-card">
+      <article class="service-card" id="amc-maintenance">
 
-        <div class="service-icon">🛠️</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> 
+        </div>
 
         <h3>
           AMC & Maintenance
@@ -351,9 +395,11 @@ SERVICES GRID
 
       <!-- 8 -->
 
-      <article class="service-card">
+      <article class="service-card" id="turnkey-projects">
 
-        <div class="service-icon">🏭</div>
+        <div class="service-icon">
+          <i class="fa-solid fa-arrows-spin" aria-hidden="true"></i>
+        </div>
 
         <h3>
           Turnkey Projects
@@ -454,13 +500,14 @@ CTA
 
       <div class="cta-buttons">
 
-        <a href="contact.html"
+        <a href="contact.html#enquiry"
            class="primary-btn">
           Request Consultation
         </a>
 
-        <a href="https://wa.me/919307213349"
+        <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20discuss%20an%20industrial%20electrical%20or%20automation%20requirement."
            target="_blank"
+           rel="noopener noreferrer"
            class="whatsapp-btn">
 
           WhatsApp Us
@@ -481,7 +528,7 @@ FOOTER
 <footer class="site-footer">
   <div class="ft-grid">
     <div class="ft-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.png" alt="Ampere Electric"></a><p>Your complete electrical solution partner in Pune — supplying and servicing HT/LT motors, DG sets, transformers, panels and more across Maharashtra.</p><div class="soc"><a href="#">in</a><a href="#">fb</a><a href="#">yt</a><a href="https://wa.me/919307213349" class="wa">wa</a></div></div>
-    <div class="ft-col"><h5>Products</h5><ul><li><a href="products.html#motors">HT &amp; LT Motors</a></li><li><a href="products.html#generators">Diesel Generators</a></li><li><a href="products.html#transformers">Transformers</a></li><li><a href="products.html#panels">Control Panels</a></li><li><a href="products.html#pumps">Industrial Pumps</a></li></ul></div>
+    <div class="ft-col"><h5>Products</h5><ul><li><a href="products.html#ht-lt-motors">HT &amp; LT Motors</a></li><li><a href="products.html#diesel-generators">Diesel Generators</a></li><li><a href="products.html#transformers">Transformers</a></li><li><a href="products.html#control-panels">Control Panels</a></li><li><a href="products.html#switchgear-cables">Switchgear &amp; Cables</a></li><li><a href="products.html#cooling-tower-solutions">Cooling Tower Solutions</a></li><li><a href="products.html#earthing-solutions">Earthing Solutions</a></li><li><a href="products.html#ev-charging">EV Charging Solutions</a></li></ul></div>
     <div class="ft-col"><h5>Services</h5><ul><li><a href="services.html#overhauling">Motor Overhauling</a></li><li><a href="services.html#earthing">Earthing Solutions</a></li><li><a href="services.html#installation">Project Installation</a></li><li><a href="services.html#amc">AMC Services</a></li></ul></div>
     <div class="ft-col"><h5>Contact</h5><div class="contact-item"><span>📞</span><a href="tel:+919307213349">+91 9307213349</a></div><div class="contact-item"><span>✉</span><a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a></div><div class="contact-item"><span>📍</span><span>Gran Exito, Office 212, Ghorpadi, Pune – 411001</span></div></div>
   </div>
@@ -501,8 +548,12 @@ FOOTER
   </div>
 
 </footer>-->
-
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
 <script src="assets/js/services.js"></script>
+<script src="assets/js/floating-contact.js"></script>
+<script src="assets/data/search-data.js"></script>
+<script src="assets/js/site-search.js"></script>
 
 </body>
 </html>

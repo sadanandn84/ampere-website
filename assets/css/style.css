@@ -175,7 +175,32 @@ main { flex: 1; }
 .nav-menu > li > a:focus-visible,
 .nav-menu > li.active > a { color: #fff; background: var(--blue-glow); }
 .nav-menu > li.active > a { color: var(--blue); }
-.arr { font-size: 0.55rem; opacity: 0.5; }
+/*.arr { font-size: 1.2rem; opacity: 0.9; }*/
+.arr {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  flex-shrink: 0;
+  color: currentColor;
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.25s ease;
+}
+
+.arr svg {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.arr svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* Dropdown */
 .nav-menu > li {

@@ -105,6 +105,7 @@
 }
 
 .service-card {
+  scroll-margin-top: 110px;
   position: relative;
   overflow: hidden;
   padding: 30px;
@@ -145,6 +146,11 @@
   align-items: center;
   justify-content: center;
   font-size: 26px;
+}
+.service-icon i {
+  color: var(--blue);
+  font-size: 26px;
+  line-height: 1;
 }
 
 .service-card h3 {
