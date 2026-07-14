@@ -6,35 +6,44 @@
 
   <title>Contact Us | Ampere Electric</title>
 
-  <meta name="description"
-        content="Contact Ampere Electric for industrial electrical products, motors, drives, automation, control panels and engineering services.">
+  <meta name="description" content="Contact Ampere Electric for industrial electrical products, motors, drives, automation, control panels and engineering services.">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animations.css">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/responsive.css"> 
   <link rel="stylesheet" href="assets/css/floating-contact.css">
+  <link rel="stylesheet" href="assets/css/site-search.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 
 <body>
   <!-- TOP BAR -->
    <div class="topbar">
       <div class="topbar-left">
-         <span>🕐 Mon–Sat: 9 AM – 7 PM</span>
-         <a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a>
+        <span class="topbar-item"><i class="fa-solid fa-business-time"></i>
+          <span>Mon–Sat: 9 AM – 7 PM</span>
+        </span>
+         <a href="mailto:sales@amperegroup.in" 
+            class="topbar-item"
+            aria-label="Email Ampere Electric"
+         ><i class="fa-regular fa-envelope"></i>
+         <span>sales@amperegroup.in</span></a>
       </div>
       <div class="topbar-right">
-         <a href="tel:+919307213349">📞 +91 9307213349</a>
-         <a href="https://wa.me/919307213349" target="_blank" rel="noopener" class="wa-link">💬 WhatsApp</a>
+         <a href="tel:+919307213349" class="top-contact" aria-label="Call Ampere Electric">
+          <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <span>+91 9307213349</span>
+         </a>
+         <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20solutions." target="_blank" rel="noopener noreferrer" class="top-contact whatsapp" aria-label="Chat with Ampere Electric on WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>WhatsApp</span>
+         </a>
       </div>
    </div>
-
-<!--<header class="site-nav">
-  <div class="container nav-container">
-
-    <a href="index.html" class="logo">
-      <img src="assets/images/logo/logo-main.png" alt="Ampere Electric">
-    </a>-->
   <nav class="site-nav" aria-label="Main Navigation">
     <a href="index.html" class="nav-logo">
      <img src="assets/images/logo/logo-main.png" loading="lazy" alt="Ampere Electric Logo">
@@ -43,7 +52,12 @@
         <li><a href="index.html">Home</a></li>
       
         <li>
-          <a href="about-us.html">About <span class="arr">▾</span></a>
+          <a href="about-us.html">About <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </a>
           <div class="nav-dropdown">
             <a href="about-us.html">About Us</a>
             <a href="our-skills.html">Our Skills</a>
@@ -52,7 +66,12 @@
           </div>
         </li>
         <li>
-          <a href="products.html">Products <span class="arr">▾</span></a>
+          <a href="products.html">Products <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </a>
           <div class="nav-dropdown">
             <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
             <a href="products.html#diesel-generators">Diesel Generators</a>
@@ -64,7 +83,12 @@
         </li>
       
         <li>
-          <a href="services.html">Services <span class="arr">▾</span></a>
+          <a href="services.html">Services <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+            </span>
+          </a>
             <div class="nav-dropdown">
               <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
               <a href="services.html#earthing">Earthing Solutions</a>
@@ -74,11 +98,22 @@
             </div>
         </li>
         <li><a href="industries.html">Industries</a></li>
-        <li ><a href="contact.html" class="active">Contact</a></li>
+        <li class="active"><a href="contact.html" aria-current="page">Contact</a></li>
         <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
       </ul>
+      <button
+        type="button"
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <!--</div>-->
 </nav>
 
 <section class="contact-hero">
@@ -114,13 +149,20 @@
       <div class="contact-cards">
 
         <div class="contact-card">
-          <div class="contact-icon">📍</div>
+          <div class="contact-icon" aria-hidden="true">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
           <h3>Office Location</h3>
-          <p>Pune, Maharashtra, India</p>
+          <p>
+            Gran Exito, Office No 212, Above Axis Bank, 2nd Floor<br>
+            B1 Kawade Road, Ghorpadi, Pune – 411001
+          </p>
         </div>
 
         <div class="contact-card">
-          <div class="contact-icon">📞</div>
+          <div class="contact-icon" aria-hidden="true">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
           <h3>Call Us</h3>
           <p>
             <a href="tel:+919307213349">+91 9307213349</a>
@@ -128,7 +170,9 @@
         </div>
 
         <div class="contact-card">
-          <div class="contact-icon">✉️</div>
+          <div class="contact-icon" aria-hidden="true">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
           <h3>Email Us</h3>
           <p>
             <a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a>
@@ -136,15 +180,21 @@
         </div>
 
         <div class="contact-card">
-          <div class="contact-icon">🕘</div>
+          <div class="contact-icon" aria-hidden="true">
+            <i class="fa-solid fa-business-time"></i>
+          </div>
           <h3>Business Hours</h3>
-          <p>Monday - Saturday<br>9:30 AM - 6:30 PM</p>
+          <p>Monday - Saturday<br>9:00 AM - 7:00 PM</p>
         </div>
 
       </div>
 
       <div class="quick-actions">
-        <a href="https://wa.me/919307213349" target="_blank" class="whatsapp-action">
+        <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20discuss%20an%20electrical%20product%20or%20service%20requirement."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-action">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           WhatsApp Now
         </a>
 
@@ -155,74 +205,223 @@
 
     </div>
 
-    <div class="contact-form-card">
+    <div class="form-wrap reveal-right">
 
-      <h2>Send Enquiry</h2>
+      <div id="contactEnquiryForm" data-enquiry-form>
 
-      <form id="contactForm" action="#" method="POST">
+      <h3>Send Your Requirement</h3>
 
-        <div class="form-row">
-          <label>Your Name</label>
-          <input type="text" name="name" id="name" required>
+      <p class="fsub">
+      Fields marked * are required. We never share your data.
+      </p>
+
+      <div class="frow">
+
+        <div class="fg">
+          <label for="contact-name">Your Name *</label>
+
+          <input
+          type="text"
+          name="name"
+          id="contact-name"
+          placeholder="Rajesh Kumar"
+          autocomplete="name"
+          required
+          >
+
+          <span class="error-msg"></span>
         </div>
 
-        <div class="form-row">
-          <label>Company Name</label>
-          <input type="text" name="company" id="company">
+        <div class="fg">
+          <label for="contact-company">Company Name *</label>
+
+          <input
+          type="text"
+          name="company"
+          id="contact-company"
+          placeholder="ABC Industries Pvt Ltd"
+          autocomplete="organization"
+          required
+          >
+
+          <span class="error-msg"></span>
         </div>
 
-        <div class="form-row two-col">
-          <div>
-            <label>Email Address</label>
-            <input type="email" name="email" id="email" required>
-          </div>
+      </div>
 
-          <div>
-            <label>Mobile Number</label>
-            <input type="tel" name="phone" id="phone" required>
-          </div>
-        </div>
+    <div class="frow">
 
-        <div class="form-row">
-          <label>Enquiry Type</label>
-          <select name="enquiry_type" id="enquiryType" required>
-            <option value="">Select enquiry type</option>
-            <option value="Product Enquiry">Product Enquiry</option>
-            <option value="Service Enquiry">Service Enquiry</option>
-            <option value="Automation Project">Automation Project</option>
-            <option value="Control Panel Requirement">Control Panel Requirement</option>
-            <option value="Motor / Drive Requirement">Motor / Drive Requirement</option>
-            <option value="AMC / Maintenance">AMC / Maintenance</option>
-            <option value="Career Enquiry">Career Enquiry</option>
-            <option value="General Enquiry">General Enquiry</option>
-          </select>
-        </div>
+      <div class="fg">
+        <label for="contact-phone">Phone Number *</label>
 
-        <div class="form-row">
-          <label>Product / Service Requirement</label>
-          <input type="text" name="requirement" id="requirement"
-                 placeholder="Example: IE3 Motor, VFD Drive, MCC Panel, Automation Support">
-        </div>
+        <input
+          type="tel"
+          name="phone"
+          id="contact-phone"
+          placeholder="+91 98765 43210"
+          autocomplete="tel"
+          required
+        >
 
-        <div class="form-row">
-          <label>Message</label>
-          <textarea name="message" id="message" rows="5"
-                    placeholder="Please share your requirement details"></textarea>
-        </div>
+        <span class="error-msg"></span>
+      </div>
 
-        <button type="submit" class="submit-btn">
-          Submit Enquiry
-        </button>
+      <div class="fg">
+        <label for="contact-email">Email Address *</label>
 
-        <p class="form-note" id="formNote">
-          This form is currently frontend-ready. Connect EmailJS / Formspree / backend API for live submissions.
-        </p>
+        <input
+          type="email"
+          name="email"
+          id="contact-email"
+          placeholder="you@company.com"
+          autocomplete="email"
+          required
+        >
 
-      </form>
+        <span class="error-msg"></span>
+      </div>
 
     </div>
 
+    <div class="fg">
+
+      <label for="contact-service">
+        Service / Product Required *
+      </label>
+
+      <select
+        name="service"
+        id="contact-service"
+        required
+      >
+        <option value="" disabled selected>
+          Select a service or product
+        </option>
+
+        <optgroup label="Motors">
+          <option>HT Motor – Supply</option>
+          <option>LT Motor – Supply</option>
+          <option>Motor Overhauling &amp; Repair</option>
+        </optgroup>
+
+        <optgroup label="Power Equipment">
+          <option>Diesel Generator (DG Set)</option>
+          <option>Transformer</option>
+        </optgroup>
+
+        <optgroup label="EV Chargers">
+          <option>AC Chargers</option>
+          <option>DC Chargers</option>
+        </optgroup>
+
+        <optgroup label="Panels &amp; Wiring">
+          <option>Control Panel / MCC / PCC</option>
+          <option>Switchgear &amp; Cables</option>
+        </optgroup>
+
+        <optgroup label="Solutions">
+          <option>Cooling Tower Solutions</option>
+          <option>Earthing Solution</option>
+          <option>Project Installation &amp; Commissioning</option>
+          <option>Electrical Contracting</option>
+          <option>Control Panel Design</option>
+          <option>Annual Maintenance Contract (AMC)</option>
+          <option>Energy Auditing</option>
+        </optgroup>
+
+        <option>Other / Not Sure</option>
+      </select>
+
+      <span class="error-msg"></span>
+    </div>
+
+    <div class="frow">
+
+      <div class="fg">
+        <label for="contact-qty">Quantity / Capacity</label>
+
+        <input
+          type="text"
+          name="qty"
+          id="contact-qty"
+          placeholder="e.g. 2 units / 100 HP / 500 kVA"
+        >
+      </div>
+
+      <div class="fg">
+
+        <label for="contact-timeline">
+          Expected Timeline
+        </label>
+
+        <select
+          name="timeline"
+          id="contact-timeline"
+        >
+          <option value="" disabled selected>
+            Select timeline
+          </option>
+
+          <option>Immediately (Urgent)</option>
+          <option>Within 1 Month</option>
+          <option>1–3 Months</option>
+          <option>3–6 Months</option>
+          <option>Planning Stage</option>
+        </select>
+
+      </div>
+
+    </div>
+
+    <div class="fg">
+
+      <label for="contact-message">
+        Message / Technical Specifications
+      </label>
+
+      <textarea
+        name="message"
+        id="contact-message"
+        placeholder="Share voltage, brand preference, site location, application type or technical requirements…"
+      ></textarea>
+
+    </div>
+
+    <p class="fnote">
+      By submitting you agree to our
+      <a href="privacy-policy.html">Privacy Policy</a>.
+      Your information is used only to respond to this enquiry.
+    </p>
+
+    <button
+      type="button"
+      class="sbtn"
+      data-submit
+      aria-live="polite"
+    >
+      <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+      Send Enquiry
+    </button>
+
   </div>
+
+  <div class="form-success">
+    <div class="ck">
+      <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+    </div>
+
+    <h3>Enquiry Received!</h3>
+
+    <p>
+      Thank you. Our team will contact you within 24 hours
+      with a suitable solution and quotation.
+    </p>
+  </div>
+
+  </div>
+</div>
+
+    
 </section>
 
 <!--<section class="map-section">
@@ -283,6 +482,7 @@
   </a>
 </div>-->
 
+
 <footer class="site-footer">
   <div class="ft-grid">
     <div class="ft-brand"><a href="index.html" class="nav-logo"><img src="assets/images/logo/logo-main.png" alt="Ampere Electric"></a><p>Your complete electrical solution partner in Pune — supplying and servicing HT/LT motors, DG sets, transformers, panels and more across Maharashtra.</p><div class="soc"><a href="#">in</a><a href="#">fb</a><a href="#">yt</a><a href="https://wa.me/919307213349" class="wa">wa</a></div></div>
@@ -311,11 +511,13 @@
   </a>
 </div>
 
-
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/form.js"></script>
 <script src="assets/js/contact.js"></script>
 <script src="assets/js/floating-contact.js"></script>
-<script src="assets/js/site-search.js"></script>
 <script src="assets/data/search-data.js"></script>
+<script src="assets/js/site-search.js"></script>
 
 </body>
 </html>
