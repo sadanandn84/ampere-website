@@ -56,6 +56,30 @@ const AMPERE_SEARCH_DATA = [
     url: "brands.html"
   },
   {
+    title: "About Ampere Electric",
+    category: "About",
+    keywords: "about ampere electric company profile pune electrical solutions industrial engineering",
+    url: "about-us.html"
+  },
+  {
+    title: "Our Skills",
+    category: "About",
+    keywords: "ampere skills engineering capabilities motor selection drives panels automation electrical contracting",
+    url: "our-skills.html"
+  },
+  {
+    title: "Why Ampere",
+    category: "About",
+    keywords: "why ampere why choose ampere engineering expertise industrial electrical partner responsive support end to end solutions customer commitment",
+    url: "why-ampere.html"
+  },
+  {
+    title: "Company Journey",
+    category: "About",
+    keywords: "ampere company journey history milestones growth electrical engineering pune",
+    url: "company-journey.html"
+  },
+  {
     title: "Industries Served",
     category: "Industries",
     keywords: "automotive steel cement pharma chemical water wastewater oem machinery",
