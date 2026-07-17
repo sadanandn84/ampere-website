@@ -1268,26 +1268,6 @@ grid-template-columns:1fr 1fr;
 
 }
 
-@media (max-width:768px){
-
-.nav-menu{
-
-position:fixed;
-
-top:78px;
-left:0;
-right:0;
-
-flex-direction:column;
-
-background:#ffffff;
-
-padding:2rem;
-
-display:none;
-align-items: stretch;
-
-}
 
 /*.nav-menu.active{
 display:flex;
@@ -1296,7 +1276,6 @@ display:flex;
   display: flex;
 }
 
-}
 
 /* ══════════════════════════════════
    ACCESSIBILITY — KEYBOARD FOCUS
