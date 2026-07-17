@@ -8,12 +8,14 @@
          content="Ampere Electric is Pune's trusted electrical solutions provider delivering industrial automation, electrical engineering, consultancy, maintenance and turnkey electrical projects.">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/animations.css">
-      <link rel="stylesheet" href="assets/css/responsive.css">
-      <link rel="stylesheet" href="assets/css/about.css">
       <link rel="stylesheet" href="assets/css/floating-contact.css">
+      <link rel="stylesheet" href="assets/css/site-search.css">
+      <link rel="stylesheet" href="assets/css/about.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
    </head>
    <body>
       <div class="page-wrapper">
@@ -21,19 +23,32 @@
       <div class="topbar">
       
          <div class="topbar-left">
-            <span>🕐 Mon–Sat: 9 AM – 7 PM</span>
-            <a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a>
+            <span class="topbar-item"><i class="fa-solid fa-business-time"></i>
+              <span> Mon–Sat: 9 AM – 7 PM </span>
+            </span>
+
+            <a href="mailto:sales@amperegroup.in"
+               class="topbar-item"
+               aria-label="Email Ampere Electric"
+               ><i class="fa-regular fa-envelope"></i>
+               <span>sales@amperegroup.in</span>
+            </a>
          </div>
       <div class="topbar-right">
-         <a href="tel:+919307213349">📞 +91 9307213349</a>
-         <a href="https://wa.me/919307213349" target="_blank" rel="noopener" class="wa-link">💬 WhatsApp</a>
+         <a href="tel:+919307213349" class="top-contact" aria-label="Call Ampere Electric"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> 
+            <span>+91 9307213349</span>
+         </a>
+         <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20solutions." target="_blank" rel="noopener noreferrer" class="top-contact whatsapp" aria-label="Chat with Ampere Electric on WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+         </a>
          </div>
       </div>
       <!-- =====================================
          NAVBAR
          ===================================== -->
       <nav class="site-nav" aria-label="Main Navigation">
-         <a href="index.html" class="nav-logo">
+         <a href="index.html" class="nav-logo" aria-label="Ampere Electric home">
             <img src="assets/images/logo/logo-main.png" loading="lazy" alt="Ampere Electric Logo">
          </a>   
 
@@ -42,9 +57,14 @@
             <li><a href="index.html">Home</a></li>
          
             <li class="active">
-             <a href="about-us.html">About <span class="arr">▾</span></a>
+             <a href="about-us.html" aria-current="page">About <span class="arr" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                     <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+               </span>
+            </a>
              <div class="nav-dropdown">
-               <a href="about-us.html">About Us</a>
+               <a href="about-us.html" class="active" aria-current="page">About Us</a>
                <a href="our-skills.html">Our Skills</a>
                <a href="why-ampere.html">Why Ampere</a>
                <a href="company-journey.html">Company Journey</a>
@@ -52,25 +72,38 @@
             </li>
         
            <li>
-             <a href="products.html">Products <span class="arr">▾</span></a>
+             <a href="products.html">Products <span class="arr" aria-hidden="true">
+               <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6"></path>
+               </svg>
+             </span></a>
              <div class="nav-dropdown">
-               <a href="products.html#motors">HT &amp; LT Motors</a>
-               <a href="products.html#generators">Diesel Generators</a>
-               <a href="products.html#transformers">Transformers</a>
-               <a href="products.html#panels">Control Panels</a>
-               <a href="products.html#pumps">Industrial Pumps</a>
-               <a href="products.html#switchgear">Switchgear &amp; Cables</a>
+              <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
+              <a href="products.html#diesel-generators">Diesel Generators</a>
+              <a href="products.html#transformers">Transformers</a>
+              <a href="products.html#control-panels">Control Panels</a>
+              <a href="products.html#switchgear-cables">Switchgear &amp; Cables</a>
+              <a href="products.html#ev-charging">EV Charging (AC &amp; DC)</a>
+              <a href="products.html#earthing-solutions">Earthing Solutions</a>
+              <a href="products.html#cooling-tower-solutions">Cooling Tower Solutions</a>
              </div>
            </li>
         
            <li>
-             <a href="services.html">Services <span class="arr">▾</span></a>
+             <a href="services.html">Services <span class="arr" aria-hidden="true">
+               <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6"></path>
+               </svg>
+             </span></a>
              <div class="nav-dropdown">
-               <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
-               <a href="services.html#earthing">Earthing Solutions</a>
-               <a href="services.html#installation">Project Installation</a>
-               <a href="services.html#amc">AMC Services</a>
-               <a href="services.html#commissioning">Commissioning</a>
+               <a href="services.html#industrial-automation">Industrial Automation</a>
+               <a href="services.html#electrical-contracting">Electrical Contracting</a>
+               <a href="services.html#control-panel-design">Control Panel Design</a>
+               <a href="services.html#drive-solutions">Drive Solutions</a>
+               <a href="services.html#motor-selection">Motor Selection</a>
+               <a href="services.html#energy-audit">Energy Audit</a>
+               <a href="services.html#amc-maintenance">AMC &amp; Maintenance</a>
+               <a href="services.html#turnkey-projects">Turnkey Projects</a>
              </div>
            </li>
         
@@ -78,11 +111,18 @@
            <li><a href="contact.html">Contact</a></li>
            <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
          </ul>
-         <div id="hamburger" class="hamburger">
+         <button 
+            type="button"
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open navigation menu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+         >
             <span></span>
             <span></span>
             <span></span>
-         </div>
+         </button>
       </nav>
       <!-- =====================================
          PREMIUM HERO
@@ -657,43 +697,213 @@
       <!-- =====================================
          CTA BANNER
          ===================================== -->
-      <section class="cta-banner">
-         <div>
-            <h3>
-               Ready To Discuss Your Electrical Requirements?
-            </h3>
-            <p>
-               Whether you need consultation, automation,
-               maintenance or complete project execution,
-               our experts are ready to help.
-            </p>
-         </div>
-         <a href="contact.html" class="btn btn-white">
-         Request Consultation
-         </a>
-      </section>
       <!-- =====================================
          FOOTER
          ===================================== -->
+      <!-- Footer CTA -->
+      <section class="footer-cta" aria-labelledby="footer-cta-title">
+        <div class="footer-cta__inner">
+          <div class="footer-cta__content">
+            <span class="footer-cta__eyebrow">ENGINEERING SUPPORT WHEN YOU NEED IT</span>
+            <h2 id="footer-cta-title">Need an Industrial Electrical Solution?</h2>
+            <p>
+              Share your product, service or project requirement. Our team will help
+              you identify the right technical solution and provide a detailed quotation.
+            </p>
+          </div>
+       
+          <div class="footer-cta__actions">
+            <a class="footer-btn footer-btn--light"
+               href="tel:+919307213349"
+               aria-label="Call Ampere Electric on +91 9307213349">
+              <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+              <span>Call Now</span>
+            </a>
+         
+            <a class="footer-btn footer-btn--outline"
+               href="contact.html#enquiry">
+              <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+              <span>Get a Quote</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <footer class="site-footer">
-         <div class="ft-bot">
-            <div>
-               © 2026 Ampere Electric. All Rights Reserved.
+        <div class="footer-shell">
+      
+          <div class="footer-grid">
+         
+            <!-- Brand -->
+            <div class="footer-brand">
+              <a href="index.html"
+                 class="footer-logo"
+                 aria-label="Ampere Electric home">
+                <img src="assets/images/logo/logo-white.png"
+                     loading="lazy"
+                     alt="Ampere Electric">
+              </a>
+           
+              <p class="footer-brand__text">
+                Your complete industrial electrical solutions partner for motors,
+                drives, automation, control panels, engineering services and turnkey
+                project support across Pune, Maharashtra and Pan-India.
+              </p>
+           
+              <ul class="footer-trust" aria-label="Ampere Electric strengths">
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Trusted industrial supplier</li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Engineering-led solutions</li>
+                <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Responsive technical support</li>
+              </ul>
+           
+              <div class="footer-social" aria-label="Social and communication links">
+                <a href="#"
+                   aria-label="Ampere Electric on LinkedIn"
+                   title="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="#"
+                   aria-label="Ampere Electric on Facebook"
+                   title="Facebook">
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="#"
+                   aria-label="Ampere Electric on YouTube"
+                   title="YouTube">
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20discuss%20an%20electrical%20requirement."
+                   class="footer-social__whatsapp"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Chat with Ampere Electric on WhatsApp"
+                   title="WhatsApp">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
-            <div class="ft-bot-links">
-               <a href="#">Privacy Policy</a>
-               <a href="#">Terms of Use</a>
+         
+            <!-- Quick Links -->
+            <nav class="footer-col" aria-labelledby="footer-quick-links">
+              <h3 id="footer-quick-links">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="industries.html">Industries</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+         
+            <!-- Products -->
+            <nav class="footer-col" aria-labelledby="footer-products">
+              <h3 id="footer-products">Products</h3>
+              <ul class="footer-links">
+                <li><a href="products.html#ht-lt-motors">HT &amp; LT Motors</a></li>
+                <li><a href="products.html#diesel-generators">Diesel Generators</a></li>
+                <li><a href="products.html#transformers">Transformers</a></li>
+                <li><a href="products.html#control-panels">Control Panels</a></li>
+                <li><a href="products.html#switchgear-cables">Switchgear &amp; Cables</a></li>
+                <li><a href="products.html#ev-charging">EV Charging Solutions</a></li>
+                <li><a href="products.html#earthing-solutions">Earthing Solutions</a></li>
+                <li><a href="products.html#cooling-tower-solutions">Cooling Tower Solutions</a></li>
+              </ul>
+            </nav>
+         
+            <!-- Services -->
+            <nav class="footer-col" aria-labelledby="footer-services">
+              <h3 id="footer-services">Services</h3>
+              <ul class="footer-links">
+                <li><a href="services.html#industrial-automation">Industrial Automation</a></li>
+                <li><a href="services.html#electrical-contracting">Electrical Contracting</a></li>
+                <li><a href="services.html#control-panel-design">Control Panel Design</a></li>
+                <li><a href="services.html#drive-solutions">Drive Solutions</a></li>
+                <li><a href="services.html#motor-selection-sizing">Motor Selection &amp; Sizing</a></li>
+                <li><a href="services.html#energy-audit">Energy Audit</a></li>
+                <li><a href="services.html#amc-maintenance">AMC &amp; Maintenance</a></li>
+                <li><a href="services.html#turnkey-projects">Turnkey Projects</a></li>
+              </ul>
+            </nav>
+         
+            <!-- Contact -->
+            <div class="footer-col footer-contact" aria-labelledby="footer-contact">
+              <h3 id="footer-contact">Contact</h3>
+            
+              <address>
+                <div class="footer-contact__item">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <span>
+                    Gran Exito, Office No. 212, Above Axis Bank, 2nd Floor,
+                    B1 Kawade Road, Ghorpadi, Pune – 411001
+                  </span>
+                </div>
+             
+                <div class="footer-contact__item">
+                  <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                  <a href="tel:+919307213349">+91 9307213349</a>
+                </div>
+             
+                <div class="footer-contact__item">
+                  <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                  <a href="mailto:sales@amperegroup.in">sales@amperegroup.in</a>
+                </div>
+             
+                <div class="footer-contact__item">
+                  <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                  <span>Monday–Saturday<br>9:00 AM–7:00 PM</span>
+                </div>
+              </address>
+           
+              <div class="footer-contact__actions">
+                <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20discuss%20an%20electrical%20requirement."
+                   class="footer-mini-btn footer-mini-btn--whatsapp"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                  WhatsApp
+                </a>
+             
+                <a href="https://www.google.com/maps/search/?api=1&query=Gran+Exito+Office+212+Above+Axis+Bank+B1+Kawade+Road+Ghorpadi+Pune+411001"
+                   class="footer-mini-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+                  View Map
+                </a>
+              </div>
             </div>
-         </div>
+         
+          </div>
+       
+          <div class="footer-bottom">
+            <p>&copy; 2026 Ampere Electric. All rights reserved.</p>
+         
+            <nav class="footer-bottom__links" aria-label="Legal links">
+              <a href="privacy-policy.html">Privacy Policy</a>
+              <a href="terms.html">Terms</a>
+              <a href="sitemap.xml">Sitemap</a>
+            </nav>
+         
+            <p class="footer-bottom__location">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              Engineered in Pune
+            </p>
+          </div>
+       
+        </div>
       </footer>
       <!-- =====================================
          SCRIPTS
          ===================================== -->
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/animations.js"></script>
       <script src="assets/js/about.js"></script>
       <script src="assets/js/floating-contact.js"></script>
-      <script src="assets/js/site-search.js"></script>
       <script src="assets/data/search-data.js"></script>
+      <script src="assets/js/site-search.js"></script>
       </div>
    </body>
 </html>

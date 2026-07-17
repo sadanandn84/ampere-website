@@ -24,7 +24,7 @@
 ========================================== */
 
 .pd-hero {
-  padding: 120px 0 80px;
+  padding: 1px 0 80px;
   background-color: var(--ae-light-blue);
   background-image:
     linear-gradient(var(--ae-grid-line) 1px, transparent 1px),

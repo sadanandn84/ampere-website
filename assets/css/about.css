@@ -86,13 +86,84 @@
   	padding: 10px 18px;
   	border-radius: 6px;
   	background: rgba(29, 126, 208, 0.08);
-  	color: var(--ae-blue);
+  	color: var(--blue);
   	font-size: 13px;
   	font-weight: 900;
   	letter-spacing: 3px;
   	text-transform: uppercase;
 }
 
+/* ========================================
+   ABOUT FAMILY NAVIGATION
+======================================== */
+
+.about-subnav {
+  position: relative;
+  z-index: 5;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-s);
+  box-shadow: 0 8px 24px rgba(17, 40, 63, 0.06);
+}
+
+.about-subnav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0;
+}
+
+.about-subnav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--text-body);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.about-subnav a:hover {
+  color: var(--blue);
+  background: var(--ae-light-blue);
+  border-color: rgba(22, 120, 201, 0.18);
+}
+
+.about-subnav a.active {
+  color: #ffffff;
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .about-subnav .container {
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .about-subnav-inner {
+    width: max-content;
+    min-width: 100%;
+    justify-content: flex-start;
+    padding: 12px 0;
+  }
+
+  .about-subnav a {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
 
 /* ==========================================================
    HERO KPI
@@ -333,8 +404,8 @@
 
 .mv-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 35px;
+	grid-template-columns: repeat(2, minmax(0, 1fr)); 
+	gap: 24px;
 }
 
 .mv-card {
@@ -396,6 +467,42 @@
 
 .why-card:hover {
 	transform: translateY(-8px);
+}
+
+/* ========================================
+   WHY AMPERE — RELATED INDUSTRIES
+======================================== */
+
+.related-page-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 42px 48px;
+}
+
+.related-page-card__content {
+  max-width: 760px;
+}
+
+.related-page-card__content h2 {
+  margin: 12px 0;
+}
+
+.related-page-card__content p {
+  margin: 0;
+}
+
+.related-page-card__action {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .related-page-card {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 24px;
+  }
 }
 
 
@@ -644,4 +751,8 @@
 	.timeline::before {
 		left: 12px;
 	}
+}
+
+.section.dark .strength-card .card-icon {
+  margin-bottom: 18px;
 }

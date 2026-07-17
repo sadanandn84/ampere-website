@@ -107,6 +107,7 @@
   background: var(--ae-white);
   box-shadow: 0 10px 30px rgba(18, 36, 58, 0.06);
   transition: all 0.3s ease;
+  scroll-margin-top: 115px;
 }
 
 .industry-card::before,
@@ -142,6 +143,17 @@
   align-items: center;
   justify-content: center;
   font-size: 26px;
+  color: var(--ae-blue);
+}
+
+.industry-icon i {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.industry-card:hover .industry-icon {
+  background: var(--blue);
+  color: #ffffff;
 }
 
 .industry-card h3,
