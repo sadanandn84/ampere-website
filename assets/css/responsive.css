@@ -28,10 +28,15 @@
 ======================================== */
 
 .site-nav {
-  position: relative;
+  position: sticky;
+  top: 0;
   height: 72px;
   padding: 0 5%;
   z-index: 1000;
+  
+
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .nav-logo img {
@@ -64,6 +69,9 @@
   gap: 0;
 
   width: 100%;
+  height: calc(100dvh - 72px);
+  height: calc(100dvh - 72px);
+  max-height: calc(100dvh - 72px);
   max-height: calc(100dvh - 72px);
   margin: 0;
   padding: 18px 5% 32px;
@@ -261,6 +269,54 @@ body.menu-open {
 
   /* CTA banner */
   .cta-banner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+
+  /* ========================================
+   MOBILE NAVIGATION FINAL REFINEMENTS
+======================================== */
+
+#navMenu.nav-menu {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-menu > li {
+  padding: 4px 0;
+}
+
+.nav-menu > li + li {
+  border-top: 1px solid rgba(17, 40, 63, 0.08);
+}
+
+.nav-menu > li > a {
+  min-height: 46px;
+  padding: 11px 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.nav-dropdown {
+  padding: 0 0 10px 12px;
+}
+
+.nav-dropdown a {
+  padding: 8px 12px;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.nav-dropdown a.active,
+.nav-dropdown a[aria-current="page"] {
+  color: var(--blue);
+  background: rgba(22, 120, 201, 0.08);
+  font-weight: 700;
+}
+
+body.menu-open .floating-contact {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 }
 
 /* ── MOBILE ── */
@@ -295,6 +351,9 @@ body.menu-open {
   .site-nav { height: 68px; }
   .nav-menu {
     top: 68px;
+    height: calc(100dvh - 68px);
+    height: calc(100dvh - 68px);
+    max-height: calc(100dvh - 68px);
     max-height: calc(100dvh - 68px);
     padding: 14px 5% 28px;
   }

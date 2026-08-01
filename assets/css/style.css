@@ -1269,13 +1269,6 @@ grid-template-columns:1fr 1fr;
 }
 
 
-/*.nav-menu.active{
-display:flex;
-}*/
-.nav-menu.open{
-  display: flex;
-}
-
 
 /* ══════════════════════════════════
    ACCESSIBILITY — KEYBOARD FOCUS
@@ -1305,63 +1298,3 @@ transparent;
 touch-action:manipulation;
 
 }
-
-/*--------------
-Common Header----*/
-/*.logo img {
-  width: 155px;
-  height: auto;
-  display: block;
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  list-style: none;
-}
-
-.nav-menu li {
-  position: relative;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  font-weight: 700;
-  color: #213244;
-}
-
-.nav-menu li.active > a,
-.nav-menu a:hover {
-  color: #1478c8;
-}
-
-.nav-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 230px;
-  background: #ffffff;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  border-radius: 12px;
-  padding: 10px;
-  display: none;
-  z-index: 999;
-}
-
-.nav-menu li:hover .nav-dropdown {
-  display: block;
-}
-
-.nav-dropdown a {
-  display: block;
-  padding: 10px 12px;
-  white-space: nowrap;
-}
-
-.nav-cta {
-  background: #1478c8;
-  color: #ffffff !important;
-  padding: 14px 24px;
-  border-radius: 8px;
-}*/
