@@ -7,74 +7,122 @@
       <meta name="description" content="Explore Ampere Electric's electrical engineering skills, industrial automation capabilities, project execution expertise, safety standards, technical support and service strengths.">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
       <link rel="stylesheet" href="assets/css/style.css">
       <link rel="stylesheet" href="assets/css/animations.css">
-      <link rel="stylesheet" href="assets/css/responsive.css">
+      <link rel="stylesheet" href="assets/css/floating-contact.css">
+      <link rel="stylesheet" href="assets/css/site-search.css">
       <link rel="stylesheet" href="assets/css/about.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
    </head>
    <body>
       <div class="page-wrapper">
          <!-- TOP BAR -->
          <div class="topbar">
-            <div class="topbar-left">
-               <span>🕐 Mon–Sat: 9 AM – 7 PM</span>
-               <a href="mailto:sales@amperegroup.in">✉ sales@amperegroup.in</a>
-            </div>
-         <div class="topbar-right">
-            <a href="tel:+919307213349">📞 +91 9307213349</a>
-            <a href="https://wa.me/919307213349" target="_blank" rel="noopener" class="wa-link">💬 WhatsApp</a>
+      
+         <div class="topbar-left">
+            <span class="topbar-item"><i class="fa-solid fa-business-time"></i>
+              <span> Mon–Sat: 9 AM – 7 PM </span>
+            </span>
+
+            <a href="mailto:sales@amperegroup.in"
+               class="topbar-item"
+               aria-label="Email Ampere Electric"
+               ><i class="fa-regular fa-envelope"></i>
+               <span>sales@amperegroup.in</span>
+            </a>
+         </div>
+      <div class="topbar-right">
+         <a href="tel:+919307213349" class="top-contact" aria-label="Call Ampere Electric"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> 
+            <span>+91 9307213349</span>
+         </a>
+         <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20solutions." target="_blank" rel="noopener noreferrer" class="top-contact whatsapp" aria-label="Chat with Ampere Electric on WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+         </a>
          </div>
       </div>
-         <!-- NAVBAR -->
-         <header class="site-nav">
-            <a href="index.html" class="nav-logo">
-            <img src="assets/images/logo/logo-main.png" alt="Ampere Electric">
+      <!-- =====================================
+         NAVBAR
+         ===================================== -->
+      <nav class="site-nav" aria-label="Main Navigation">
+         <a href="index.html" class="nav-logo" aria-label="Ampere Electric home">
+            <img src="assets/images/logo/logo-main.png" loading="lazy" alt="Ampere Electric Logo">
+         </a>   
+
+         <ul class="nav-menu" id="navMenu">
+
+            <li><a href="index.html">Home</a></li>
+         
+            <li class="active">
+             <a href="about-us.html" aria-current="page">About <span class="arr" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                     <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+               </span>
             </a>
-
-            <ul class="nav-menu" id="navMenu">
-               <li><a href="index.html">Home</a></li>
-
-               <li class="active">
-                 <a href="about-us.html">About <span class="arr">▾</span></a>
-                 <div class="nav-dropdown">
-                   <a href="about-us.html">About Us</a>
-                   <a href="our-skills.html">Our Skills</a>
-                   <a href="why-ampere.html">Why Ampere</a>
-                   <a href="company-journey.html">Company Journey</a>
-                 </div>
-               </li>
-               <li>
-                 <a href="products.html">Products <span class="arr">▾</span></a>
-                 <div class="nav-dropdown">
-                   <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
-                   <a href="products.html#diesel-generators">Diesel Generators</a>
-                   <a href="products.html#transformers">Transformers</a>
-                   <a href="products.html#control-panels">Control Panels</a>
-                   <a href="products.html#industrial-pumps">Industrial Pumps</a>
-                   <a href="products.html#switchgear-cables">Switchgear &amp; Cables</a>
-                 </div>
-               </li>
-            
-               <li>
-                 <a href="services.html">Services <span class="arr">▾</span></a>
-                   <div class="nav-dropdown">
-                     <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
-                     <a href="services.html#earthing">Earthing Solutions</a>
-                     <a href="services.html#installation">Project Installation</a>
-                     <a href="services.html#amc">AMC Services</a>
-                     <a href="services.html#commissioning">Commissioning</a>
-                   </div>
-               </li>
-               <li><a href="industries.html">Industries</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><a href="contact.html#enquiry" class="nav-cta">Enquire Now</a></li>
-            </ul>
-            <div id="hamburger" class="hamburger">
-               <span></span><span></span><span></span>
-            </div>
-         </header>
+             <div class="nav-dropdown">
+               <a href="about-us.html">About Us</a>
+               <a href="our-skills.html" class="active" aria-current="page">Our Skills</a>
+               <a href="why-ampere.html">Why Ampere</a>
+               <a href="company-journey.html">Company Journey</a>
+             </div>
+            </li>
+        
+           <li>
+             <a href="products.html">Products <span class="arr" aria-hidden="true">
+               <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6"></path>
+               </svg>
+             </span></a>
+             <div class="nav-dropdown">
+              <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
+              <a href="products.html#diesel-generators">Diesel Generators</a>
+              <a href="products.html#transformers">Transformers</a>
+              <a href="products.html#control-panels">Control Panels</a>
+              <a href="products.html#switchgear-cables">Switchgear &amp; Cables</a>
+              <a href="products.html#ev-charging">EV Charging (AC &amp; DC)</a>
+              <a href="products.html#earthing-solutions">Earthing Solutions</a>
+              <a href="products.html#cooling-tower-solutions">Cooling Tower Solutions</a>
+             </div>
+           </li>
+        
+           <li>
+             <a href="services.html">Services <span class="arr" aria-hidden="true">
+               <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 9l6 6 6-6"></path>
+               </svg>
+             </span></a>
+             <div class="nav-dropdown">
+               <a href="services.html#industrial-automation">Industrial Automation</a>
+               <a href="services.html#electrical-contracting">Electrical Contracting</a>
+               <a href="services.html#control-panel-design">Control Panel Design</a>
+               <a href="services.html#drive-solutions">Drive Solutions</a>
+               <a href="services.html#motor-selection">Motor Selection</a>
+               <a href="services.html#energy-audit">Energy Audit</a>
+               <a href="services.html#amc-maintenance">AMC &amp; Maintenance</a>
+               <a href="services.html#turnkey-projects">Turnkey Projects</a>
+             </div>
+           </li>
+        
+           <li><a href="industries.html">Industries</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
+         </ul>
+         <button 
+            type="button"
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open navigation menu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+         >
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+      </nav>
          <!-- HERO -->
          <section class="about-hero">
             <div class="hero-grid"></div>
@@ -98,8 +146,11 @@
                         site execution discipline and responsive service support.
                      </p>
                      <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">Discuss Requirement</a>
-                        <a href="#technical-skills" class="btn btn-ghost">View Skills</a>
+                        <a href="contact.html" class="btn btn-primary">
+                           Discuss Your Requirement
+                           <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="#core-skills" class="btn btn-ghost">Explore Our Skills</a>
                      </div>
                   </div>
                   <div class="hero-kpis reveal-right">
@@ -112,83 +163,125 @@
                         <span>Core Domains</span>
                      </div>
                      <div class="hero-kpi">
-                        <div class="num">24×7</div>
-                        <span>Support Mindset</span>
+                        <div class="num">
+                           <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                        </div>
+                        <span>Responsive Support</span>
                      </div>
                      <div class="hero-kpi">
-                        <div class="num">100%</div>
-                        <span>Safety Focus</span>
+                        <div class="num">
+                           <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        </div>
+                        <span>Safety-Focused Execution</span>
                      </div>
                   </div>
                </div>
             </div>
          </section>
+         <nav class="about-subnav" aria-label="About Ampere pages">
+            <div class="container">
+              <div class="about-subnav-inner">
+
+                <a href="about-us.html">
+                  About Us
+                </a>
+             
+                <a href="our-skills.html"
+                   class="active"
+                   aria-current="page">
+                  Our Skills
+                </a>
+             
+                <a href="why-ampere.html">
+                  Why Ampere
+                </a>
+             
+                <a href="company-journey.html">
+                  Company Journey
+                </a>
+             
+              </div>
+            </div>
+         </nav>
          <!-- TECHNICAL SKILLS -->
          <section id="technical-skills" class="section skills-section">
             <div class="container">
                <div class="sec-head center reveal">
                   <span class="tag">Technical Excellence</span>
-                  <h2>Our Core Skills</h2>
+                  <h2>Our Core Engineering Skills</h2>
                   <p class="intro">
-                     Built around engineering understanding, practical site experience and
-                     customer-specific electrical requirements.
+                     Practical capabilities built around engineering understanding,
+                     industrial applications, site experience and customer-specific requirements.
                   </p>
                </div>
-               <div class="skills-wrap reveal">
-                  <div class="skill-item">
-                     <div class="skill-head">
-                        <span>Electrical Engineering</span>
-                        <span>95%</span>
-                     </div>
-                     <div class="skill-bar">
-                        <div class="skill-fill" style="--skill:95%"></div>
-                     </div>
+               <div class="services-grid" data-stagger>
+
+                  <div class="card reveal">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <h3>Electrical Engineering</h3>
+                    <p>
+                      Practical engineering support covering equipment selection,
+                      electrical systems, application requirements and industrial solutions.
+                    </p>
                   </div>
-                  <div class="skill-item">
-                     <div class="skill-head">
-                        <span>Industrial Automation</span>
-                        <span>92%</span>
-                     </div>
-                     <div class="skill-bar">
-                        <div class="skill-fill" style="--skill:92%"></div>
-                     </div>
+      
+                  <div class="card reveal">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                    </div>
+                    <h3>Industrial Automation</h3>
+                    <p>
+                      Support for drives, PLC-based control, automation integration
+                      and process improvement requirements.
+                    </p>
                   </div>
-                  <div class="skill-item">
-                     <div class="skill-head">
-                        <span>Project Execution</span>
-                        <span>94%</span>
-                     </div>
-                     <div class="skill-bar">
-                        <div class="skill-fill" style="--skill:94%"></div>
-                     </div>
+      
+                  <div class="card reveal">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                    </div>
+                    <h3>Project Execution</h3>
+                    <p>
+                      Coordination across installation, supervision, testing,
+                      commissioning and project delivery activities.
+                    </p>
                   </div>
-                  <div class="skill-item">
-                     <div class="skill-head">
-                        <span>Technical Support</span>
-                        <span>96%</span>
-                     </div>
-                     <div class="skill-bar">
-                        <div class="skill-fill" style="--skill:96%"></div>
-                     </div>
+      
+                  <div class="card reveal">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>
+                      Responsive assistance for troubleshooting, product support,
+                      maintenance and after-sales requirements.
+                    </p>
                   </div>
-                  <div class="skill-item">
-                     <div class="skill-head">
-                        <span>Safety Compliance</span>
-                        <span>90%</span>
-                     </div>
-                     <div class="skill-bar">
-                        <div class="skill-fill" style="--skill:90%"></div>
-                     </div>
+      
+                  <div class="card reveal">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                    </div>
+                    <h3>Safety-Conscious Execution</h3>
+                    <p>
+                      Safety considerations incorporated into engineering,
+                      site execution and commissioning activities.
+                    </p>
                   </div>
-                  <div class="skill-item">
-                     <div class="skill-head">
-                        <span>Power Quality Analysis</span>
-                        <span>88%</span>
-                     </div>
-                     <div class="skill-bar">
-                        <div class="skill-fill" style="--skill:88%"></div>
-                     </div>
+               
+                  <div class="card reveal">
+                    <div class="card-icon">
+                      <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <h3>Power Quality & Diagnostics</h3>
+                    <p>
+                      Assessment, fault analysis and recommendations supporting
+                      reliable and efficient electrical system performance.
+                    </p>
                   </div>
+
                </div>
             </div>
          </section>
@@ -205,34 +298,51 @@
                </div>
                <div class="services-grid">
                   <div class="card reveal">
-                     <div class="card-icon">⚙️</div>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-fan" aria-hidden="true"></i>
+                     </div>
                      <h3>Motor Selection</h3>
-                     <p>Application-wise selection of LV and HV motors for industrial operations.</p>
+                     <p>Application-based selection and sizing support for LV and HV motors across industrial operating conditions</p>
                   </div>
                   <div class="card reveal">
-                     <div class="card-icon">🔌</div>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                     </div>
                      <h3>Drives & Automation</h3>
-                     <p>VFD, automation and control solutions for process and machine applications.</p>
+                     <p>VFD, automation and control solutions for
+                        process, machine and energy-efficiency applications.</p>
                   </div>
                   <div class="card reveal">
-                     <div class="card-icon">🧰</div>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-plug-circle-bolt" aria-hidden="true"></i>
+                     </div>
                      <h3>Switchgear Support</h3>
-                     <p>Selection and support for LV / HV switchgear and spares.</p>
+                     <p>Selection support for LV/HV switchgear,
+                        protection products, electrical spares and related systems.</p>
                   </div>
                   <div class="card reveal">
-                     <div class="card-icon">📊</div>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-wave-square" aria-hidden="true"></i>
+                     </div>
                      <h3>Power Quality</h3>
-                     <p>Analysis and recommendations for improving electrical system reliability.</p>
+                     <p>Assessment and recommendations supporting
+                        electrical reliability, power quality and system performance.</p>
                   </div>
                   <div class="card reveal">
-                     <div class="card-icon">🛠</div>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+                     </div>
                      <h3>Repair & Overhauling</h3>
-                     <p>Repair, refurbishing and overhauling support for motors and drives.</p>
+                     <p>Repair, refurbishment and overhauling support
+                        for motors, drives and associated equipment.</p>
                   </div>
                   <div class="card reveal">
-                     <div class="card-icon">🏗️</div>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-helmet-safety" aria-hidden="true"></i>
+                     </div>
                      <h3>Site Supervision</h3>
-                     <p>Manpower support for supervision, erection, testing and commissioning.</p>
+                     <p>Supervision support for erection, installation,
+                        testing, commissioning and project coordination.</p>
                   </div>
                </div>
             </div>
@@ -251,27 +361,27 @@
                <div class="strengths-grid">
                   <div class="card strength-card reveal">
                      <h3>Safety Standards</h3>
-                     <p>We maintain safety-focused practices while delivering electrical solutions.</p>
+                     <p>Safety-conscious practices across engineering, site execution and service activities.</p>
                   </div>
                   <div class="card strength-card reveal">
                      <h3>Skilled Workforce</h3>
-                     <p>Experienced and skilled teams supporting site and service requirements.</p>
+                     <p>Experienced technical teams supporting industrial site and service requirements.</p>
                   </div>
                   <div class="card strength-card reveal">
                      <h3>Custom Solutions</h3>
-                     <p>Products and services customized according to technical specifications.</p>
+                     <p>Products and services adapted to application requirements and technical specifications.</p>
                   </div>
                   <div class="card strength-card reveal">
                      <h3>Timely Delivery</h3>
-                     <p>Commitment to project schedules with reliable execution planning.</p>
+                     <p>Structured coordination and execution planning aligned with agreed project schedules.</p>
                   </div>
                   <div class="card strength-card reveal">
                      <h3>Quality Products</h3>
-                     <p>Focus on dependable, durable and long-lasting electrical products.</p>
+                     <p>Focus on dependable products selected for performance, reliability and application suitability.</p>
                   </div>
                   <div class="card strength-card reveal">
                      <h3>Prompt Support</h3>
-                     <p>Responsive support for customer satisfaction and long-term service.</p>
+                     <p>Responsive technical and after-sales assistance supporting long-term customer requirements.</p>
                   </div>
                </div>
             </div>
@@ -280,29 +390,70 @@
          <section class="section">
             <div class="container">
                <div class="sec-head center reveal">
-                  <span class="tag">Tools & Technologies</span>
-                  <h2>Products & Technology Areas</h2>
+                  <span class="tag">Technical Expertise</span>
+                  <h2>Engineering Expertise Across Our Product Portfolio</h2>
+                  <p class="intro">
+                  Our engineering capabilities span industrial electrical products,
+                  engineered systems and application-specific solutions, enabling us
+                  to recommend, integrate and support reliable solutions across
+                  diverse industries.
+                  </p>
                </div>
                <div class="why-grid">
                   <div class="why-card reveal">
-                     <div class="card-icon">⚡</div>
-                     <h3>Electric Motors</h3>
-                     <p>LV, HV, IE2, IE3, IE4, IE5 and special application motors.</p>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-fan" aria-hidden="true"></i>
+                     </div>
+                     <h3>Motors & Drives</h3>
+                     <p>
+                        Expertise in HT & LT motors, diesel generators,
+                        motor applications, selection and performance optimization.
+                     </p>
                   </div>
                   <div class="why-card reveal">
-                     <div class="card-icon">🔁</div>
-                     <h3>Variable Frequency Drives</h3>
-                     <p>LV / HV VFDs, drive panels and automation integration.</p>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                     </div>
+                     <h3>Power Distribution</h3>
+                     <p>Transformers, switchgear, protection, 
+                        electrical distribution equipment,
+                        cables and associated electrical systems.</p>
                   </div>
                   <div class="why-card reveal">
-                     <div class="card-icon">🧲</div>
-                     <h3>Switchgear</h3>
-                     <p>LV and HV switchgear, spares and electrical protection products.</p>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-gears" aria-hidden="true"></i>
+                     </div>
+                     <h3>Control & Automation</h3>
+                     <p>Control panels, industrial automation,
+                        PLC integration and electrical control system.</p>
                   </div>
                   <div class="why-card reveal">
-                     <div class="card-icon">🌀</div>
-                     <h3>Industrial Fans</h3>
-                     <p>Axial flow and centrifugal fans for ventilation and process applications.</p>
+                     <div class="card-icon">
+                        <i class="fa-solid fa-charging-station"></i>
+                     </div>
+                     <h3>EV Charging Infrastructure</h3>
+                     <p>AC and DC EV charging solutions,
+                        installation support and charging infrastructure.</p>
+                  </div>
+                  <div class="why-card reveal">
+                     <div class="card-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                     </div>
+                     <h3>Earthing & Protection</h3>
+                     <p>
+                        Earthing systems, grounding solutions
+                        and electrical safety infrastructure.
+                     </p>
+                  </div>
+                  <div class="why-card reveal">
+                     <div class="card-icon">
+                        <i class="fa-solid fa-industry"></i>
+                     </div>
+                     <h3>Industrial Utility Solutions</h3>
+                     <p>
+                        Cooling tower solutions and industrial
+                        utility equipment supporting reliable plant operations.
+                     </p>
                   </div>
                </div>
             </div>
@@ -310,35 +461,31 @@
          <!-- INDUSTRIES SERVED -->
          <section class="section alt">
             <div class="container">
-               <div class="sec-head center reveal">
-                  <span class="tag">Industries Served</span>
-                  <h2>Where Our Skills Create Value</h2>
-               </div>
-               <div class="services-grid">
-                  <div class="card reveal">
-                     <h3>Manufacturing</h3>
-                     <p>Motors, drives, switchgear and automation for production facilities.</p>
+               <div class="card related-page-card reveal">
+
+                  <div class="related-page-card__content">
+                    <span class="tag">
+                      Industry Experience
+                    </span>
+                 
+                    <h2>
+                      Skills Applied Across Industrial Applications
+                    </h2>
+                 
+                    <p>
+                      Our engineering capabilities support manufacturing,
+                      infrastructure, commercial facilities, water applications,
+                      process industries and industrial utilities.
+                    </p>
                   </div>
-                  <div class="card reveal">
-                     <h3>Agriculture & Water</h3>
-                     <p>Water application pumps and electrical systems for agricultural needs.</p>
+
+                  <div class="related-page-card__action">
+                    <a href="industries.html" class="btn btn-primary">
+                      View Industries
+                      <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
                   </div>
-                  <div class="card reveal">
-                     <h3>Commercial Facilities</h3>
-                     <p>Electrical panels, drives, switchgear and maintenance support.</p>
-                  </div>
-                  <div class="card reveal">
-                     <h3>Industrial Utilities</h3>
-                     <p>Support for rotating equipment, fans, motors and drive systems.</p>
-                  </div>
-                  <div class="card reveal">
-                     <h3>Infrastructure</h3>
-                     <p>Electrical products and support for project-based requirements.</p>
-                  </div>
-                  <div class="card reveal">
-                     <h3>Maintenance Teams</h3>
-                     <p>AMC, troubleshooting, spares, supervision and repair support.</p>
-                  </div>
+
                </div>
             </div>
          </section>
@@ -467,7 +614,7 @@
                    <li><a href="services.html#electrical-contracting">Electrical Contracting</a></li>
                    <li><a href="services.html#control-panel-design">Control Panel Design</a></li>
                    <li><a href="services.html#drive-solutions">Drive Solutions</a></li>
-                   <li><a href="services.html#motor-selection-sizing">Motor Selection &amp; Sizing</a></li>
+                   <li><a href="services.html#motor-selection">Motor Selection</a></li>
                    <li><a href="services.html#energy-audit">Energy Audit</a></li>
                    <li><a href="services.html#amc-maintenance">AMC &amp; Maintenance</a></li>
                    <li><a href="services.html#turnkey-projects">Turnkey Projects</a></li>
@@ -544,6 +691,9 @@
          
          <script src="assets/js/main.js"></script>
          <script src="assets/js/about.js"></script>
+         <script src="assets/js/floating-contact.js"></script>
+         <script src="assets/data/search-data.js"></script>
+         <script src="assets/js/site-search.js"></script>
       </div>
    </body>
 </html>
