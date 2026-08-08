@@ -171,10 +171,16 @@ main { flex: 1; }
   padding: 0.5rem 0.85rem; border-radius: var(--r);
   transition: color 0.2s, background 0.2s;
 }
-.nav-menu > li > a:hover,
+/*.nav-menu > li > a:hover,
 .nav-menu > li > a:focus-visible,
 .nav-menu > li.active > a { color: #fff; background: var(--blue-glow); }
-.nav-menu > li.active > a { color: var(--blue); }
+.nav-menu > li.active > a { color: var(--blue); }*/
+.nav-menu > li > a:hover,
+.nav-menu > li > a:focus-visible,
+.nav-menu > li.active > a {
+  color: var(--blue);
+  background: var(--blue-glow);
+}
 /*.arr { font-size: 1.2rem; opacity: 0.9; }*/
 .arr {
   display: inline-flex;
@@ -203,9 +209,9 @@ main { flex: 1; }
 }
 
 /* Dropdown */
-.nav-menu > li {
+/*.nav-menu > li {
   position: relative;
-}
+}*/
 .nav-dropdown {
   position: absolute; top: 100%; left: 0;
   min-width: 230px;
