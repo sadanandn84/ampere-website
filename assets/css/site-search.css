@@ -40,12 +40,25 @@
 
   z-index: 9998;
 
-  transition: all .3s ease;
+  transition: 
+    transform .25s ease,
+    background-color .25s ease,
+    box-shadow .25s ease;
 }
 
 .site-search-toggle:hover {
   transform: translateY(-4px);
   background: var(--ae-orange);
+}
+.site-search-toggle:focus-visible {
+  outline: 3px solid rgba(29, 126, 208, .30);
+  outline-offset: 4px;
+}
+
+.site-search-close:focus-visible {
+  outline: 3px solid rgba(29, 126, 208, .25);
+  outline-offset: 3px;
+  border-radius: 6px;
 }
 
 /* ==========================================

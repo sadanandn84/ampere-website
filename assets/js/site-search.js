@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   searchWrap.className = "site-search-wrap";
 
   searchWrap.innerHTML = `
-    <button class="site-search-toggle" type="button" aria-label="Open search">
-      🔍
+    <button class="site-search-toggle" type="button" aria-label="Open site search" title="Search">
+      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
     </button>
 
     <div class="site-search-panel">
@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
         />
 
         <button class="site-search-close" type="button" aria-label="Close search">
-          ×
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
       </div>
 
       <div class="site-search-results" id="siteSearchResults">
         <p class="site-search-hint">
-          Try searching: IE3, Danfoss, APFC, Automation, Pumps
+          Try searching: Motors, Transformers, EV Charging, Automation, Earthing
         </p>
       </div>
     </div>
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showHint() {
     results.innerHTML = `
       <p class="site-search-hint">
-        Try searching: IE3, Danfoss, APFC, Automation, Pumps
+        Try searching: Motors, Transformers, EV Charging, Automation, Earthing
       </p>
     `;
   }
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!matches.length) {
       results.innerHTML = `
         <p class="site-search-hint">
-          No results found. Try searching for Motors, Drives, Panels or Automation.
+          No results found. Try searching for Motors, Transformers, EV Charging, Automation or Services.
         </p>
       `;
       return;
