@@ -1020,6 +1020,27 @@ main { flex: 1; }
   }
 }
 
+@media (max-width: 640px) {
+  .oem-strip {
+    padding: 42px 5%;
+  }
+
+  .oem-logos {
+    gap: 1rem;
+  }
+
+  .oem-logo {
+    width: 145px;
+    height: 76px;
+    padding: 10px 12px;
+  }
+
+  .oem-logo img {
+    max-width: 120px;
+    max-height: 50px;
+  }
+}
+
 @media (max-width: 480px) {
   .footer-cta__actions {
     flex-direction: column;
@@ -1114,6 +1135,16 @@ main { flex: 1; }
 }
 .testi-author strong { display: block; color: #11283f; font-size: 0.9rem; }
 .testi-author small { color: var(--text-body); font-size: 0.78rem; }
+.testi-quote-icon {
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+.testi-location {
+  display: block;
+  margin-top: 3px;
+}
 
 /* ══════════════════════════════════
    KPI CARDS
@@ -1138,32 +1169,59 @@ main { flex: 1; }
   background: var(--navy-2);
   text-align: center;
 }
-.oem-strip-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-body); margin-bottom: 1.75rem; }
-.oem-logos { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0.75rem; }
-.oem-logo {
-  background: var(--navy-3); border: 1px solid var(--border-s);
-  border-radius: var(--r); padding: 0.6rem 1.4rem;
-  font-family: var(--fh); font-size: 0.92rem; font-weight: 700;
-  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-body);
-  transition: all 0.2s;
+
+.oem-strip-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-body);
+  margin-bottom: 1.75rem;
 }
-.oem-logo:hover { border-color: var(--blue); color: var(--blue-lt); }
-#scrollProgress{
 
-position:fixed;
-top:0;
-left:0;
-height:3px;
+.oem-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem 1.75rem;
+}
 
-width:0;
+.oem-logo {
+  width: 180px;
+  height: 90px;
 
-background:linear-gradient(
-90deg,
-var(--blue),
-var(--blue-lt)
-);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-z-index:9999;
+  padding: 12px 16px;
+
+  background: var(--navy-3);
+  border: 1px solid var(--border-s);
+  border-radius: var(--r);
+
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.oem-logo img {
+  display: block;
+
+  max-width: 150px;
+  max-height: 58px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.oem-logo:hover {
+  transform: translateY(-3px);
+  border-color: var(--blue);
 }
 
 /* ===== BRIGHT HOMEPAGE HERO ===== */
