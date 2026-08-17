@@ -184,39 +184,212 @@ const AMPERE_PRODUCTS = {
     catalogue: "#"
   },
 
-  "brake-motors": {
-    name: "Brake Motors",
-    brand: "CG Power / Siemens",
-    category: "HT & LT Motors",
-    image: "assets/images/products/brake-motor.webp",
-    shortDescription:
-      "Motors with integrated braking arrangement for controlled stopping.",
-    overview:
-      "Brake motors are used where quick stopping and holding are required. These motors are widely used in conveyors, cranes, packaging machines and automation systems.",
-    specifications: {
-      "Power Range": "0.25 HP to 50 HP",
-      "Voltage": "415V",
-      "Frequency": "50 Hz",
-      "Brake Type": "DC / AC Fail-safe Brake",
-      "Mounting": "Foot / Flange",
-      "Protection": "IP55",
-      "Insulation Class": "Class F"
-    },
-    features: [
-      "Quick stopping",
-      "Fail-safe braking",
-      "Compact design",
-      "Low maintenance",
-      "Suitable for automation applications"
-    ],
-    applications: [
-      "Conveyors",
-      "Cranes",
-      "Packaging machinery",
-      "Textile machinery",
-      "Automation systems"
-    ],
-    catalogue: "#"
+  "flameproof-mv-motors": {
+  name: "TEFC Flameproof Motors",
+  brand: "Marathon Electric / Leading Motor Brands",
+  category: "HT & LT Motors",
+  image: "assets/images/products/flameproof-mv-motor.webp",
+  shortDescription:
+    "Flameproof motors designed for dependable operation in hazardous industrial environments.",
+  overview:
+    "TEFC flameproof motors are intended for industrial applications where potentially hazardous gases, vapours or dust may be present. Product selection should be based on the required hazardous-area classification, operating duty, power rating and site conditions.",
+  specifications: {
+    "Motor Type": "TEFC Flameproof Induction Motor",
+    "Voltage": "As per application",
+    "Frequency": "50 Hz",
+    "Mounting": "Foot / Flange, subject to model",
+    "Protection": "As per selected motor",
+    "Insulation Class": "As per selected motor",
+    "Application": "Hazardous-area industrial applications"
+  },
+  features: [
+    "Designed for hazardous industrial environments",
+    "Robust totally enclosed construction",
+    "Suitable for continuous industrial operation",
+    "Application-based rating selection",
+    "Installation and technical selection support"
+  ],
+  applications: [
+    "Chemical plants",
+    "Petrochemical facilities",
+    "Paint and solvent processing",
+    "Oil and gas installations",
+    "Hazardous process areas"
+  ],
+  catalogue: "#"
+  },
+
+"caca-motors": {
+  name: "CACA Motors",
+  brand: "Marathon Electric / Leading Motor Brands",
+  category: "HT & LT Motors",
+  image: "assets/images/products/caca-motor.webp",
+  shortDescription:
+    "Closed-air-circuit air-cooled motors for demanding high-power industrial applications.",
+  overview:
+    "CACA motors use a closed internal air circuit with an external air-cooling arrangement. They are suitable for industrial applications requiring reliable cooling, controlled motor temperatures and dependable operation under demanding load conditions.",
+  specifications: {
+    "Motor Type": "CACA Induction Motor",
+    "Cooling Method": "Closed Air Circuit Air Cooled",
+    "Voltage": "As per application",
+    "Frequency": "50 Hz",
+    "Mounting": "As per requirement",
+    "Protection": "As per selected motor",
+    "Duty": "Continuous / Application based"
+  },
+  features: [
+    "Closed internal cooling circuit",
+    "Suitable for demanding operating conditions",
+    "Reliable temperature management",
+    "Robust industrial construction",
+    "Application-based motor selection"
+  ],
+  applications: [
+    "Large pumps",
+    "Compressors",
+    "Fans and blowers",
+    "Process machinery",
+    "Heavy industrial drives"
+  ],
+  catalogue: "#"
+  },
+
+"tetv-high-voltage-motors": {
+  name: "TETV High Voltage Motors",
+  brand: "Marathon Electric",
+  category: "HT & LT Motors",
+  image: "assets/images/products/tetv-high-voltage-motor.webp",
+  shortDescription:
+    "Tube-ventilated high-voltage motors for dependable continuous industrial operation.",
+  overview:
+    "TETV high-voltage motors are designed for demanding industrial applications requiring dependable operation, effective ventilation and application-specific high-voltage motor selection.",
+  specifications: {
+    "Motor Type": "TETV High Voltage Motor",
+    "Voltage": "High voltage, subject to selected model",
+    "Frequency": "50 Hz",
+    "Cooling": "Tube ventilated",
+    "Mounting": "As per application",
+    "Duty": "Continuous / Application based",
+    "Protection": "As per selected model"
+  },
+  features: [
+    "Designed for high-voltage applications",
+    "Effective tube-ventilated cooling",
+    "Suitable for continuous industrial duty",
+    "Robust mechanical construction",
+    "Application-specific selection support"
+  ],
+  applications: [
+    "Large pumps",
+    "Industrial fans",
+    "Compressors",
+    "Process plants",
+    "Heavy-duty machinery"
+  ],
+  catalogue: "#"
+  },
+
+"ptsc-fire-fighting-motors": {
+  name: "PTSC Fire Fighting Motors",
+  brand: "Marathon Electric",
+  category: "HT & LT Motors",
+  image: "assets/images/products/ptsc-fire-fighting-motor.webp",
+  shortDescription:
+    "Fire-fighting duty motors for emergency pumping and fire-protection installations.",
+  overview:
+    "PTSC fire-fighting motors are selected for fire-pump systems requiring dependable operation during emergency conditions. Selection should be based on pump duty, operating voltage, applicable standards and project requirements.",
+  specifications: {
+    "Motor Type": "PTSC Fire Fighting Motor",
+    "Application": "Fire Pump Systems",
+    "Voltage": "As per requirement",
+    "Frequency": "50 Hz",
+    "Mounting": "As per pump arrangement",
+    "Duty": "Emergency fire-fighting duty",
+    "Protection": "As per selected model"
+  },
+  features: [
+    "Designed for fire-pump applications",
+    "Dependable emergency operation",
+    "Robust industrial construction",
+    "Application-based rating selection",
+    "Installation and commissioning support"
+  ],
+  applications: [
+    "Fire-water pumping systems",
+    "Industrial fire-protection systems",
+    "Commercial buildings",
+    "Warehouses",
+    "Infrastructure facilities"
+  ],
+  catalogue: "#"
+  },
+
+"earthing-solutions": {
+  name: "Industrial Earthing Solutions",
+  brand: "Ampere Electric / Leading Earthing Brands",
+  category: "Earthing Solutions",
+  image: "assets/images/products/product-placeholder.webp",
+  shortDescription:
+    "Application-based earthing solutions for industrial, commercial and infrastructure projects.",
+  overview:
+    "Ampere Electric supports earthing-product selection and implementation according to installation type, soil conditions, fault-current requirements and applicable project specifications.",
+  specifications: {
+    "Solution Type": "Industrial Earthing",
+    "Application": "Electrical safety and fault-current dissipation",
+    "Configuration": "Project and site specific",
+    "Material": "Subject to selected earthing system",
+    "Installation": "Industrial / Commercial / Infrastructure",
+    "Support": "Selection, supply and installation coordination"
+  },
+  features: [
+    "Application-based earthing selection",
+    "Supports safe fault-current dissipation",
+    "Suitable for industrial installations",
+    "Project-specific configuration",
+    "Installation and technical support"
+  ],
+  applications: [
+    "Industrial plants",
+    "Commercial buildings",
+    "Electrical substations",
+    "Control panels",
+    "Infrastructure projects"
+  ],
+  catalogue: "#"
+  },
+
+"cooling-tower-solutions": {
+  name: "Industrial Cooling Tower Solutions",
+  brand: "Ampere Electric / Leading Cooling Tower Brands",
+  category: "Cooling Tower Solutions",
+  image: "assets/images/products/product-placeholder.webp",
+  shortDescription:
+    "Cooling tower products and application support for industrial cooling requirements.",
+  overview:
+    "Cooling tower solutions are selected according to process heat load, water conditions, required cooling capacity, installation space and operating environment. Ampere Electric supports application assessment, product selection and project coordination.",
+  specifications: {
+    "Solution Type": "Industrial Cooling Tower",
+    "Capacity": "As per process requirement",
+    "Configuration": "Application dependent",
+    "Installation": "Industrial / Commercial",
+    "Selection Basis": "Heat load, water and site conditions",
+    "Support": "Selection and project coordination"
+  },
+  features: [
+    "Application-based cooling capacity selection",
+    "Suitable for industrial cooling processes",
+    "Configuration based on site conditions",
+    "Scalable project options",
+    "Technical and installation support"
+  ],
+  applications: [
+    "Manufacturing plants",
+    "Process industries",
+    "HVAC systems",
+    "Power and utility installations",
+    "Industrial water-cooling systems"
+  ],
+  catalogue: "#"
   },
 
   "diesel-generators": {
@@ -355,10 +528,10 @@ const AMPERE_PRODUCTS = {
   },
 
   "control-panels": {
-    name: "Control Panels",
+    name: "Industrial Control Panels",
     brand: "Ampere Electric",
     category: "Control Panels",
-    image: "assets/images/products/control-panel.webp",
+    image: "assets/images/products/industrial-control-panel.webp",
     shortDescription:
       "Custom electrical control panels for industrial automation and power control.",
     overview:
@@ -392,7 +565,7 @@ const AMPERE_PRODUCTS = {
     name: "APFC Panels",
     brand: "Ampere Electric",
     category: "Control Panels",
-    image: "assets/images/products/apfc-panel.webp",
+    image: "assets/images/products/distribution-panel(Control Panel Interior).webp",
     shortDescription:
       "Automatic power factor correction panels for energy efficiency and penalty reduction.",
     overview:
@@ -423,10 +596,10 @@ const AMPERE_PRODUCTS = {
   },
 
   "mcc-panels": {
-    name: "MCC Panels",
+    name: "MCC & VFD Panels",
     brand: "Ampere Electric",
     category: "Control Panels",
-    image: "assets/images/products/mcc-panel.webp",
+    image: "assets/images/products/mcc-vfd-panel.webp",
     shortDescription:
       "Motor Control Centre panels for safe and reliable motor operation.",
     overview:
@@ -461,7 +634,7 @@ const AMPERE_PRODUCTS = {
 
   category: "EV Charging Infrastructure",
 
-  brand: "Chargeway by Sterling Green Power Solutions",
+  brand: "Ampere Electric in association with Chargeway",
 
   shortDescription:
     "End-to-end AC and DC EV charging infrastructure for commercial, industrial, fleet and public charging applications.",
@@ -617,9 +790,9 @@ const AMPERE_RELATED_PRODUCTS = [
   "ie4-motors",
   "ie3-motors",
   "ie2-motors",
-  "crane-duty-motors",
+  "crane-duty-slipring-motors",
   "control-panels",
   "apfc-panels",
   "switchgear",
-  "industrial-pumps"
+  "ev-charging-solutions"
 ];

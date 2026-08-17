@@ -52,7 +52,16 @@ function loadProductDetails(product, productSlug) {
 
   const catalogueBtn = document.getElementById("catalogueBtn");
   if (catalogueBtn) {
-    catalogueBtn.href = product.catalogue || "#";
+    const hasCatalogue =
+    product.catalogue &&
+    product.catalogue !== "#";
+
+    if (hasCatalogue) {
+    catalogueBtn.href = product.catalogue;
+    catalogueBtn.hidden = false;
+  } else {
+    catalogueBtn.hidden = true;
+  }
   }
 
   populateSpecifications(product.specifications);
