@@ -124,7 +124,7 @@ function populateEnquiryFields(product) {
       `Product: ${product.name}\n` +
       `Category: ${product.category}\n` +
       `Brand: ${product.brand}\n\n` +
-      `Please share pricing, availability, catalogue and technical details.\n\n` +
+      `Please share pricing, availability and relevant technical details.\n\n` +
       `Thank you.`;
   }
 }
@@ -139,7 +139,7 @@ function buildWhatsAppLink(product) {
     `Product: ${product.name}\n` +
     `Category: ${product.category}\n` +
     `Brand: ${product.brand}\n\n` +
-    `Please share pricing, availability, catalogue and technical details.`;
+    `Please share pricing, availability and relevant technical details.`;
 
   whatsappBtn.href =
     `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

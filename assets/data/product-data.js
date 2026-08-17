@@ -790,8 +790,11 @@ const AMPERE_RELATED_PRODUCTS = [
   "ie4-motors",
   "ie3-motors",
   "ie2-motors",
+  "flameproof-mv-motors",
   "crane-duty-slipring-motors",
-  "control-panels",
+  "caca-motors",
+  "tetv-high-voltage-motors",
+  "industrial-control-panels",
   "apfc-panels",
   "switchgear",
   "ev-charging-solutions"
