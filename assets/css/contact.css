@@ -317,6 +317,21 @@
   }
 }
 
+.form-context-help {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--ae-blue);
+  border-radius: 4px;
+  background: var(--ae-light-blue);
+  color: var(--ae-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.form-context-help[hidden] {
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .contact-hero {

@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════
    AMPERE ELECTRIC — PRODUCTS DATA
-   assets/data/products-data.js
+   assets/data/product-data.js
    ═══════════════════════════════════════════════ */
 
 const AMPERE_PRODUCTS = {
@@ -221,9 +221,9 @@ const AMPERE_PRODUCTS = {
 
   "diesel-generators": {
     name: "Diesel Generators",
-    brand: "Leading DG Brands",
+    brand: "Sterling",
     category: "Diesel Generators",
-    image: "assets/images/products/diesel-generator.webp",
+    image: "assets/images/products/sterling-diesel-generator.webp",
     shortDescription:
       "Reliable diesel generator sets for industrial and commercial backup power.",
     overview:
@@ -456,72 +456,61 @@ const AMPERE_PRODUCTS = {
     catalogue: "#"
   },
 
-  "industrial-pumps": {
-    name: "Industrial Pumps",
-    brand: "Leading Pump Brands",
-    category: "Industrial Pumps",
-    image: "assets/images/products/industrial-pump.webp",
-    shortDescription:
-      "Industrial pump solutions for water, process and utility applications.",
-    overview:
-      "Industrial pumps are used in manufacturing plants, utilities, process systems and water handling applications. Ampere Electric supports selection and supply based on operational requirements.",
-    specifications: {
-      "Pump Type": "As per requirement",
-      "Flow Range": "Application Specific",
-      "Head Range": "Application Specific",
-      "Material": "CI / SS / Other",
-      "Drive": "Electric Motor Driven",
-      "Application": "Water / Process / Utility"
-    },
-    features: [
-      "Reliable pumping performance",
-      "Application-based selection",
-      "Suitable for continuous operation",
-      "Motor-pump integration support",
-      "Service support available"
-    ],
-    applications: [
-      "Water transfer",
-      "Industrial utilities",
-      "Process applications",
-      "Cooling systems",
-      "Boiler feed systems"
-    ],
-    catalogue: "#"
+  "ev-charging-solutions": {
+  name: "EV Charging Solutions",
+
+  category: "EV Charging Infrastructure",
+
+  brand: "Chargeway by Sterling Green Power Solutions",
+
+  shortDescription:
+    "End-to-end AC and DC EV charging infrastructure for commercial, industrial, fleet and public charging applications.",
+
+  image: "assets/images/products/ev-charging-solutions.webp",
+
+  overview:
+    "Ampere Electric provides application-based EV charging solutions covering AC chargers, DC fast chargers, charging management, electrical infrastructure, installation, commissioning and technical support. Solutions are selected according to charging demand, vehicle type, available electrical capacity, site conditions and future expansion requirements.",
+
+  specifications: {
+  "Charging Types": "AC charging and DC fast charging",
+  "AC Charger Options": "Wall-mounted and pedestal configurations",
+  "DC Charger Options": "Floor-mounted fast-charging configurations",
+  "Connector Options": "Type 2 and CCS2, subject to selected charger",
+  "Connectivity": "Ethernet, Wi-Fi or cellular connectivity, model dependent",
+  "Management": "Remote monitoring and charging-management options",
+  "Installation": "Indoor and outdoor configurations, subject to model",
+  "Support": "Site assessment, installation, commissioning and maintenance"
   },
 
-  "centrifugal-pumps": {
-    name: "Centrifugal Pumps",
-    brand: "Leading Pump Brands",
-    category: "Industrial Pumps",
-    image: "assets/images/products/centrifugal-pump.webp",
-    shortDescription:
-      "Centrifugal pumps for efficient and continuous fluid transfer.",
-    overview:
-      "Centrifugal pumps are commonly used for water transfer, circulation, cooling and utility applications across industrial and commercial facilities.",
-    specifications: {
-      "Pump Type": "Centrifugal",
-      "Flow Range": "Application Specific",
-      "Head Range": "Application Specific",
-      "Drive": "Electric Motor Driven",
-      "Material": "CI / SS",
-      "Application": "Water / Utility"
-    },
-    features: [
-      "Efficient fluid transfer",
-      "Simple operation",
-      "Low maintenance",
-      "Suitable for continuous duty",
-      "Available in multiple configurations"
-    ],
-    applications: [
-      "Water supply",
-      "Cooling systems",
-      "Industrial utilities",
-      "HVAC systems",
-      "Process circulation"
-    ],
-    catalogue: "#"
+  features: [
+    "AC and DC charging solutions",
+    "Residential, commercial, industrial and fleet applications",
+    "Smart user authentication options",
+    "Remote charger monitoring",
+    "Energy-consumption visibility",
+    "Charging-management integration",
+    "Scalable site design",
+    "Installation and commissioning support"
+  ],
+
+  applications: [
+    "Commercial buildings",
+    "Corporate offices",
+    "Industrial facilities",
+    "Residential societies",
+    "Hotels and hospitals",
+    "Shopping centres",
+    "Fleet and logistics depots",
+    "Public charging locations"
+  ],
+
+  catalogue: "#",
+
+  relatedProducts: [
+    "control-panels",
+    "switchgear",
+    "industrial-cables"
+    ]
   },
 
   "switchgear": {

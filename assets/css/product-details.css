@@ -498,3 +498,129 @@
     font-size: 24px;
   }
 }
+
+/* =========================================
+   EV CHARGING SOLUTION TYPES
+========================================= */
+
+.pd-solution-types {
+  margin-top: 72px;
+}
+
+.pd-solution-types[hidden] {
+  display: none;
+}
+
+.pd-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.pd-solution-card {
+  overflow: hidden;
+  border: 1px solid rgba(25, 70, 115, 0.12);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(18, 46, 75, 0.08);
+}
+
+.pd-solution-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #f5f8fb;
+}
+
+.pd-solution-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  padding: 24px;
+}
+
+.pd-solution-content {
+  padding: 28px;
+}
+
+.pd-solution-label {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--ae-blue, #1d7ed0);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pd-solution-content h3 {
+  margin-bottom: 12px;
+}
+
+.pd-solution-content p {
+  margin-bottom: 18px;
+}
+
+.pd-solution-content ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pd-solution-content li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.pd-solution-content li::before {
+  content: "\f058";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: var(--ae-blue, #1d7ed0);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.pd-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.pd-capability-card {
+  padding: 28px;
+  border: 1px solid rgba(25, 70, 115, 0.12);
+  border-radius: 16px;
+  background: #f6f9fc;
+}
+
+.pd-capability-card i {
+  margin-bottom: 16px;
+  color: var(--ae-blue, #1d7ed0);
+  font-size: 1.8rem;
+}
+
+.pd-capability-card h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .pd-solution-grid,
+  .pd-capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-solution-types {
+    margin-top: 52px;
+  }
+
+  .pd-solution-content,
+  .pd-capability-card {
+    padding: 22px;
+  }
+}

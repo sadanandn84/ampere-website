@@ -508,3 +508,44 @@
 .product-card:hover {
   transform: translateY(-8px);
 }
+
+.solution-partner-note {
+  max-width: 760px;
+  margin: 10px 0 0;
+}
+
+.solution-partner-note strong {
+  color: var(--ae-blue-dark);
+  font-weight: 700;
+}
+
+.product-enquiry-link {
+  display: block;
+  width: fit-content;
+  margin: 16px auto 4px;
+  color: var(--ae-blue);
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+
+.product-enquiry-link:hover {
+  color: var(--ae-orange);
+}
+
+.ev-enquiry-cta {
+  margin-top: 30px;
+  padding: 26px;
+  border: 1px solid var(--ae-border);
+  border-radius: 14px;
+  background: var(--ae-light-blue);
+  text-align: center;
+}
+
+.ev-enquiry-cta p {
+  max-width: 700px;
+  margin: 0 auto 18px;
+  color: var(--ae-muted);
+  line-height: 1.65;
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="placeholderTitle placeholderDesc">
+
+  <title id="placeholderTitle">Ampere Electric product image placeholder</title>
+  <desc id="placeholderDesc">
+    Branded placeholder displayed until an approved product image is available.
+  </desc>
+
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef6fc"></stop>
+      <stop offset="100%" stop-color="#dbeefa"></stop>
+    </linearGradient>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#bfd8e9" stroke-width="1"></path>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#backgroundGradient)"></rect>
+
+  <rect width="900" height="600" fill="url(#grid)" opacity="0.55"></rect>
+
+  <rect x="260" y="145" width="380" height="235" rx="22" fill="#ffffff" stroke="#1d7ed0" stroke-width="4"></rect>
+
+  <path d="M360 320V230h180v90" fill="none" stroke="#123b5d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <circle cx="400" cy="275" r="22" fill="none" stroke="#1d7ed0" stroke-width="10"></circle>
+
+  <path d="M455 255h50M455 285h70" stroke="#1d7ed0" stroke-width="10" stroke-linecap="round"></path>
+
+  <text x="450" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#123b5d">
+    AMPERE ELECTRIC
+  </text>
+
+  <text x="450" y="485" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" fill="#1d7ed0">
+    PRODUCT IMAGE COMING SOON
+  </text>
+
+  <text x="450" y="525" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#527086">
+    Approved product photograph will be added shortly
+  </text>
+</svg>

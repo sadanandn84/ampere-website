@@ -24,12 +24,86 @@ document.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('[data-enquiry-form]');
   forms.forEach(form => initForm(form));
 
+  /* ── PRESELECT REQUIREMENT FROM URL ── */
+  preselectEnquiryInterest();
+
 });
+function preselectEnquiryInterest() {
+  const params = new URLSearchParams(window.location.search);
+  const interest = params.get('interest');
+
+  if (!interest) {
+    return;
+  }
+
+  const serviceField = document.getElementById('contact-service');
+
+  if (!serviceField) {
+    return;
+  }
+
+  const normalizedInterest = interest.trim().toLowerCase();
+
+  const matchingOption = Array.from(serviceField.options).find(option => {
+    return option.value.trim().toLowerCase() === normalizedInterest;
+  });
+
+  if (!matchingOption) {
+    console.warn(`No matching enquiry option found for: ${interest}`);
+    return;
+  }
+
+  serviceField.value = matchingOption.value;
+
+  serviceField.dispatchEvent(
+    new Event('change', {
+      bubbles: true
+    })
+  );
+
+  updateEnquiryMetadata(matchingOption.value);
+}
+
+function updateEnquiryMetadata(selectedInterest) {
+  const subjectField = document.getElementById('contact-subject');
+  const sourceField = document.getElementById('contact-source');
+  const helpText = document.getElementById('ev-enquiry-help');
+
+  if (subjectField) {
+    subjectField.value = `New Enquiry - ${selectedInterest}`;
+  }
+
+  if (sourceField) {
+    sourceField.value = `Products Page - ${selectedInterest}`;
+  }
+
+  if (helpText) {
+    const evSelections = [
+      'EV Charging Solutions',
+      'AC Chargers',
+      'DC Chargers'
+    ];
+
+    helpText.hidden = !evSelections.includes(selectedInterest);
+  }
+}
 
 function initForm(formEl) {
 
   const submitBtn = formEl.querySelector('[data-submit]');
   const successEl = formEl.parentElement.querySelector('.form-success');
+
+    const serviceField = formEl.querySelector('#contact-service');
+
+  if (serviceField) {
+    serviceField.addEventListener('change', () => {
+      const selectedInterest = serviceField.value;
+
+      if (selectedInterest) {
+        updateEnquiryMetadata(selectedInterest);
+      }
+    });
+  }
 
   /* ── REAL-TIME VALIDATION ── */
   formEl.querySelectorAll('[required]').forEach(input => {

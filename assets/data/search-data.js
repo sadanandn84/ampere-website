@@ -91,6 +91,13 @@ const AMPERE_SEARCH_DATA = [
     keywords: "mcc pcc apfc plc control panels automation panels electrical panels megavolt power llp",
     url: "product-details.html?product=control-panels"
   },
+  {
+  title: "EV Charging Solutions",
+  category: "Products",
+  keywords:
+    "ev charging electric vehicle charger ac charger dc fast charger charging station type 2 ccs2 commercial ev charging fleet charging public charging chargeway charging infrastructure charger installation charging management",
+  url: "product-details.html?product=ev-charging-solutions"
+  },
 
   /* SERVICES */
   {

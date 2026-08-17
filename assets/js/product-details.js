@@ -19,6 +19,18 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  const evChargingSection = document.getElementById(
+    "evChargingSolutionTypes"
+  );
+
+  if (evChargingSection) {
+    if (productSlug === "ev-charging-solutions") {
+      evChargingSection.removeAttribute("hidden");
+    } else {
+      evChargingSection.setAttribute("hidden", "");
+    }
+  }
+
   loadProductDetails(product, productSlug);
   loadRelatedProducts(productSlug);
 });

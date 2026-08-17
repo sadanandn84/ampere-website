@@ -213,6 +213,19 @@
     <div class="form-wrap reveal-right">
 
       <div id="contactEnquiryForm" data-enquiry-form>
+        <input
+          type="hidden"
+          name="_subject"
+          id="contact-subject"
+          value="New Website Enquiry - Ampere Electric"
+        >
+
+        <input
+          type="hidden"
+          name="source_page"
+          id="contact-source"
+          value="Contact Page"
+        >
 
       <h3>Send Your Requirement</h3>
 
@@ -314,9 +327,11 @@
           <option>Transformer</option>
         </optgroup>
 
-        <optgroup label="EV Chargers">
-          <option>AC Chargers</option>
-          <option>DC Chargers</option>
+        <optgroup label="EV Charging Solutions">
+          <option value="EV Charging Solutions">EV Charging Solutions</option>
+          <option value="AC Chargers">AC Chargers</option></option>
+          <option value="DC Chargers">DC Chargers</option>
+          <option value="EV Charger Installation & Commissioning">EV Charger Installation &amp; Commissioning</option>
         </optgroup>
 
         <optgroup label="Panels &amp; Wiring">
@@ -387,8 +402,17 @@
       <textarea
         name="message"
         id="contact-message"
-        placeholder="Share voltage, brand preference, site location, application type or technical requirements…"
+        placeholder="Please describe your product, service or project requirement."
       ></textarea>
+      <p
+        class="form-context-help"
+        id="ev-enquiry-help"
+        hidden
+      >
+        For EV charging enquiries, please mention the site type,
+        location, preferred AC or DC charger, number of charging
+        points and expected project timeline.
+      </p>
 
     </div>
 
