@@ -69,12 +69,19 @@ function updateEnquiryMetadata(selectedInterest) {
   const sourceField = document.getElementById('contact-source');
   const helpText = document.getElementById('ev-enquiry-help');
 
+  const params = new URLSearchParams(window.location.search);
+  const cameFromContextLink = params.has('interest');
+
   if (subjectField) {
-    subjectField.value = `New Enquiry - ${selectedInterest}`;
+    subjectField.value = selectedInterest
+    ? `New Enquiry - ${selectedInterest}`
+    : 'New Website Enquiry - Ampere Electric';
   }
 
   if (sourceField) {
-    sourceField.value = `Products Page - ${selectedInterest}`;
+    sourceField.value = cameFromContextLink
+    ? `Contextual Enquiry Link - ${selectedInterest}`
+    : 'Contact Page';
   }
 
   if (helpText) {
