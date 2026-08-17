@@ -527,7 +527,7 @@ const AMPERE_PRODUCTS = {
     catalogue: "#"
   },
 
-  "control-panels": {
+  "industrial-control-panels": {
     name: "Industrial Control Panels",
     brand: "Ampere Electric",
     category: "Control Panels",
