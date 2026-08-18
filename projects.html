@@ -4,239 +4,492 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Projects & Case Studies | Ampere Electric</title>
+  <title>Industrial Project Capabilities | Ampere Electric</title>
 
   <meta name="description"
-        content="Explore Ampere Electric industrial electrical, automation, motor, drive, control panel and turnkey project capabilities.">
+        content="Explore Ampere Electric capabilities across industrial automation, motors and drives, control panels, electrical contracting, plant monitoring and energy-efficiency projects.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/floating-contact.css">
+  <link rel="stylesheet" href="assets/css/site-search.css">
   <link rel="stylesheet" href="assets/css/projects.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="container header-wrap">
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-left">
 
-    <a href="index.html" class="logo">
-      <img src="assets/images/logo/logo-main.png" alt="Ampere Electric">
+    <span class="topbar-item">
+      <i
+        class="fa-solid fa-business-time"
+        aria-hidden="true"
+      ></i>
+
+      <span>Mon–Sat: 9 AM – 7 PM</span>
+    </span>
+
+    <a
+      href="mailto:sales@amperegroup.in"
+      class="topbar-item"
+      aria-label="Email Ampere Electric"
+    >
+      <i
+        class="fa-regular fa-envelope"
+        aria-hidden="true"
+      ></i>
+
+      <span>sales@amperegroup.in</span>
     </a>
-    <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="services.html">Services</a></li>
-      
-        <li>
-          <a href="about-us.html">About <span class="arr">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="about-us.html">About Us</a>
-            <a href="our-skills.html">Our Skills</a>
-            <a href="why-ampere.html">Why Ampere</a>
-            <a href="company-journey.html">Company Journey</a>
-          </div>
-        </li>
-        <li>
-          <a href="products.html">Products <span class="arr">▾</span></a>
-          <div class="nav-dropdown">
-            <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
-            <a href="products.html#diesel-generators">Diesel Generators</a>
-            <a href="products.html#transformers">Transformers</a>
-            <a href="products.html#control-panels">Control Panels</a>
-            <a href="products.html#industrial-pumps">Industrial Pumps</a>
-            <a href="products.html#switchgear-cables">Switchgear &amp; Cables</a>
-          </div>
-        </li>
-      
-        <li>
-          <a href="services.html">Services <span class="arr">▾</span></a>
-            <div class="nav-dropdown">
-              <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
-              <a href="services.html#earthing">Earthing Solutions</a>
-              <a href="services.html#installation">Project Installation</a>
-              <a href="services.html#amc">AMC Services</a>
-              <a href="services.html#commissioning">Commissioning</a>
-            </div>
-        </li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html#enquiry" class="nav-cta">Enquire Now</a></li>
-      </ul>
 
   </div>
-</header>
 
-<section class="projects-hero">
+  <div class="topbar-right">
+
+    <a
+      href="tel:+919307213349"
+      class="top-contact"
+      aria-label="Call Ampere Electric"
+    >
+      <i
+        class="fa-solid fa-phone-volume"
+        aria-hidden="true"
+      ></i>
+
+      <span>+91 9307213349</span>
+    </a>
+
+    <a
+      href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20discuss%20an%20industrial%20project%20requirement."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="top-contact whatsapp"
+      aria-label="Chat with Ampere Electric on WhatsApp"
+    >
+      <i
+        class="fa-brands fa-whatsapp"
+        aria-hidden="true"
+      ></i>
+
+      <span>WhatsApp</span>
+    </a>
+
+  </div>
+</div>
+<!-- MAIN NAVIGATION -->
+<nav class="site-nav" aria-label="Main Navigation">
+
+  <a href="index.html" class="nav-logo">
+    <img
+      src="assets/images/logo/logo-main.png"
+      alt="Ampere Electric Logo"
+    >
+  </a>
+
+  <ul class="nav-menu" id="navMenu">
+
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+
+    <!-- ABOUT -->
+    <li>
+      <a href="about-us.html">
+        About
+
+        <span class="arr" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </span>
+      </a>
+
+      <div class="nav-dropdown">
+        <a href="about-us.html">About Us</a>
+        <a href="our-skills.html">Our Skills</a>
+        <a href="why-ampere.html">Why Ampere</a>
+        <a href="company-journey.html">Company Journey</a>
+      </div>
+    </li>
+
+    <!-- PRODUCTS -->
+    <li>
+      <a href="products.html">
+        Products
+
+        <span class="arr" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </span>
+      </a>
+
+      <div class="nav-dropdown">
+
+        <a href="products.html#ht-lt-motors">
+          HT &amp; LT Motors
+        </a>
+
+        <a href="products.html#diesel-generators">
+          Diesel Generators
+        </a>
+
+        <a href="products.html#transformers">
+          Transformers
+        </a>
+
+        <a href="products.html#control-panels">
+          Control Panels
+        </a>
+
+        <a href="products.html#switchgear-cables">
+          Switchgear &amp; Cables
+        </a>
+
+        <a href="products.html#ev-charging">
+          EV Charging (AC &amp; DC)
+        </a>
+
+        <a href="products.html#earthing-solutions">
+          Earthing Solutions
+        </a>
+
+        <a href="products.html#cooling-tower-solutions">
+          Cooling Tower Solutions
+        </a>
+
+      </div>
+    </li>
+
+    <!-- SERVICES -->
+    <li class="active">
+
+      <a href="services.html" aria-current="page">
+        Services
+
+        <span class="arr" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </span>
+      </a>
+
+      <div class="nav-dropdown">
+
+        <a href="services.html#industrial-automation">
+          Industrial Automation
+        </a>
+
+        <a href="services.html#electrical-contracting">
+          Electrical Contracting
+        </a>
+
+        <a href="services.html#control-panel-design">
+          Control Panel Design
+        </a>
+
+        <a href="services.html#drive-solutions">
+          Drive Solutions
+        </a>
+
+        <a href="services.html#motor-selection">
+          Motor Selection
+        </a>
+
+        <a href="services.html#energy-audit">
+          Energy Audit
+        </a>
+
+        <a href="services.html#amc-maintenance">
+          AMC &amp; Maintenance
+        </a>
+
+        <a href="services.html#turnkey-projects">
+          Turnkey Projects
+        </a>
+
+      </div>
+    </li>
+
+    <li>
+      <a href="industries.html">Industries</a>
+    </li>
+
+    <li>
+      <a href="contact.html">Contact</a>
+    </li>
+
+    <li>
+      <a href="contact.html#enquiry" class="nav-cta">
+        Get a Quote
+      </a>
+    </li>
+
+  </ul>
+
+  <button
+    type="button"
+    class="hamburger"
+    id="hamburger"
+    aria-label="Open navigation menu"
+    aria-controls="navMenu"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</nav>
+
+
+<!-- PROJECTS HERO -->
+<section
+  class="projects-hero"
+  aria-labelledby="projects-hero-title"
+>
   <div class="container">
-    <span class="hero-tag">PROJECTS & CASE STUDIES</span>
 
-    <h1>
-      Engineering Solutions
-      <span>Delivered Across Industries</span>
+    <span class="hero-tag">
+      PROJECT CAPABILITIES
+    </span>
+
+    <h1 id="projects-hero-title">
+      Engineering Support
+      <span>Across Industrial Projects</span>
     </h1>
 
     <p>
-      From motor and drive solutions to automation, control panels and turnkey
-      electrical projects, Ampere Electric supports industries with reliable
-      engineering execution.
+      Explore our capabilities across industrial automation, motors and
+      drives, control panels, electrical contracting, plant monitoring
+      and energy-efficiency initiatives.
     </p>
+
+    <p class="projects-hero__note">
+      Project scope, equipment selection and execution approach are
+      finalized according to customer requirements and site conditions.
+    </p>
+
   </div>
 </section>
 
-<section class="projects-intro">
+<!-- SERVICES CONTEXT -->
+<section
+  class="projects-context"
+  aria-label="Services and project capabilities"
+>
   <div class="container">
-    <div class="section-title">
-      <span>OUR WORK</span>
-      <h2>Project Capabilities</h2>
+
+    <div class="projects-context__inner">
+
       <p>
-        These project categories represent the type of industrial electrical
-        and automation work Ampere Electric supports for manufacturing,
-        utilities, OEMs and infrastructure customers.
+        These capabilities complement the industrial engineering and
+        execution support described on our Services page.
       </p>
+
+      <a href="services.html">
+        <span>View All Services</span>
+
+        <i
+          class="fa-solid fa-arrow-right"
+          aria-hidden="true"
+        ></i>
+      </a>
+
     </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS INTRODUCTION -->
+<section
+  class="projects-intro"
+  aria-labelledby="project-capabilities-title"
+>
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>ENGINEERING &amp; EXECUTION SUPPORT</span>
+
+      <h2 id="project-capabilities-title">
+        Project Capabilities
+      </h2>
+
+      <p>
+        These categories represent the industrial electrical,
+        automation and project-support capabilities available for
+        manufacturing, utilities, OEM and infrastructure requirements.
+      </p>
+
+    </div>
+
   </div>
 </section>
 
 <section class="project-filter-section">
   <div class="container">
-    <div class="project-filter-pills">
-      <button class="project-pill active" data-filter="all">All Projects</button>
-      <button class="project-pill" data-filter="automation">Automation</button>
-      <button class="project-pill" data-filter="motors-drives">Motors & Drives</button>
-      <button class="project-pill" data-filter="panels">Control Panels</button>
-      <button class="project-pill" data-filter="electrical">Electrical Contracting</button>
-      <button class="project-pill" data-filter="energy">Energy Saving</button>
+    <div class="project-filter-pills" role="group" aria-label="Filter project capabilities">
+      <button type="button" class="project-pill active" data-filter="all" aria-pressed="true">All Capabilities</button>
+      <button type="button" class="project-pill" data-filter="automation" aria-pressed="false">Automation</button>
+      <button type="button" class="project-pill" data-filter="motors" aria-pressed="false">Motors &amp; Drives</button>
+      <button type="button" class="project-pill" data-filter="panels" aria-pressed="false">Control Panels</button>
+      <button type="button" class="project-pill" data-filter="electrical" aria-pressed="false">Electrical Execution</button>
+      <button type="button" class="project-pill" data-filter="energy" aria-pressed="false">Energy Efficiency</button>
+      <button type="button" class="project-pill" data-filter="monitoring" aria-pressed="false">Monitoring &amp; Control</button>
     </div>
+    <p
+      class="project-filter-status"
+      id="projectFilterStatus"
+      aria-live="polite"
+    >
+    Showing all project capabilities.
+   </p>
   </div>
 </section>
 
 <section class="projects-grid-section">
   <div class="container">
 
-    <div class="projects-grid">
+    <div class="projects-grid" id="projectsGrid" aria-label="Project capabilities">
 
       <article class="project-card" data-category="automation">
         <div class="project-image">
-          <img src="assets/images/projects/industrial-automation.webp" alt="Industrial Automation Project">
+          <img src="assets/images/projects/industrial-automation.webp" alt="PLC automation panel representing industrial automation capabilities" loading="lazy" width="1200" height="800">
         </div>
 
         <div class="project-content">
-          <span>Industrial Automation</span>
-          <h3>PLC, HMI & Process Automation Upgrade</h3>
+          <span>AUTOMATION</span>
+          <h3>PLC, HMI &amp; Process Automation Solutions</h3>
           <p>
-            Automation support for improving machine control, process visibility
-            and operator efficiency.
+            Engineering and integration support for improving machine control,
+            process visibility and operator interaction across industrial
+            applications.
           </p>
 
           <ul>
-            <li>PLC logic development</li>
-            <li>HMI screen design</li>
-            <li>Panel integration support</li>
+            <li>PLC programming and system integration</li>
+            <li>HMI development and operator visualization</li>
+            <li>SCADA and process-monitoring support</li>
+            <li>Automation upgrades and control optimization</li>
           </ul>
         </div>
       </article>
 
-      <article class="project-card" data-category="motors-drives">
+      <article class="project-card" data-category="motors">
         <div class="project-image">
-          <img src="assets/images/projects/motor-drive-solution.webp" alt="Motor and Drive Solution">
+          <img src="assets/images/projects/motor-vfd-integration.webp" alt="MCC and VFD panel representing motor and drive integration capabilities" loading="lazy" width="1200" height="800">
         </div>
 
         <div class="project-content">
-          <span>Motors & Drives</span>
-          <h3>Motor Selection & VFD Drive Commissioning</h3>
+          <span>MOTORS & DRIVES</span>
+          <h3>Motor Selection &amp; VFD Integration</h3>
           <p>
-            Application-based motor and drive selection for process equipment,
-            pumps, fans and conveyors.
+            Application-based motor and drive engineering for pumps, fans,
+            conveyors and industrial process equipment.
           </p>
 
           <ul>
-            <li>Motor sizing support</li>
-            <li>VFD parameterization</li>
-            <li>Energy optimization</li>
+            <li>Motor selection and application sizing</li>
+            <li>VFD and soft-starter selection</li>
+            <li>Drive commissioning and parameter setup</li>
+            <li>Motor-control and energy-optimization support</li>
           </ul>
         </div>
       </article>
 
       <article class="project-card" data-category="panels">
         <div class="project-image">
-          <img src="assets/images/projects/control-panel-project.webp" alt="Control Panel Project">
+          <img src="assets/images/projects/control-panel-engineering.webp" alt="Custom engineered control panel representing panel design capabilities" loading="lazy" width="1200" height="800">
         </div>
 
         <div class="project-content">
-          <span>Control Panels</span>
-          <h3>MCC, APFC & PLC Control Panel Execution</h3>
+          <span>CONTROL PANELS</span>
+          <h3>Industrial Control Panel Engineering</h3>
           <p>
-            Electrical panel engineering, component selection, wiring,
-            testing and commissioning support.
+            Design and manufacturing support for MCC, PCC, APFC, PLC and
+            application-specific industrial control panels.
           </p>
 
           <ul>
-            <li>MCC / PCC panels</li>
-            <li>APFC panels</li>
-            <li>PLC control panels</li>
+            <li>Panel design and component selection</li>
+            <li>MCC, PCC, APFC and PLC panels</li>
+            <li>Wiring, assembly and testing support</li>
+            <li>Application-specific panel integration</li>
           </ul>
         </div>
       </article>
 
       <article class="project-card" data-category="electrical">
         <div class="project-image">
-          <img src="assets/images/projects/electrical-contracting.webp" alt="Electrical Contracting Project">
+          <img src="assets/images/projects/electrical-installation.webp" alt="Electrical distribution panel representing industrial installation capabilities" loading="lazy" width="1200" height="800">
         </div>
 
         <div class="project-content">
-          <span>Electrical Contracting</span>
-          <h3>Industrial Electrical Installation & Commissioning</h3>
+          <span>ELECTRICAL EXECUTION</span>
+          <h3>Industrial Electrical Installation</h3>
           <p>
-            Site electrical execution support for power distribution, cabling,
-            panel installation and commissioning.
+            Electrical installation, cable laying, distribution and
+            commissioning support for industrial facilities and infrastructure.
           </p>
 
           <ul>
-            <li>Cable laying</li>
-            <li>Panel installation</li>
-            <li>Testing and commissioning</li>
+            <li>Power and control-cable installation</li>
+            <li>Electrical distribution and panel integration</li>
+            <li>Equipment connection and commissioning support</li>
+            <li>Site coordination and execution assistance</li>
           </ul>
         </div>
       </article>
 
       <article class="project-card" data-category="energy">
         <div class="project-image">
-          <img src="assets/images/projects/energy-saving-project.webp" alt="Energy Saving Project">
+          <img src="assets/images/projects/energy-efficiency.webp" alt="Placeholder representing energy-efficiency and power-quality capabilities" loading="lazy" width="1200" height="800">
         </div>
 
         <div class="project-content">
-          <span>Energy Saving</span>
-          <h3>Drive-Based Energy Optimization</h3>
+          <span>ENERGY EFFICIENCY</span>
+          <h3>Energy-Efficiency Improvement</h3>
           <p>
-            Energy efficiency improvements using VFDs, APFC panels and
-            application-specific electrical optimization.
+            Assessment and implementation support for power-factor improvement,
+            drive optimization and electrical energy monitoring.
           </p>
 
           <ul>
-            <li>Power factor improvement</li>
-            <li>VFD retrofit</li>
-            <li>Energy consumption reduction</li>
+            <li>Energy-consumption and load assessment</li>
+            <li>Power-factor improvement support</li>
+            <li>Motor and drive efficiency optimization</li>
+            <li>Electrical monitoring and improvement planning</li>
           </ul>
         </div>
       </article>
 
-      <article class="project-card" data-category="automation">
+      <article class="project-card" data-category="monitoring">
         <div class="project-image">
-          <img src="assets/images/projects/scada-monitoring.webp" alt="SCADA Monitoring Project">
+          <img src="assets/images/projects/plant-monitoring.webp" alt="Process control panel representing plant monitoring and control capabilities" loading="lazy" width="1200" height="800">
         </div>
 
         <div class="project-content">
-          <span>SCADA & Monitoring</span>
-          <h3>Plant Monitoring & Control System Support</h3>
+          <span>MONITORING & CONTROL</span>
+          <h3>Plant Monitoring &amp; Control Systems</h3>
           <p>
-            Monitoring and control solutions for better visibility of plant
-            operation, alarms and process performance.
+            SCADA, alarm-monitoring and process-visualization support for
+            improved operating visibility and control.
           </p>
 
           <ul>
-            <li>SCADA integration</li>
-            <li>Alarm monitoring</li>
-            <li>Process visualization</li>
+            <li>SCADA and process-visualization integration</li>
+            <li>Alarm monitoring and event reporting</li>
+            <li>Plant data and operating-status visibility</li>
+            <li>Control-system integration support</li>
           </ul>
         </div>
       </article>

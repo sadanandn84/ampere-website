@@ -797,5 +797,7 @@ const AMPERE_RELATED_PRODUCTS = [
   "industrial-control-panels",
   "apfc-panels",
   "switchgear",
-  "ev-charging-solutions"
+  "ev-charging-solutions",
+  "cooling-tower-solutions",
+  "earthing-solutions"
 ];
