@@ -76,7 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
       observer.observe(item);
     });
   } else {
-    revealItems.forEach((item) => {item.classList.add("is-visible");
+    revealItems.forEach((item) => {
+      item.classList.add("is-visible");
     });
   }
 });
