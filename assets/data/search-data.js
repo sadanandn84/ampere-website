@@ -166,11 +166,103 @@ const AMPERE_SEARCH_DATA = [
   
   /* INDUSTRIES */
   {
-    title: "Industries Served",
+    title: "Industries We Support",
     category: "Industries",
-    keywords: "automotive steel cement pharma chemical water wastewater oem machinery",
+    keywords: "industries manufacturing industrial applications sectors electrical automation motors drives control panels",
     url: "industries.html"
   },
+  {
+    title: "Automotive Industry",
+    category: "Industries",
+    keywords:
+    "automotive vehicle manufacturing assembly line conveyors robotics motors drives automation",
+    url: "industries.html#industry-automotive"
+  },
+  {
+    title: "Steel Industry",
+    category: "Industries",
+    keywords:
+      "steel rolling mill crane duty heavy motors slip ring motors steel plant",
+    url: "industries.html#industry-steel"
+  },
+  {
+    title: "Steel Industry",
+    category: "Industries",
+    keywords:
+      "steel rolling mill crane duty heavy motors slip ring motors steel plant",
+    url: "industries.html#industry-steel"
+  },
+  {
+    title: "Cement Industry",
+    category: "Industries",
+    keywords:
+      "cement crushers mills conveyors heavy duty motors process industry",
+    url: "industries.html#industry-cement"
+  },
+  {
+    title: "Cement Industry",
+    category: "Industries",
+    keywords:
+      "cement crushers mills conveyors heavy duty motors process industry",
+    url: "industries.html#industry-cement"
+  },
+  {
+    title: "Pharmaceutical Industry",
+    category: "Industries",
+    keywords:
+      "pharmaceutical pharma process automation motors clean manufacturing",
+    url: "industries.html#industry-pharmaceutical"
+  },
+  {
+    title: "Chemical Industry",
+    category: "Industries",
+    keywords:
+      "chemical process pumps mixers drives automation industrial",
+    url: "industries.html#industry-chemical"
+  },
+  {
+    title: "Water & Wastewater",
+    category: "Industries",
+    keywords:
+      "water treatment wastewater pumping vfd motors control panels",
+    url: "industries.html#industry-water-wastewater"
+  },
+  {
+    title: "OEM Machinery",
+    category: "Industries",
+    keywords:
+      "oem machinery machine builders automation panels motors drives",
+    url: "industries.html#industry-oem-machinery"
+  },
+  {
+    title: "Infrastructure",
+    category: "Industries",
+    keywords:
+      "infrastructure utilities electrical distribution dg transformer panels",
+    url: "industries.html#industry-infrastructure"
+  },
+  {
+    title: "Commercial Buildings",
+    category: "Industries",
+    keywords:
+      "commercial building hvac electrical distribution automation",
+    url: "industries.html#industry-commercial-buildings"
+  },
+  {
+    title: "Data Centers",
+    category: "Industries",
+    keywords:
+      "data center critical power electrical automation monitoring",
+    url: "industries.html#industry-data-centers"
+  },
+  {
+    title: "Renewable Energy",
+    category: "Industries",
+    keywords:
+      "renewable energy solar ev charging electrical automation",
+    url: "industries.html#industry-renewable-energy"
+  },
+  
 
   /* PROJECT CAPABILITIES */
   {
@@ -180,7 +272,7 @@ const AMPERE_SEARCH_DATA = [
       "industrial project capabilities engineering execution automation motors drives control panels electrical installation energy efficiency plant monitoring scada turnkey project support",
     url: "projects.html"
   },
-    {
+  {
     title: "PLC, HMI & Process Automation Solutions",
     category: "Projects",
     keywords:
@@ -233,29 +325,47 @@ const AMPERE_SEARCH_DATA = [
 
   /* BRANDS */
   {
-    title: "Electric Motors Brands",
+    title: "Industrial Brands & Technology Ecosystem",
     category: "Brands",
-    keywords: "electric motors marathon siemens cg power cg power and industrial solutions bharat bijlee industrial motors ht lt motors",
+    keywords:
+    "industrial brands motors drives automation electrical products marathon siemens cg power bharat bijlee l&t danfoss schneider yaskawa ev charging",
     url: "brands.html"
   },
   {
-    title: "Electric Drives Brands",
+    title: "Electric Motor Brands",
     category: "Brands",
-    keywords: "electric drives vfd variable frequency drives l&t lt danfoss schneider yaskawa industrial drives automation",
-    url: "brands.html"
+    keywords:
+      "marathon electric siemens cg power bharat bijlee industrial motors energy efficient motors crane duty slip ring",
+    url: "brands.html#electric-motors"
   },
   {
-    title: "Transformers & Panels",
+    title: "Industrial Drives & Automation Brands",
     category: "Brands",
-    keywords: "transformers control panels electrical panels megavolt power llp mcc pcc apfc distribution panels",
-    url: "brands.html"
+    keywords:
+      "l&t danfoss schneider electric yaskawa vfd industrial drives automation motor control",
+    url: "brands.html#drives-automation"
   },
   {
-    title: "Diesel Generators",
+    title: "Control Panels & Automation Components",
     category: "Brands",
-    keywords: "diesel generators dg sets sterling generators industrial generators backup power",
-    url: "brands.html"
-  },  
+    keywords:
+      "plc hmi control panels automation components protection power distribution drive integration",
+    url: "brands.html#control-automation-components"
+  },
+  {
+    title: "Electrical Product Portfolio",
+    category: "Brands",
+    keywords:
+      "transformers switchgear industrial cables earthing electrical products",
+    url: "brands.html#electrical-products"
+  },
+  {
+    title: "EV Charging Technology",
+    category: "Brands",
+    keywords:
+      "ev charging ac chargers dc fast chargers chargeway charging infrastructure",
+    url: "brands.html#ev-charging-technology"
+  },
 
   /* CONTACT */
   {

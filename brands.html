@@ -5,33 +5,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Brands We Offer | Ampere Electric</title>
+  <title>Industrial Brands We Offer | Ampere Electric</title>
+  <meta
+  name="description"
+  content="Explore industrial motor, drive, automation and electrical brands supported by Ampere Electric for industrial applications and project requirements."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/floating-contact.css">
+  <link rel="stylesheet" href="assets/css/site-search.css">
   <link rel="stylesheet" href="assets/css/brands.css">
 
 </head>
-<script src="assets/js/brands.js"></script>
 <body>
 
 <!-- ==========================================
 HEADER
 ========================================== -->
 
-<header class="site-header">
-  <div class="container header-wrap">
+<!-- TOP BAR -->
+   <div class="topbar">
+      <div class="topbar-left">
+        <span class="topbar-item"><i class="fa-solid fa-business-time"></i>
+          <span>Mon–Sat: 9 AM – 7 PM</span>
+        </span>
+         <a href="mailto:sales@amperegroup.in" 
+            class="topbar-item"
+            aria-label="Email Ampere Electric"
+         ><i class="fa-regular fa-envelope"></i>
+         <span>sales@amperegroup.in</span></a>
+      </div>
+      <div class="topbar-right">
+         <a href="tel:+919307213349" class="top-contact" aria-label="Call Ampere Electric">
+          <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+          <span>+91 9307213349</span>
+         </a>
+         <a href="https://wa.me/919307213349?text=Hello%20Ampere%20Electric%2C%20I%20would%20like%20to%20enquire%20about%20your%20electrical%20solutions." target="_blank" rel="noopener noreferrer" class="top-contact whatsapp" aria-label="Chat with Ampere Electric on WhatsApp">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>WhatsApp</span>
+         </a>
+      </div>
+   </div>
 
-    <a href="index.html" class="logo">
-      <img src="assets/images/logo/logo-main.png" alt="Ampere Electric">
+<!-- NAV -->
+
+  <nav class="site-nav" aria-label="Main Navigation">
+    <a href="index.html" class="nav-logo">
+     <img src="assets/images/logo/logo-main.png" loading="lazy" alt="Ampere Electric Logo">
     </a>
     <ul class="nav-menu" id="navMenu">
         <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="products.html">Products</a></li>
       
         <li>
-          <a href="about-us.html">About <span class="arr">▾</span></a>
+          <a href="about-us.html">About <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span></a>
           <div class="nav-dropdown">
             <a href="about-us.html">About Us</a>
             <a href="our-skills.html">Our Skills</a>
@@ -39,35 +75,59 @@ HEADER
             <a href="company-journey.html">Company Journey</a>
           </div>
         </li>
-        <li>
-          <a href="products.html">Products <span class="arr">▾</span></a>
+        <li class="active">
+          <a href="products.html" aria-current="page">Products <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span></a>
           <div class="nav-dropdown">
             <a href="products.html#ht-lt-motors">HT &amp; LT Motors</a>
             <a href="products.html#diesel-generators">Diesel Generators</a>
             <a href="products.html#transformers">Transformers</a>
             <a href="products.html#control-panels">Control Panels</a>
-            <a href="products.html#industrial-pumps">Industrial Pumps</a>
             <a href="products.html#switchgear-cables">Switchgear &amp; Cables</a>
+            <a href="products.html#ev-charging">EV Charging Solutions</a>
+            <a href="products.html#earthing-solutions">Earthing Solutions</a>
+            <a href="products.html#cooling-tower-solutions">Cooling Tower Solutions</a>
           </div>
         </li>
       
         <li>
-          <a href="services.html">Services <span class="arr">▾</span></a>
+          <a href="services.html">Services <span class="arr">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6"></path>  
+            </svg>
+          </span></a>
             <div class="nav-dropdown">
-              <a href="services.html#overhauling">Motor Overhauling &amp; Repair</a>
-              <a href="services.html#earthing">Earthing Solutions</a>
-              <a href="services.html#installation">Project Installation</a>
-              <a href="services.html#amc">AMC Services</a>
-              <a href="services.html#commissioning">Commissioning</a>
+              <a href="services.html#industrial-automation">Industrial Automation</a>
+              <a href="services.html#electrical-contracting">Electrical Contracting</a>
+              <a href="services.html#control-panel-design">Control Panel Design</a>
+              <a href="services.html#drive-solutions">Drive Solutions</a>
+              <a href="services.html#motor-selection">Motor Selection</a>
+              <a href="services.html#energy-audit">Energy Audit</a>
+              <a href="services.html#amc-maintenance">AMC &amp; Maintenance</a>
+              <a href="services.html#turnkey-projects">Turnkey Projects</a>
             </div>
         </li>
         <li><a href="industries.html">Industries</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="contact.html#enquiry" class="nav-cta">Get a Quote</a></li>
       </ul>
+      <button
+        type="button"
+        class="hamburger"
+        id="hamburger"
+        aria-label="Open navigation menu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-  </div>
-</header>
+</nav>
 
 <!-- ==========================================
 HERO
@@ -78,7 +138,7 @@ HERO
   <div class="container">
 
     <span class="hero-tag">
-      INDUSTRIAL PARTNERSHIPS
+      TECHNOLOGY &amp; MANUFACTURING ECOSYSTEM
     </span>
 
     <h1>
@@ -87,9 +147,9 @@ HERO
     </h1>
 
     <p>
-      Ampere Electric partners with leading global and Indian manufacturers
-      to deliver reliable motors, drives, automation and electrical solutions
-      for industrial applications.
+      Ampere Electric offers industrial products and engineering solutions
+      from established Indian and global manufacturers, selected according
+      to application, project and customer requirements.
     </p>
 
   </div>
@@ -100,144 +160,230 @@ HERO
 ELECTRIC MOTORS
 ========================================== -->
 
-<section class="brand-category-section">
+<section class="brand-category-section" id="electric-motors" aria-labelledby="electric-motors-title">
 
   <div class="container">
 
     <div class="section-title">
       <span>PRODUCT CATEGORY</span>
-      <h2>Electric Motors</h2>
+      <h2 id="electric-motors-title">Electric Motors</h2>
       <p>
-        Energy-efficient industrial motors for manufacturing,
-        process industries, utilities and infrastructure.
+        Energy-efficient and application-specific industrial motors for
+        manufacturing, process industries, utilities, infrastructure
+        and material-handling requirements.
       </p>
     </div>
 
     <div class="brands-grid">
 
-      <!-- MARATHON -->
+      <!-- MARATHON ELECTRIC -->
 
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/marathon-logo.webp"
-            alt="Marathon Motors">
+            src="assets/images/brands/marathon.webp"
+            alt="Marathon Electric industrial motors"
+            loading="lazy"
+            width="220"
+            height="110"
+          >
         </div>
 
-        <h3>Marathon Motors</h3>
+        <h3>Marathon Electric</h3>
 
         <p>
-          High-performance industrial motors for continuous-duty
-          applications and critical processes.
+          Industrial induction motors for continuous-duty applications,
+          demanding operating environments and critical process loads.
         </p>
 
         <ul>
-          <li>Low Voltage Motors</li>
-          <li>High Efficiency Motors</li>
-          <li>Industrial Applications</li>
+          <li>Low- and high-voltage motors</li>
+          <li>IE2, IE3 and application-specific motors</li>
+          <li>Crane-duty, TETV, PTSC and CACA options</li>
         </ul>
 
         <a
-          href="products.html?category=ht-lt-motors"
+          href="products.html#ht-lt-motors"
           class="brand-btn">
-          View Products
+          View Motor Solutions
         </a>
 
-      </div>
+      </article>
 
       <!-- SIEMENS -->
 
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/siemens-logo.webp"
-            alt="Siemens">
+            src="assets/images/brands/siemens.webp"
+            alt="Siemens industrial motors"
+            loading="lazy"
+            width="220"
+            height="110"
+            >
         </div>
 
         <h3>Siemens</h3>
 
         <p>
-          Industrial motors and automation solutions trusted
-          worldwide for reliability and performance.
+          Industrial motor solutions for manufacturing, utilities,
+          material handling and process applications.
         </p>
 
         <ul>
-          <li>IE2 / IE3 / IE4 Motors</li>
-          <li>Brake Motors</li>
-          <li>Industrial Applications</li>
+          <li>Energy-efficient industrial motors</li>
+          <li>General-purpose and process applications</li>
+          <li>Motor and automation integration support</li>
         </ul>
 
         <a
-          href="products.html?category=ht-lt-motors"
+          href="products.html#ht-lt-motors"
           class="brand-btn">
-          View Products
+          View Motor Solutions
         </a>
 
-      </div>
+      </article>
 
       <!-- CG POWER -->
 
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/cg-power-logo.webp"
-            alt="CG Power">
+            src="assets/images/brands/cgp.webp"
+            alt="CG Power industrial motors"
+            loading="lazy"
+            width="220"
+            height="110"
+            >
         </div>
 
         <h3>CG Power</h3>
 
         <p>
-          One of India's most trusted manufacturers of
-          industrial motors and electrical equipment.
+          Industrial motor options for energy-efficient operation,
+          lifting applications and demanding process requirements.
         </p>
 
         <ul>
-          <li>IE2 / IE3 / IE4 Motors</li>
-          <li>Crane Duty Motors</li>
-          <li>Slip Ring Motors</li>
+          <li>IE2, IE3 and IE4 motors</li>
+          <li>Crane-duty motors</li>
+          <li>Slip-ring and process motors</li>
         </ul>
 
         <a
-          href="products.html?category=ht-lt-motors"
+          href="products.html#ht-lt-motors"
           class="brand-btn">
-          View Products
+          View Motor Solutions
         </a>
 
-      </div>
+      </article>
 
       <!-- BHARAT BIJLEE -->
 
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/bharat-bijlee-logo.webp"
-            alt="Bharat Bijlee">
+            src="assets/images/brands/bharatbijlee-logo.webp"
+            alt="Bharat Bijlee industrial motors"
+            loading="lazy"
+            width="220"
+            height="110"
+            >
         </div>
 
         <h3>Bharat Bijlee</h3>
 
         <p>
-          Reliable industrial motor solutions serving
-          manufacturing and infrastructure sectors.
+          Energy-efficient low-voltage motors for manufacturing,
+          process industries and infrastructure applications.
         </p>
 
         <ul>
-          <li>LV Motors</li>
-          <li>Crane Duty Motors</li>
-          <li>Process Industry Motors</li>
+          <li>Low-voltage industrial motors</li>
+          <li>Process and utility applications</li>
+          <li>Application-based motor selection</li>
         </ul>
 
         <a
-          href="products.html?category=ht-lt-motors"
+          href="products.html#ht-lt-motors"
           class="brand-btn">
-          View Products
+          View Motor Solutions
         </a>
 
-      </div>
+      </article>
+
+      <!-- MEGAVOLT POWER LLP -->
+
+      <article class="brand-card">
+
+        <div class="brand-logo">
+          <img
+            src="assets/images/brands/megavoltpower.webp"
+            alt="Megavolt Power electrical products"
+            loading="lazy"
+            width="220"
+            height="110"
+            >
+        </div>
+
+        <h3>Megavolt Power LLP</h3>
+
+        <p>
+          Electrical equipment options supporting industrial power,
+          distribution and application-specific project requirements.
+        </p>
+
+        <ul>
+          <li>Application-specific electrical products</li>
+          <li>Industrial project support</li>
+          <li>Selection according to site requirements</li>
+        </ul>
+
+        <a
+          href="contact.html#enquiry"
+          class="brand-btn">
+          Enquire About Availability
+        </a>
+
+      </article>
+
+      <!-- STERLING -->
+
+      <article class="brand-card">
+
+        <div class="brand-logo">
+          <img
+            src="assets/images/brands/sterling.webp"
+            alt="Sterling industrial electrical solutions"
+            loading="lazy"
+            width="220"
+            height="110">
+        </div>
+
+        <h3>Sterling</h3>
+
+        <p>
+          Industrial electrical and energy solutions selected according
+          to application, capacity and project requirements.
+        </p>
+
+        <ul>
+          <li>Industrial electrical applications</li>
+          <li>Project-specific equipment selection</li>
+          <li>Engineering and supply support</li>
+        </ul>
+
+        <a
+          href="contact.html#enquiry"
+          class="brand-btn">
+          Enquire About Availability
+        </a>
+
+      </article>
 
     </div>
 
@@ -246,144 +392,447 @@ ELECTRIC MOTORS
 </section>
 
 <!-- ==========================================
-ELECTRIC DRIVES
+INDUSTRIAL DRIVES & AUTOMATION
 ========================================== -->
 
-<section class="brand-category-section alternate-bg">
-
+<section
+  class="brand-category-section alternate-bg"
+  id="drives-automation"
+  aria-labelledby="drives-automation-title"
+>
   <div class="container">
 
     <div class="section-title">
-      <span>PRODUCT CATEGORY</span>
-      <h2>Electric Drives</h2>
+      <span>PRODUCT &amp; SERVICE CATEGORY</span>
+
+      <h2 id="drives-automation-title">
+        Industrial Drives &amp; Automation
+      </h2>
+
       <p>
-        Advanced VFD and drive solutions for energy savings,
-        automation and process optimization.
+        Variable-frequency drives, motor-control and automation
+        technologies for energy savings, process control and reliable
+        industrial operation.
       </p>
     </div>
 
     <div class="brands-grid">
 
       <!-- L&T -->
-
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/lt-logo.webp"
-            alt="L&T">
+            src="assets/images/brands/lt.webp"
+            alt="L&T electrical and automation products"
+            loading="lazy"
+            width="220"
+            height="110"
+          >
         </div>
 
-        <h3>L&T Electrical & Automation</h3>
+        <h3>L&amp;T Electrical &amp; Automation</h3>
 
         <p>
-          Industrial automation and motor drive solutions
-          for modern manufacturing environments.
+          Electrical control, motor-management and automation products
+          for industrial distribution and machinery applications.
         </p>
 
         <ul>
-          <li>Variable Frequency Drives</li>
-          <li>Automation Solutions</li>
-          <li>Industrial Control</li>
+          <li>Variable-frequency drives</li>
+          <li>Motor control and protection</li>
+          <li>Industrial automation components</li>
         </ul>
 
-        <a href="contact.html" class="brand-btn">
-          Enquire Now
+        <a
+          href="services.html#drive-solutions"
+          class="brand-btn"
+        >
+          Explore Drive Solutions
         </a>
 
-      </div>
+      </article>
 
       <!-- DANFOSS -->
-
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/danfoss-logo.webp"
-            alt="Danfoss">
+            src="assets/images/brands/danfoss.webp"
+            alt="Danfoss variable-frequency drives"
+            loading="lazy"
+            width="220"
+            height="110"
+          >
         </div>
 
         <h3>Danfoss Drives</h3>
 
         <p>
-          Global leader in energy-efficient VFDs
-          for industrial and HVAC applications.
+          Variable-frequency drive solutions for pumps, HVAC,
+          conveyors and industrial process-control applications.
         </p>
 
         <ul>
-          <li>VLT Drives</li>
-          <li>HVAC Drives</li>
-          <li>Industrial Automation</li>
+          <li>Industrial VFD solutions</li>
+          <li>HVAC and pump applications</li>
+          <li>Energy and process optimization</li>
         </ul>
 
-        <a href="contact.html" class="brand-btn">
-          Enquire Now
+        <a
+          href="services.html#drive-solutions"
+          class="brand-btn"
+        >
+          Explore Drive Solutions
         </a>
 
-      </div>
+      </article>
 
-      <!-- SCHNEIDER -->
-
-      <div class="brand-card">
+      <!-- SCHNEIDER ELECTRIC -->
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/schneider-logo.webp"
-            alt="Schneider">
+            src="assets/images/brands/schneider.webp"
+            alt="Schneider Electric drives and automation"
+            loading="lazy"
+            width="220"
+            height="110"
+          >
         </div>
 
         <h3>Schneider Electric</h3>
 
         <p>
-          Smart motor control and automation
-          technologies for modern industries.
+          Motor control, drive and industrial automation technologies
+          for modern machines and process systems.
         </p>
 
         <ul>
-          <li>Altivar Drives</li>
-          <li>Motor Control</li>
-          <li>Industrial Automation</li>
+          <li>Altivar drive solutions</li>
+          <li>Motor control and protection</li>
+          <li>Industrial automation components</li>
         </ul>
 
-        <a href="contact.html" class="brand-btn">
-          Enquire Now
+        <a
+          href="services.html#drive-solutions"
+          class="brand-btn"
+        >
+          Explore Drive Solutions
         </a>
 
-      </div>
+      </article>
 
       <!-- YASKAWA -->
-
-      <div class="brand-card">
+      <article class="brand-card">
 
         <div class="brand-logo">
           <img
-            src="assets/images/brands/yaskawa-logo.webp"
-            alt="Yaskawa">
+            src="assets/images/brands/yaskawa.webp"
+            alt="Yaskawa industrial drives and motion control"
+            loading="lazy"
+            width="220"
+            height="110"
+          >
         </div>
 
         <h3>Yaskawa</h3>
 
         <p>
-          Premium Japanese drive technology
-          for precision industrial applications.
+          AC drives and motion-control technologies for precise,
+          dependable industrial automation and machine operation.
         </p>
 
         <ul>
-          <li>A1000 Drives</li>
-          <li>Industrial VFDs</li>
-          <li>Motion Control</li>
+          <li>Industrial AC drives</li>
+          <li>Motion-control applications</li>
+          <li>Machine and process automation</li>
         </ul>
 
-        <a href="contact.html" class="brand-btn">
-          Enquire Now
+        <a
+          href="services.html#drive-solutions"
+          class="brand-btn"
+        >
+          Explore Drive Solutions
         </a>
 
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+CONTROL PANELS & AUTOMATION COMPONENTS
+========================================== -->
+
+<section
+  class="brand-capability-section"
+  id="control-automation-components"
+  aria-labelledby="control-components-title"
+>
+  <div class="container">
+
+    <div class="section-title">
+      <span>ENGINEERING INTEGRATION</span>
+
+      <h2 id="control-components-title">
+        Control Panels &amp; Automation Components
+      </h2>
+
+      <p>
+        Components and technologies are selected according to panel
+        design, operating duty, protection, automation and customer
+        specifications.
+      </p>
+    </div>
+
+    <div class="brand-capability-grid">
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+        </div>
+
+        <h3>PLC &amp; HMI Systems</h3>
+
+        <p>
+          PLC, HMI and control-system components for machine automation,
+          process visibility and operator interaction.
+        </p>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+        </div>
+
+        <h3>Power Distribution</h3>
+
+        <p>
+          Components for MCC, PCC, distribution and application-specific
+          electrical panel requirements.
+        </p>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        </div>
+
+        <h3>Industrial Protection</h3>
+
+        <p>
+          Switching, isolation and protection components selected
+          according to ratings and operating conditions.
+        </p>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-gears" aria-hidden="true"></i>
+        </div>
+
+        <h3>Automation Components</h3>
+
+        <p>
+          Relays, controllers, interfaces and related components for
+          industrial automation and machine control.
+        </p>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+        </div>
+
+        <h3>Drive Integration</h3>
+
+        <p>
+          VFD and motor-control integration for pumps, fans, conveyors
+          and process applications.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="brand-section-action">
+      <a
+        href="products.html#control-panels"
+        class="brand-btn"
+      >
+        View Control Panel Solutions
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+ELECTRICAL PRODUCTS
+========================================== -->
+
+<section
+  class="brand-capability-section alternate-bg"
+  id="electrical-products"
+  aria-labelledby="electrical-products-title"
+>
+  <div class="container">
+
+    <div class="section-title">
+      <span>PRODUCT PORTFOLIO</span>
+
+      <h2 id="electrical-products-title">
+        Electrical Products
+      </h2>
+
+      <p>
+        Electrical products are selected based on application, ratings,
+        environmental conditions, technical specifications and project
+        requirements.
+      </p>
+    </div>
+
+    <div class="brand-capability-grid">
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+        </div>
+
+        <h3>Transformers</h3>
+
+        <p>
+          Distribution, oil-cooled and dry-type transformer solutions
+          selected according to capacity and site requirements.
+        </p>
+
+        <a href="products.html#transformers">
+          View Transformers
+        </a>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-toggle-on" aria-hidden="true"></i>
+        </div>
+
+        <h3>Switchgear</h3>
+
+        <p>
+          Switching and protection solutions for industrial electrical
+          distribution and equipment control.
+        </p>
+
+        <a href="products.html#switchgear-cables">
+          View Switchgear
+        </a>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-wave-square" aria-hidden="true"></i>
+        </div>
+
+        <h3>Industrial Cables</h3>
+
+        <p>
+          Power and control cables selected according to voltage,
+          loading, installation method and environmental conditions.
+        </p>
+
+        <a href="products.html#switchgear-cables">
+          View Cable Solutions
+        </a>
+      </article>
+
+      <article class="brand-capability-card">
+        <div class="brand-capability-card__icon">
+          <i class="fa-solid fa-plug-circle-check" aria-hidden="true"></i>
+        </div>
+
+        <h3>Earthing Solutions</h3>
+
+        <p>
+          Earthing products and systems for electrical safety,
+          equipment protection and fault-current dissipation.
+        </p>
+
+        <a href="products.html#earthing-solutions">
+          View Earthing Solutions
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==========================================
+EV CHARGING SOLUTIONS
+========================================== -->
+
+<section
+  class="brand-ev-section"
+  id="ev-charging-technology"
+  aria-labelledby="ev-technology-title"
+>
+  <div class="container">
+
+    <div class="brand-ev-section__content">
+
+      <div class="brand-ev-section__text">
+
+        <span class="brand-ev-section__eyebrow">
+          EV CHARGING TECHNOLOGY
+        </span>
+
+        <h2 id="ev-technology-title">
+          AC &amp; DC Charging Solutions
+        </h2>
+
+        <p>
+          Ampere Electric supports AC and DC EV charging requirements
+          through application assessment, charger selection,
+          installation coordination and technical support.
+        </p>
+
+        <ul>
+          <li>AC wall-mounted and pedestal chargers</li>
+          <li>DC fast-charging solutions</li>
+          <li>Charging management and connectivity options</li>
+          <li>Site assessment and installation support</li>
+        </ul>
+
+        <div class="brand-ev-section__actions">
+          <a
+            href="product-details.html?product=ev-charging-solutions"
+            class="brand-btn"
+          >
+            Explore EV Charging
+          </a>
+
+          <a
+            href="contact.html#enquiry"
+            class="brand-btn brand-btn--secondary"
+          >
+            Discuss Your Requirement
+          </a>
+        </div>
+
+      </div>
+
+      <div class="brand-ev-section__visual" aria-hidden="true">
+        <i class="fa-solid fa-charging-station"></i>
       </div>
 
     </div>
 
   </div>
-
 </section>
 
 <!-- ==========================================
@@ -479,6 +928,7 @@ FOOTER
           <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About Us</a></li>
           <li><a href="products.html">Products</a></li>
+          <li><a href="brands.html">Brands</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="industries.html">Industries</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -510,7 +960,7 @@ FOOTER
           <li><a href="services.html#electrical-contracting">Electrical Contracting</a></li>
           <li><a href="services.html#control-panel-design">Control Panel Design</a></li>
           <li><a href="services.html#drive-solutions">Drive Solutions</a></li>
-          <li><a href="services.html#motor-selection-sizing">Motor Selection &amp; Sizing</a></li>
+          <li><a href="services.html#motor-selection">Motor Selection</a></li>
           <li><a href="services.html#energy-audit">Energy Audit</a></li>
           <li><a href="services.html#amc-maintenance">AMC &amp; Maintenance</a></li>
           <li><a href="services.html#turnkey-projects">Turnkey Projects</a></li>
@@ -572,8 +1022,7 @@ FOOTER
    
       <nav class="footer-bottom__links" aria-label="Legal links">
         <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms.html">Terms</a>
-        <a href="sitemap.html">Sitemap</a>
+        <a href="sitemap.xml">Sitemap</a>
       </nav>
    
       <p class="footer-bottom__location">
@@ -584,6 +1033,13 @@ FOOTER
  
   </div>
 </footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/brands.js"></script>
+<script src="assets/js/floating-contact.js"></script>
+<script src="assets/data/search-data.js"></script>
+<script src="assets/js/site-search.js"></script>
 
 </body>
 </html>

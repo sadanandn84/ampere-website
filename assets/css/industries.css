@@ -27,7 +27,7 @@
 .section-title span {
   display: inline-block;
   margin-bottom: 16px;
-  color: var(--ae-orange);
+  color: var(--ae-blue);
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 3px;
@@ -100,13 +100,20 @@
 .industry-card,
 .benefit-card {
   position: relative;
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
   overflow: hidden;
   padding: 30px;
   border: 1px solid var(--ae-border);
   border-radius: 18px;
   background: var(--ae-white);
   box-shadow: 0 10px 30px rgba(18, 36, 58, 0.06);
-  transition: all 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
   scroll-margin-top: 115px;
 }
 
@@ -144,6 +151,10 @@
   justify-content: center;
   font-size: 26px;
   color: var(--ae-blue);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .industry-icon i {
@@ -152,8 +163,9 @@
 }
 
 .industry-card:hover .industry-icon {
-  background: var(--blue);
-  color: #ffffff;
+  background: var(--ae-blue);
+  color: var(--ae-white);
+  transform: scale(1.04);
 }
 
 .industry-card h3,
@@ -166,6 +178,8 @@
 
 .industry-card p,
 .benefit-card p {
+  flex: 1;
+  margin: 0;
   color: var(--ae-muted);
   font-size: 15px;
   line-height: 1.7;
@@ -183,8 +197,105 @@
 }
 
 .industries-cta {
-  padding: 75px 0;
-  background: linear-gradient(135deg, var(--ae-blue-dark), var(--ae-blue));
+  padding: 80px 0;
+  background: var(--ae-light-blue);
+}
+
+.industries-cta__content {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.industries-cta__eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--ae-blue);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.industries-cta h2 {
+  margin-bottom: 18px;
+  color: var(--ae-blue-dark);
+  font-family: "Rajdhani", sans-serif;
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.industries-cta p {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  color: var(--ae-text);
+  line-height: 1.8;
+}
+.industries-cta__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.industries-cta__actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  min-height: 52px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color .25s ease,
+    color .25s ease,
+    border-color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+/* Primary */
+
+.industries-cta__actions .primary-btn {
+
+  background: var(--ae-blue);
+  border: 2px solid var(--ae-blue);
+  color: var(--ae-white);
+
+}
+
+.industries-cta__actions .primary-btn:hover {
+
+  background: var(--ae-blue-dark);
+  border-color: var(--ae-blue-dark);
+  color: var(--ae-white);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(18,36,58,.18);
+
+}
+
+/* Secondary */
+
+.industries-cta__actions .secondary-btn {
+
+  background: transparent;
+  border: 2px solid var(--ae-blue);
+  color: var(--ae-blue);
+
+}
+
+.industries-cta__actions .secondary-btn:hover {
+
+  background: var(--ae-blue);
+  color: var(--ae-white);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(18,36,58,.18);
+
 }
 
 .cta-box {
@@ -223,11 +334,16 @@
   border-radius: 8px;
   color: var(--ae-white);
   font-weight: 900;
-  transition: all 0.25s ease;
+  text-decoration: none;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .primary-btn {
-  background: var(--ae-orange);
+  background: var(--ae-blue);
 }
 
 .whatsapp-btn {
@@ -236,14 +352,15 @@
 
 .primary-btn:hover,
 .whatsapp-btn:hover {
+  background: var(--ae-blue-dark);
   color: var(--ae-white);
   transform: translateY(-3px);
 }
 
 .industry-card,
 .benefit-card {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .industry-card.is-visible,
@@ -255,6 +372,11 @@
 .industry-card.is-visible:hover,
 .benefit-card.is-visible:hover {
   transform: translateY(-8px);
+}
+
+.industries-cta__actions a:focus-visible {
+  outline: 3px solid rgba(29, 126, 208, 0.35);
+  outline-offset: 4px;
 }
 
 @media (max-width: 1200px) {
@@ -286,5 +408,71 @@
   .industry-card,
   .benefit-card {
     padding: 26px;
+  }
+
+    .industries-grid-section,
+  .industry-benefits,
+  .industries-cta {
+    padding: 60px 0;
+  }
+
+  .industries-cta__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .industries-cta__actions a {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-hero h1 {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .industry-card,
+  .benefit-card {
+    padding: 24px 20px;
+  }
+
+  .industries-cta h2 {
+    font-size: 30px;
+  }
+
+  .industries-cta p {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .industry-card,
+  .benefit-card,
+  .industry-icon,
+  .industries-cta__actions a,
+  .primary-btn,
+  .whatsapp-btn {
+    transition: none;
+  }
+
+  .industry-card,
+  .benefit-card,
+  .industry-card.is-visible,
+  .benefit-card.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .industry-card:hover,
+  .industry-card.is-visible:hover,
+  .benefit-card:hover,
+  .benefit-card.is-visible:hover,
+  .industry-card:hover .industry-icon,
+  .industries-cta__actions a:hover,
+  .primary-btn:hover,
+  .whatsapp-btn:hover {
+    transform: none;
   }
 }

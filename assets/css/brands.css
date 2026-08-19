@@ -252,6 +252,223 @@
   transform: translateY(-8px);
 }
 
+/* ==================================================
+   BRAND CAPABILITY SECTIONS
+================================================== */
+
+.brand-capability-section {
+  padding: 88px 0;
+  background: var(--ae-white);
+}
+
+.brand-capability-section.alternate-bg {
+  background: var(--ae-light-blue);
+}
+
+.brand-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 38px;
+}
+
+.brand-capability-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 28px 24px;
+  border: 1px solid var(--ae-border);
+  border-radius: 18px;
+  background: var(--ae-white);
+  box-shadow: 0 10px 28px rgba(18, 36, 58, 0.05);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.brand-capability-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(29, 126, 208, 0.34);
+  box-shadow: 0 18px 36px rgba(18, 36, 58, 0.1);
+}
+
+.brand-capability-card__icon {
+  display: inline-flex;
+  width: 54px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: rgba(29, 126, 208, 0.1);
+  color: var(--ae-blue);
+  font-size: 24px;
+}
+
+.brand-capability-card h3 {
+  margin-bottom: 12px;
+  color: var(--ae-blue-dark);
+  font-family: "Rajdhani", sans-serif;
+  font-size: 23px;
+  line-height: 1.15;
+}
+
+.brand-capability-card p {
+  flex: 1;
+  margin: 0;
+  color: var(--ae-text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.brand-capability-card a {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 18px;
+  color: var(--ae-blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.brand-capability-card a:hover {
+  color: var(--ae-blue-dark);
+}
+
+.brand-section-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+
+/* ==================================================
+   EV CHARGING TECHNOLOGY
+================================================== */
+
+.brand-ev-section {
+  padding: 88px 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(10, 38, 64, 0.98),
+      rgba(29, 126, 208, 0.94)
+    );
+}
+
+.brand-ev-section__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.5fr);
+  align-items: center;
+  gap: 54px;
+}
+
+.brand-ev-section__eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--ae-orange);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 2.2px;
+}
+
+.brand-ev-section h2 {
+  margin-bottom: 16px;
+  color: var(--ae-white);
+  font-family: "Rajdhani", sans-serif;
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.08;
+}
+
+.brand-ev-section p {
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.brand-ev-section ul {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.brand-ev-section li {
+  position: relative;
+  padding-left: 26px;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.6;
+}
+
+.brand-ev-section li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--ae-orange);
+  content: "✓";
+  font-weight: 900;
+}
+
+.brand-ev-section__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.brand-btn--secondary {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: var(--ae-white);
+}
+
+.brand-btn--secondary:hover {
+  border-color: var(--ae-white);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.brand-ev-section__visual {
+  display: flex;
+  min-height: 260px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ae-white);
+  font-size: 112px;
+}
+
+
+/* ==================================================
+   BRAND CARD CONSISTENCY
+================================================== */
+
+.brand-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-card p {
+  flex: 1;
+}
+
+.brand-card ul {
+  margin-bottom: 24px;
+}
+
+.brand-card .brand-btn {
+  margin-top: auto;
+}
+
+.brand-logo img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 @media (max-width: 1200px) {
   .brands-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -261,6 +478,35 @@
 @media (max-width: 768px) {
   .brands-hero {
     padding: 90px 0 65px;
+  }
+
+  .brand-category-section,
+  .brand-capability-section,
+  .brand-ev-section {
+    padding: 64px 0;
+  }
+
+  .brand-capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-ev-section__content {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-ev-section__visual {
+    min-height: 190px;
+    font-size: 84px;
+  }
+
+  .brand-ev-section__actions {
+    flex-direction: column;
+  }
+
+  .brand-ev-section__actions .brand-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 
   .brands-grid {
@@ -274,5 +520,30 @@
 
   .brands-hero h1 {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brand-capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brand-ev-section__content {
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-card,
+  .brand-capability-card,
+  .brand-btn {
+    transition: none;
+  }
+
+  .brand-card:hover,
+  .brand-capability-card:hover,
+  .brand-btn:hover {
+    transform: none;
   }
 }
