@@ -186,18 +186,11 @@ const AMPERE_SEARCH_DATA = [
     url: "industries.html#industry-steel"
   },
   {
-    title: "Steel Industry",
+    title: "Food & Beverage Industry",
     category: "Industries",
     keywords:
-      "steel rolling mill crane duty heavy motors slip ring motors steel plant",
-    url: "industries.html#industry-steel"
-  },
-  {
-    title: "Cement Industry",
-    category: "Industries",
-    keywords:
-      "cement crushers mills conveyors heavy duty motors process industry",
-    url: "industries.html#industry-cement"
+      "food beverage processing packaging conveyors automation motors control panels utilities",
+    url: "industries.html#industry-food-beverage"
   },
   {
     title: "Cement Industry",
@@ -262,7 +255,7 @@ const AMPERE_SEARCH_DATA = [
       "renewable energy solar ev charging electrical automation",
     url: "industries.html#industry-renewable-energy"
   },
-  
+
 
   /* PROJECT CAPABILITIES */
   {
