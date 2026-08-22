@@ -3,17 +3,7 @@
    form.js
    ═══════════════════════════════════════════════ */
 
-/* ── CONFIGURATION ──────────────────────────────
-   Replace YOUR_FORM_ID with your Formspree form ID.
-   Steps:
-     1. Go to https://formspree.io and sign up free
-     2. Create a new form
-     3. Set notification email to: sales@amperegroup.in
-     4. Enable reCAPTCHA in Formspree settings (stops spam)
-     5. Set Allowed Origins to your domain only
-     6. Copy your form ID (e.g. "xpzvkgqw") and paste below
-──────────────────────────────────────────────── */
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnparbnw';
 
 /* ── REDIRECT after success (set to '' to show inline success) ── */
 const SUCCESS_REDIRECT = 'thank-you.html';
@@ -182,12 +172,13 @@ async function handleSubmit(formEl, btn, successEl) {
       }
     }
   } catch (err) {
-    /* Network error or FORMSPREE_ID not set — show success in demo/dev mode */
-    if (FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) {
-      onSuccess(formEl, successEl); // Dev preview
-    } else {
-      onError(btn, originalHTML, 'Network error. Please check your connection or call us directly.');
-    }
+    console.error('Form submission error:', err);
+
+    onError(
+    btn,
+    originalHTML,
+    'Network error. Please check your connection or contact us directly.'
+    );
   }
 }
 
