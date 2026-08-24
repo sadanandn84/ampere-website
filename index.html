@@ -8,7 +8,7 @@
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Ampere Electric – Complete Electrical Solutions, Pune">
   <meta property="og:description" content="Your complete electrical solution partner — HT/LT Motors, DG Sets, Transformers, Panels & Project Commissioning.">
-  <meta property="og:image" content="https://amperegroup.in/assets/images/logo/logo-main.png">
+  <meta property="og:image" content="https://amperegroup.in/assets/hero/hero-ampere-electric-solutions-final.webp">
   <meta property="og:type" content="website">
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
@@ -42,11 +42,9 @@
     #hero {
       position: relative;
       min-height: calc(100vh - 108px);
-      /*display: grid;*/
+      isolation: isolate;
       display: flex;
-      /*grid-template-columns: minmax(480px, 0.9fr) minmax(0, 1.1fr);*/
       align-items: center;
-      /*gap: clamp(2rem, 4vw, 5rem);*/
       overflow: hidden;
       padding: 70px 5%;
     }
@@ -54,10 +52,12 @@
     .hero-image-layer {
       position: absolute;
       inset: 0;
-      background:
-        url("assets/images/hero/hero-ampere-electric-solutions-final.webp")
-        center / cover no-repeat;
       z-index: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+
     }
 
     .hero-overlay {
@@ -66,16 +66,17 @@
       background:
         linear-gradient(
           90deg,
-          rgba(248, 251, 255, 0.98) 0%,
-          rgba(248, 251, 255, 0.94) 32%,
-          rgba(248, 251, 255, 0.65) 50%,
-          rgba(248, 251, 255, 0.12) 72%,
-          rgba(248, 251, 255, 0.04) 100%
+          rgba(248, 251, 255, 0.99) 0%,
+          rgba(248, 251, 255, 0.97) 28%,
+          rgba(248, 251, 255, 0.88) 42%,
+          rgba(248, 251, 255, 0.56) 57%,
+          rgba(248, 251, 255, 0.18) 76%,
+          rgba(248, 251, 255, 0.05) 100%
         );
       z-index: 1;
+      pointer-events: none;
+
     }
-
-
 
     .hero-bg {
       position: absolute; inset: 0;
@@ -98,34 +99,7 @@
     .hc-2 { width: 420px; height: 420px; border: 1px solid rgba(26,143,209,0.14); }
     .hc-3 { width: 260px; height: 260px; border: 1px solid rgba(26,143,209,0.1); }
     .hc-4 { width: 120px; height: 120px; background: rgba(26,143,209,0.08); border-radius: 50%; }
-    .hero-content { position: relative; z-index: 2; max-width: 680px; }
-    .hero-right {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      min-width: 0;
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-end;
-      align-self: start;
-    }
-    .hero-visual-card {
-      position: relative;
-      width: 100%;
-      max-width: none;
-      overflow: hidden;
-      background: transparent;
-      border: none;
-      border-radius: 12px;
-      box-shadow: none;
-    }
-    .hero-visual-card img {
-      display: block;
-      width: 100%;
-      height: clamp(500px, 62vh, 680px);
-      object-fit: cover;
-      object-position: 72% center;
-    }
+    .hero-content { position: relative; z-index: 2; max-width: 650px; width: min(650px, 58%); }
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 0.6rem;
       font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
@@ -137,29 +111,24 @@
     h1 .line2 { font-weight: 400; font-size: 75%; color: var(--light); display: block; margin-top: 0.3rem; }
     .hero-desc { font-size: 1rem; line-height: 1.75; max-width: 520px; margin-bottom: 2.25rem; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
-    /*.oem-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-    .oem-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
-    .oem-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .oem-tag {
-      background: var(--navy-3); border: 1px solid var(--border-s);
-      padding: 0.3rem 0.75rem; border-radius: 2px;
-      font-family: var(--fh); font-size: 0.8rem; font-weight: 600;
-      color: var(--muted); transition: all 0.2s;
-    }
-    .oem-tag:hover { border-color: var(--blue); color: var(--blue-lt); }*/
+
     .hero-panel {
-      position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
-      z-index: 3; display: flex; flex-direction: column; gap: 0.75rem; width: min(180px, 24%);
+      position: absolute; right: 3%; top: 50%; transform: translateY(-50%);
+      z-index: 3; display: flex; flex-direction: column; gap: 0.65rem; width: 158px;
     }
     .hp-card {
-      width: 100%; background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(217, 227, 239, 0.95);
-      border-radius: var(--r); padding: 1rem 1.1rem; min-width: 0;
-      backdrop-filter: blur(8px);
+      width: 100%; background: rgba(255, 255, 255, 0.84); border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 10px; padding: 0.9rem 1rem; min-width: 0; box-shadow: 0 8px 24px rgba(17, 40, 63, 0.12);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
     }
-    .hp-card:hover { border-color: var(--blue); }
-    .hp-card .num { font-family: var(--fh); font-size:  clamp(1.8rem, 2.2vw, 2.35rem); font-weight: 700; color: var(--blue-lt); line-height: 1; }
-    .hp-card .lbl { font-size: 0.66rem; color: var(--muted); line-height:1.35;  letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem; }
-    .hp-card:last-child .num { font-size: clamp(1.35rem, 1.8vw, 1.8rem); }
+    .hp-card:hover { transform: translateY(-2px); border-color: rgba(26, 143, 209, 0.55); background: rgba(255, 255, 255, 0.92); }
+    .hp-card .num { font-family: var(--fh); font-size:  clamp(1.75rem, 2vw, 2.15rem); font-weight: 700; color: var(--blue-lt); line-height: 1; }
+    .hp-card .lbl { font-size: 0.66rem; color: #40556c; line-height:1.35;  letter-spacing: 0.09em; text-transform: uppercase; margin-top: 0.35rem; }
+    .hp-card--text .num {
+      font-size: 1.35rem;
+      line-height: 1.05;
+    }
     /* Solutions grid */
     .solutions-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
     .sol-card {
@@ -330,18 +299,38 @@
   <div class="left-accent"></div>
 
   <div id="hero">
-    <div class="hero-image-layer" aria-hidden="true"></div>
+    <img
+    class="hero-image-layer"
+    src="assets/images/hero/hero-ampere-electric-solutions-final.webp"
+    alt=""
+    width="1536"
+    height="1024"
+    fetchpriority="high"
+    aria-hidden="true"
+    >
+    <!-- Readability gradient -->
     <div class="hero-overlay" aria-hidden="true"></div>
+
     <!-- LEFT CONTENT -->
     <div class="hero-content">
-      <div class="hero-eyebrow"><div class="dot dot-pulse"></div> Pune's Complete Electrical Solution Partner</div>
+      <div class="hero-eyebrow">
+        <div class="dot dot-pulse"></div> 
+        Pune's Complete Electrical Solution Partner
+      </div>
+
       <h1>
         Your Electrical<br>
         <em id="heroTyped">Solution Partner</em>
-        <span class="line2">End-to-End. Reliable. Application-Focused.</span>
+
+        <span class="line2">
+          End-to-End. Reliable. Application-Focused.
+        </span>
       </h1>
+
       <p class="hero-desc">
-        From supply of HT/LT motors and diesel generators to complete project installation and commissioning — Ampere Electric delivers comprehensive electrical solutions for industries across Pune and Maharashtra.
+        From supply of HT/LT motors and diesel generators to complete project 
+        installation and commissioning — Ampere Electric delivers comprehensive 
+        electrical solutions for industries across Pune and Maharashtra.
       </p>
       <div class="hero-actions">
         <a href="services.html" class="btn btn-primary" role="button">
@@ -350,69 +339,40 @@
         </a>
         <a href="contact.html#enquiry" class="btn btn-ghost">Get a Quote →</a>
       </div>
-    </div>
+    </div><!-- /.hero-content -->
 
-    <!-- RIGHT VISUAL SIDE -->
-    <!--<div class="hero-right">-->
-      <!-- floating visual -->
-      <!--<div class="hero-visual-card">
-        <img 
-          src="assets/images/hero/hero-ampere-electric-solutions-final.webp" 
-          alt="Ampere Electrical Industrial electrical solutions including motors, transformers, generators, control panels and EV charging"
-          width="1536"
-          height="1024"
-          fetchpriority="high"
-          >
-
-      </div>-->
-
-      <!-- KPI PANEL -->
-      <div class="hero-panel">
-        <div class="hp-card">
-                <div class="num counter"
-                data-target="15"
-                data-suffix="+">
-                0
-                </div>
-
-                <div class="lbl">
-                    Years Experience
-                </div>
-            </div>
-
-            <div class="hp-card">
-                <div class="num counter"
-                data-target="80"
-                data-suffix="+">
-                0
-                </div>
-
-                <div class="lbl">
-                    Projects Done
-                </div>
-            </div>
-
-            <div class="hp-card">
-                <div class="num">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-            <div class="lbl">
-                   Responsive Support
-                </div>
-            </div>
-
-            <div class="hp-card">
-                <div class="num">
-                    Multi-Brand
-                </div>
-
-                <div class="lbl">
-                    Industrial Solutions
-                </div>
-            </div>
+    <!-- KPI PANEL -->
+    <div class="hero-panel">
+      <div class="hp-card">
+          <div class="num counter"
+              data-target="15"
+              data-suffix="+">
+              0
+          </div>
+          <div class="lbl">
+              Years Experience
+          </div>
+      </div>
+      <div class="hp-card">
+          <div class="num counter"
+              data-target="80"
+              data-suffix="+">
+              0
+          </div>
+          <div class="lbl">
+              Projects Delivered
+          </div>
+      </div>
+      <div class="hp-card hp-card--text">
+        <div class="num">
+            Multi-Brand
+        </div>
+        <div class="lbl">
+            Industrial Solutions
         </div>
       </div>
-    </div>
+    </div><!-- /.hero-panel -->
+  </div><!-- /#hero -->
 </section>
 
 <!-- MARQUEE -->
