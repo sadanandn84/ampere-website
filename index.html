@@ -86,10 +86,10 @@
       width: 100%;
       max-width: none;
       overflow: hidden;
-      border: 1px solid #d9e3ef;
+      background: transparent;
+      border: none;
       border-radius: 12px;
-      background: #ffffff;
-      box-shadow: 0 24px 60px rgba(17, 40, 63, 0.14);
+      box-shadow: none;
     }
     .hero-visual-card img {
       display: block;
@@ -121,17 +121,17 @@
     .oem-tag:hover { border-color: var(--blue); color: var(--blue-lt); }
     .hero-panel {
       position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
-      z-index: 3; display: flex; flex-direction: column; gap: 1rem;
+      z-index: 3; display: flex; flex-direction: column; gap: 0.75rem; width: min(180px, 24%);
     }
     .hp-card {
-      background: #ffffff; color:#222; border: 1px solid #d9e3ef;
-      border-radius: var(--r); padding: 1.25rem 1.5rem; min-width: 160px;
-      backdrop-filter: blur(8px); transition: border-color 0.3s;
+      width: 100%; background: rgba(255, 255, 255, 0.94); border: 1px solid rgba(217, 227, 239, 0.95);
+      border-radius: var(--r); padding: 1rem 1.1rem; min-width: 0;
+      backdrop-filter: blur(8px);
     }
     .hp-card:hover { border-color: var(--blue); }
-    .hp-card .num { font-family: var(--fh); font-size: 2.4rem; font-weight: 700; color: var(--blue-lt); line-height: 1; }
-    .hp-card .lbl { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem; }
-
+    .hp-card .num { font-family: var(--fh); font-size:  clamp(1.8rem, 2.2vw, 2.35rem); font-weight: 700; color: var(--blue-lt); line-height: 1; }
+    .hp-card .lbl { font-size: 0.66rem; color: var(--muted); line-height:1.35;  letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.2rem; }
+    .hp-card:last-child .num { font-size: clamp(1.35rem, 1.8vw, 1.8rem); }
     /* Solutions grid */
     .solutions-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
     .sol-card {
@@ -359,7 +359,13 @@
     <div class="hero-right">
       <!-- floating visual -->
       <div class="hero-visual-card">
-        <img src="assets/images/hero/VFD_panels.webp" alt="Ampere Electrical Solutions">
+        <img 
+          src="assets/images/hero/hero-ampere-electric-solutions-final.webp" 
+          alt="Ampere Electrical Industrial electrical solutions including motors, transformers, generators, control panels and EV charging"
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+          >
 
       </div>
 
