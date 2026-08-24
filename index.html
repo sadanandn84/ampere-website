@@ -42,13 +42,41 @@
     #hero {
       position: relative;
       min-height: calc(100vh - 108px);
-      display: grid;
-      grid-template-columns: minmax(420px, 0.85fr) minmax(560px, 1.15fr);
-      align-items: start;
-      gap: clamp(2rem, 4vw, 5rem);
+      /*display: grid;*/
+      display: flex;
+      /*grid-template-columns: minmax(480px, 0.9fr) minmax(0, 1.1fr);*/
+      align-items: center;
+      /*gap: clamp(2rem, 4vw, 5rem);*/
       overflow: hidden;
-      padding: 50px 5%;
+      padding: 70px 5%;
     }
+
+    .hero-image-layer {
+      position: absolute;
+      inset: 0;
+      background:
+        url("assets/images/hero/hero-ampere-electric-solutions-final.webp")
+        center / cover no-repeat;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(248, 251, 255, 0.98) 0%,
+          rgba(248, 251, 255, 0.94) 32%,
+          rgba(248, 251, 255, 0.65) 50%,
+          rgba(248, 251, 255, 0.12) 72%,
+          rgba(248, 251, 255, 0.04) 100%
+        );
+      z-index: 1;
+    }
+
+
+
     .hero-bg {
       position: absolute; inset: 0;
       background: linear-gradient(135deg, #f8fbff  0%, #eef6fc  50%, #ffffff  100%);
@@ -109,7 +137,7 @@
     h1 .line2 { font-weight: 400; font-size: 75%; color: var(--light); display: block; margin-top: 0.3rem; }
     .hero-desc { font-size: 1rem; line-height: 1.75; max-width: 520px; margin-bottom: 2.25rem; }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
-    .oem-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    /*.oem-row { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
     .oem-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
     .oem-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
     .oem-tag {
@@ -118,9 +146,9 @@
       font-family: var(--fh); font-size: 0.8rem; font-weight: 600;
       color: var(--muted); transition: all 0.2s;
     }
-    .oem-tag:hover { border-color: var(--blue); color: var(--blue-lt); }
+    .oem-tag:hover { border-color: var(--blue); color: var(--blue-lt); }*/
     .hero-panel {
-      position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+      position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
       z-index: 3; display: flex; flex-direction: column; gap: 0.75rem; width: min(180px, 24%);
     }
     .hp-card {
@@ -302,7 +330,8 @@
   <div class="left-accent"></div>
 
   <div id="hero">
-
+    <div class="hero-image-layer" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
     <!-- LEFT CONTENT -->
     <div class="hero-content">
       <div class="hero-eyebrow"><div class="dot dot-pulse"></div> Pune's Complete Electrical Solution Partner</div>
@@ -321,44 +350,12 @@
         </a>
         <a href="contact.html#enquiry" class="btn btn-ghost">Get a Quote →</a>
       </div>
-
-      <!-- OEM BADGES -->
-
-      <div class="oem-row">
-        <span class="oem-label">Brands We Work With</span>
-        <div class="oem-tags">
-          <img
-        src="assets/images/brands/marathon.webp"
-        alt="Marathon"
-        loading="lazy">
-        <img
-        src="assets/images/brands/schneider.webp"
-        alt="Schneider"
-        loading="lazy">
-        <img
-        src="assets/images/brands/bharatbijlee-logo.webp"
-        alt="Bharat-Bijlee"
-        loading="lazy">
-        <img
-        src="assets/images/brands/danfoss.webp"
-        alt="Danfoss"
-        loading="lazy">
-        <img
-        src="assets/images/brands/lt.webp"
-        alt="L&T"
-        loading="lazy">
-        <img
-        src="assets/images/brands/megavoltpower.webp"
-        alt="megavoltpower"
-        loading="lazy">
-        </div>
-      </div>
     </div>
 
     <!-- RIGHT VISUAL SIDE -->
-    <div class="hero-right">
+    <!--<div class="hero-right">-->
       <!-- floating visual -->
-      <div class="hero-visual-card">
+      <!--<div class="hero-visual-card">
         <img 
           src="assets/images/hero/hero-ampere-electric-solutions-final.webp" 
           alt="Ampere Electrical Industrial electrical solutions including motors, transformers, generators, control panels and EV charging"
@@ -367,7 +364,7 @@
           fetchpriority="high"
           >
 
-      </div>
+      </div>-->
 
       <!-- KPI PANEL -->
       <div class="hero-panel">

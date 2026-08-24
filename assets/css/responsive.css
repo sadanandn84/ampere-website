@@ -13,7 +13,7 @@
 
 /* ── LAPTOP / SMALL DESKTOP ── */
 @media (max-width: 1100px) {
-  #hero { grid-template-columns: minmax(380px, 0.95fr) minmax(0, 1.05fr); gap: 2rem; }
+  #hero { grid-template-columns: minmax(380px, 0.95fr) minmax(0, 1.05fr); }
   .hero-panel { display: none; }
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
   .section { padding:75px 5%;}
@@ -22,14 +22,16 @@
 /* ── TABLET ── */
 @media (max-width: 960px) {
   /* Hide topbar */
-  .topbar { display: none; }
-  #hero { grid-template-columns: 1fr; padding: 40px 5%; }
+.topbar { display: none; }
+#hero { min-height: auto; padding: 60px 5%;}
 
-.hero-right {
-  width: 100%;
-  margin-top: 2.5rem;
-  /*justify-content: center;*/
-}
+.hero-image-layer {
+    background-position: 65% center;
+  }
+
+.hero-overlay {
+    background: rgba(248, 251, 255, 0.9);
+  }
 
 .hero-visual-card {
   max-width: 720px;
@@ -43,7 +45,7 @@
 }
 
 .hero-panel {
-  display: none !important;
+  display: none;
 }
 
 /* ========================================
@@ -364,7 +366,6 @@ body.menu-open .floating-contact {
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; justify-content: center; }
 
-  .oem-row { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
 
   .page-hero { padding: 50px 5% 40px; }
 
