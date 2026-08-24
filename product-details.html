@@ -423,41 +423,158 @@
           </a>
         </div>
 
-        <form class="pd-enquiry-form" action="#" method="POST">
+        <form
+          class="pd-enquiry-form"
+          id="productEnquiryForm"
+          data-enquiry-form
+          novalidate
+        >
+          <!-- Formspree email metadata -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Product Enquiry - Ampere Electric"
+          >
 
-          <input type="hidden" id="hiddenProductName" name="product_name">
-          <input type="hidden" id="hiddenProductCategory" name="product_category">
-          <input type="hidden" id="hiddenProductBrand" name="product_brand">
+          <input
+            type="hidden"
+            name="source_page"
+            value="Product Details Page"
+          >
+
+          <!-- Dynamic product metadata populated by product-details.js -->
+          <input
+            type="hidden"
+            id="hiddenProductName"
+            name="product_name"
+          >
+
+          <input
+            type="hidden"
+            id="hiddenProductCategory"
+            name="product_category"
+          >
+
+          <input
+            type="hidden"
+            id="hiddenProductBrand"
+            name="product_brand"
+          >
 
           <div class="form-row">
-            <label>Your Name</label>
-            <input type="text" name="name" placeholder="Enter your name" required>
+            <label for="product-enquiry-name">
+              Your Name
+            </label>
+          
+            <input
+              type="text"
+              id="product-enquiry-name"
+              name="name"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+              aria-describedby="product-name-error"
+            >
+          
+            <span
+              class="error-msg"
+              id="product-name-error"
+              aria-live="polite"
+            ></span>
           </div>
-
+        
           <div class="form-row">
-            <label>Company Name</label>
-            <input type="text" name="company" placeholder="Enter company name">
+            <label for="product-enquiry-company">
+              Company Name
+            </label>
+          
+            <input
+              type="text"
+              id="product-enquiry-company"
+              name="company"
+              placeholder="Enter company name"
+              autocomplete="organization"
+            >
+          
+            <span
+              class="error-msg"
+              id="product-company-error"
+              aria-live="polite"
+            ></span>
           </div>
-
+        
           <div class="form-row">
-            <label>Email Address</label>
-            <input type="email" name="email" placeholder="Enter email address" required>
+            <label for="product-enquiry-email">
+              Email Address
+            </label>
+          
+            <input
+              type="email"
+              id="product-enquiry-email"
+              name="email"
+              placeholder="Enter email address"
+              autocomplete="email"
+              required
+              aria-describedby="product-email-error"
+            >
+          
+            <span
+              class="error-msg"
+              id="product-email-error"
+              aria-live="polite"
+            ></span>
           </div>
-
+        
           <div class="form-row">
-            <label>Mobile Number</label>
-            <input type="tel" name="phone" placeholder="Enter mobile number" required>
+            <label for="product-enquiry-phone">
+              Mobile Number
+            </label>
+          
+            <input
+              type="tel"
+              id="product-enquiry-phone"
+              name="phone"
+              placeholder="Enter mobile number"
+              autocomplete="tel"
+              inputmode="tel"
+              required
+              aria-describedby="product-phone-error"
+            >
+          
+            <span
+              class="error-msg"
+              id="product-phone-error"
+              aria-live="polite"
+            ></span>
           </div>
-
+        
           <div class="form-row">
-            <label>Requirement</label>
-            <textarea id="requirementMessage" name="message" rows="5"></textarea>
+            <label for="requirementMessage">
+              Requirement
+            </label>
+          
+            <textarea
+              id="requirementMessage"
+              name="message"
+              rows="5"
+              placeholder="Share product quantity, specifications, application or other requirements"
+              aria-describedby="product-message-error"
+            ></textarea>
+          
+            <span
+              class="error-msg"
+              id="product-message-error"
+              aria-live="polite"
+            ></span>
           </div>
-
-          <button type="submit" class="pd-submit-btn">
+        
+          <button
+            type="submit"
+            class="pd-submit-btn"
+            data-submit
+          >
             Submit Enquiry
           </button>
-
         </form>
 
       </section>
@@ -601,7 +718,7 @@
             <li><a href="services.html#electrical-contracting">Electrical Contracting</a></li>
             <li><a href="services.html#control-panel-design">Control Panel Design</a></li>
             <li><a href="services.html#drive-solutions">Drive Solutions</a></li>
-            <li><a href="services.html#motor-selection-sizing">Motor Selection &amp; Sizing</a></li>
+            <li><a href="services.html#motor-selection">Motor Selection</a></li>
             <li><a href="services.html#energy-audit">Energy Audit</a></li>
             <li><a href="services.html#amc-maintenance">AMC &amp; Maintenance</a></li>
             <li><a href="services.html#turnkey-projects">Turnkey Projects</a></li>
@@ -679,6 +796,7 @@
   <script src="assets/js/animations.js"></script>
   <script src="assets/data/product-data.js"></script>
   <script src="assets/js/product-details.js"></script>
+  <script src="assets/js/form.js"></script>
   <script src="assets/js/floating-contact.js"></script>
   <script src="assets/data/search-data.js"></script>
   <script src="assets/js/site-search.js"></script>

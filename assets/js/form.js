@@ -212,7 +212,7 @@ function showGlobalError(message) {
 
 /* ── FIELD VALIDATION ── */
 function validateField(input) {
-  const fg = input.closest('.fg');
+  const fg = input.closest('.fg, .form-row');
   if (!fg) return true;
 
   const value = input.value.trim();
@@ -239,7 +239,7 @@ function validateField(input) {
 }
 
 function clearError(input) {
-  const fg = input.closest('.fg');
+  const fg = input.closest('.fg, .form-row');
   if (fg && fg.classList.contains('has-error') && input.value.trim()) {
     fg.classList.remove('has-error');
   }
