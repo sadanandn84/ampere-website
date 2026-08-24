@@ -22,6 +22,27 @@
 @media (max-width: 960px) {
   /* Hide topbar */
   .topbar { display: none; }
+  #hero {
+  grid-template-columns: 1fr !important;
+}
+
+.hero-right {
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.hero-visual-card {
+  max-width: 720px;
+}
+
+.hero-visual-card img {
+  height: auto;
+  aspect-ratio: 16 / 10;
+}
+
+.hero-panel {
+  display: none !important;
+}
 
 /* ========================================
    SHARED MOBILE NAVIGATION
