@@ -7,33 +7,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── MOBILE NAV ── */
   const hamburger = document.getElementById('hamburger');
-  const navMenu   = document.getElementById('navMenu');
+  const navMenu = document.getElementById('navMenu');
 
   if (hamburger && navMenu) {
+    const closeMenu = () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open navigation menu');
+    };
+
+    const openMenu = () => {
+      hamburger.classList.add('active');
+      navMenu.classList.add('open');
+      document.body.classList.add('menu-open');
+
+      hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.setAttribute('aria-label', 'Close navigation menu');
+    };
+
     hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navMenu.classList.toggle('open');
       const isOpen = navMenu.classList.contains('open');
-      hamburger.setAttribute('aria-expanded', String(isOpen));
-      hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-      document.body.classList.toggle('menu-open', isOpen);
+
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
-    // Close on link click
-    navMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('open');
-        document.body.classList.remove('menu-open');
-      });
+    navMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeMenu);
     });
 
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('open');
-        document.body.classList.remove('menu-open');
+    document.addEventListener('click', (event) => {
+      if (
+        navMenu.classList.contains('open') &&
+        !hamburger.contains(event.target) &&
+        !navMenu.contains(event.target)
+      ) {
+        closeMenu();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMenu();
+        hamburger.focus();
       }
     });
   }
@@ -49,11 +71,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ── ACTIVE NAV LINK (based on current page) ── */
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-menu > li > a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.closest('li').classList.add('active');
+  const currentPage =
+    window.location.pathname.split('/').pop() || 'index.html';
+  
+  const navSectionMap = {
+    'index.html': 'index.html',
+  
+    'about-us.html': 'about-us.html',
+    'our-skills.html': 'about-us.html',
+    'why-ampere.html': 'about-us.html',
+    'company-journey.html': 'about-us.html',
+  
+    'products.html': 'products.html',
+    'product-details.html': 'products.html',
+  
+    'services.html': 'services.html',
+    'projects.html': 'services.html',
+  
+    'industries.html': 'industries.html',
+    'contact.html': 'contact.html'
+  };
+  
+  const activeTopLevelHref = navSectionMap[currentPage];
+  
+  document.querySelectorAll('.nav-menu > li').forEach((item) => {
+    item.classList.remove('active');
+  
+    const link = item.querySelector(':scope > a');
+    if (!link) return;
+  
+    const linkPage = link.getAttribute('href')?.split('#')[0];
+  
+    if (linkPage === activeTopLevelHref) {
+      item.classList.add('active');
     }
   });
 

@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <span class="fc-content">
             <strong>Call an Engineer</strong>
-            <small>Mon–Sat · 9 AM–6 PM</small>
+            <small>Mon–Sat · 9 AM–7 PM</small>
           </span>
 
           <span class="fc-arrow" aria-hidden="true">

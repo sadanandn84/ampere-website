@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
   searchWrap.className = "site-search-wrap";
 
   searchWrap.innerHTML = `
-    <button class="site-search-toggle" type="button" aria-label="Open site search" title="Search">
+    <button class="site-search-toggle" type="button" aria-label="Open site search" aria-expanded="false" aria-controls="siteSearchPanel" title="Search">
       <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
     </button>
 
-    <div class="site-search-panel">
+    <div class="site-search-panel" id="siteSearchPanel" aria-hidden="true">
       <div class="site-search-box">
         <input
           type="search"
@@ -43,13 +43,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openSearch() {
     panel.classList.add("is-open");
+    panel.setAttribute('aria-hidden', 'false');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    toggleBtn.setAttribute('aria-label', 'Close site search');
+
     setTimeout(() => input.focus(), 100);
   }
 
-  function closeSearch() {
+  function closeSearch({ returnFocus = false } = {}) {
+    const wasOpen = panel.classList.contains('is-open');
+
     panel.classList.remove("is-open");
+    panel.setAttribute('aria-hidden', 'true');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    toggleBtn.setAttribute('aria-label', 'Open site search');
+
     input.value = "";
     showHint();
+    if (wasOpen && returnFocus) {
+    toggleBtn.focus();
+    }
   }
 
   function showHint() {
@@ -103,16 +116,24 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  toggleBtn.addEventListener("click", openSearch);
-  closeBtn.addEventListener("click", closeSearch);
+  toggleBtn.addEventListener("click", () => {
+    if (panel.classList.contains('is-open')) {
+      closeSearch();
+    } else {
+      openSearch();
+    }
+  });
+  closeBtn.addEventListener("click", () => {
+    closeSearch({ returnFocus: true });
+  });
 
   input.addEventListener("input", () => {
     renderResults(input.value);
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closeSearch();
+    if (event.key === "Escape" && panel.classList.contains('is-open')) {
+      closeSearch({ returnFocus: true });
     }
 
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
