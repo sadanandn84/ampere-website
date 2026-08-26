@@ -58,7 +58,7 @@ h1 { font-size: clamp(2.8rem, 5vw, 5rem); text-transform: uppercase; }
 h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); text-transform: uppercase; margin-bottom: 0.65rem; }
 h3 { font-size: 1.15rem; text-transform: uppercase;}
 h4 { font-size: 1rem; text-transform: uppercase; }
-h2 .hl, h1 em { color: var(--blue); font-style: normal; }
+h2 .hl, h1 .hl, h1 em { color: var(--blue); font-style: normal; }
 p { color: var(--text-body); line-height: 1.8; }
 
 /* ── PAGE WRAPPER ── */
